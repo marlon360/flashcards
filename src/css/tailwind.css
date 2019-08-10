@@ -2985,204 +2985,124 @@ video {
   border-color: #702459;
 }
 
-.rounded-none {
-  border-radius: 0;
+.rounded-xl {
+  border-radius: 1em;
 }
 
-.rounded-sm {
-  border-radius: 0.125rem;
+.rounded-2xl {
+  border-radius: 2em;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-3xl {
+  border-radius: 4em;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.rounded-t-xl {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
 }
 
-.rounded-full {
-  border-radius: 9999px;
+.rounded-r-xl {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
-.rounded-t-none {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.rounded-b-xl {
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
 }
 
-.rounded-r-none {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.rounded-l-xl {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
 }
 
-.rounded-b-none {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.rounded-t-2xl {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
-.rounded-l-none {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+.rounded-r-2xl {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
-.rounded-t-sm {
-  border-top-left-radius: 0.125rem;
-  border-top-right-radius: 0.125rem;
+.rounded-b-2xl {
+  border-bottom-right-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
-.rounded-r-sm {
-  border-top-right-radius: 0.125rem;
-  border-bottom-right-radius: 0.125rem;
+.rounded-l-2xl {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
-.rounded-b-sm {
-  border-bottom-right-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
+.rounded-t-3xl {
+  border-top-left-radius: 4em;
+  border-top-right-radius: 4em;
 }
 
-.rounded-l-sm {
-  border-top-left-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
+.rounded-r-3xl {
+  border-top-right-radius: 4em;
+  border-bottom-right-radius: 4em;
 }
 
-.rounded-t {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+.rounded-b-3xl {
+  border-bottom-right-radius: 4em;
+  border-bottom-left-radius: 4em;
 }
 
-.rounded-r {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+.rounded-l-3xl {
+  border-top-left-radius: 4em;
+  border-bottom-left-radius: 4em;
 }
 
-.rounded-b {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+.rounded-tl-xl {
+  border-top-left-radius: 1em;
 }
 
-.rounded-l {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+.rounded-tr-xl {
+  border-top-right-radius: 1em;
 }
 
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+.rounded-br-xl {
+  border-bottom-right-radius: 1em;
 }
 
-.rounded-r-lg {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+.rounded-bl-xl {
+  border-bottom-left-radius: 1em;
 }
 
-.rounded-b-lg {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+.rounded-tl-2xl {
+  border-top-left-radius: 2em;
 }
 
-.rounded-l-lg {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+.rounded-tr-2xl {
+  border-top-right-radius: 2em;
 }
 
-.rounded-t-full {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
+.rounded-br-2xl {
+  border-bottom-right-radius: 2em;
 }
 
-.rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
+.rounded-bl-2xl {
+  border-bottom-left-radius: 2em;
 }
 
-.rounded-b-full {
-  border-bottom-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
+.rounded-tl-3xl {
+  border-top-left-radius: 4em;
 }
 
-.rounded-l-full {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
+.rounded-tr-3xl {
+  border-top-right-radius: 4em;
 }
 
-.rounded-tl-none {
-  border-top-left-radius: 0;
+.rounded-br-3xl {
+  border-bottom-right-radius: 4em;
 }
 
-.rounded-tr-none {
-  border-top-right-radius: 0;
-}
-
-.rounded-br-none {
-  border-bottom-right-radius: 0;
-}
-
-.rounded-bl-none {
-  border-bottom-left-radius: 0;
-}
-
-.rounded-tl-sm {
-  border-top-left-radius: 0.125rem;
-}
-
-.rounded-tr-sm {
-  border-top-right-radius: 0.125rem;
-}
-
-.rounded-br-sm {
-  border-bottom-right-radius: 0.125rem;
-}
-
-.rounded-bl-sm {
-  border-bottom-left-radius: 0.125rem;
-}
-
-.rounded-tl {
-  border-top-left-radius: 0.25rem;
-}
-
-.rounded-tr {
-  border-top-right-radius: 0.25rem;
-}
-
-.rounded-br {
-  border-bottom-right-radius: 0.25rem;
-}
-
-.rounded-bl {
-  border-bottom-left-radius: 0.25rem;
-}
-
-.rounded-tl-lg {
-  border-top-left-radius: 0.5rem;
-}
-
-.rounded-tr-lg {
-  border-top-right-radius: 0.5rem;
-}
-
-.rounded-br-lg {
-  border-bottom-right-radius: 0.5rem;
-}
-
-.rounded-bl-lg {
-  border-bottom-left-radius: 0.5rem;
-}
-
-.rounded-tl-full {
-  border-top-left-radius: 9999px;
-}
-
-.rounded-tr-full {
-  border-top-right-radius: 9999px;
-}
-
-.rounded-br-full {
-  border-bottom-right-radius: 9999px;
-}
-
-.rounded-bl-full {
-  border-bottom-left-radius: 9999px;
+.rounded-bl-3xl {
+  border-bottom-left-radius: 4em;
 }
 
 .border-solid {
@@ -8497,6 +8417,154 @@ video {
   background-image: linear-gradient(350deg, #4299e1, #48bb78);
 }
 
+.bg-gradient-orange {
+  background-image: linear-gradient(to right, #FFB550, #FF895D);
+}
+
+.bg-gradient-0-orange {
+  background-image: linear-gradient(0deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-10-orange {
+  background-image: linear-gradient(10deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-20-orange {
+  background-image: linear-gradient(20deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-30-orange {
+  background-image: linear-gradient(30deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-40-orange {
+  background-image: linear-gradient(40deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-50-orange {
+  background-image: linear-gradient(50deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-60-orange {
+  background-image: linear-gradient(60deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-70-orange {
+  background-image: linear-gradient(70deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-80-orange {
+  background-image: linear-gradient(80deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-90-orange {
+  background-image: linear-gradient(90deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-100-orange {
+  background-image: linear-gradient(100deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-110-orange {
+  background-image: linear-gradient(110deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-120-orange {
+  background-image: linear-gradient(120deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-130-orange {
+  background-image: linear-gradient(130deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-140-orange {
+  background-image: linear-gradient(140deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-150-orange {
+  background-image: linear-gradient(150deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-160-orange {
+  background-image: linear-gradient(160deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-170-orange {
+  background-image: linear-gradient(170deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-180-orange {
+  background-image: linear-gradient(180deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-190-orange {
+  background-image: linear-gradient(190deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-200-orange {
+  background-image: linear-gradient(200deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-210-orange {
+  background-image: linear-gradient(210deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-220-orange {
+  background-image: linear-gradient(220deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-230-orange {
+  background-image: linear-gradient(230deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-240-orange {
+  background-image: linear-gradient(240deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-250-orange {
+  background-image: linear-gradient(250deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-260-orange {
+  background-image: linear-gradient(260deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-270-orange {
+  background-image: linear-gradient(270deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-280-orange {
+  background-image: linear-gradient(280deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-290-orange {
+  background-image: linear-gradient(290deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-300-orange {
+  background-image: linear-gradient(300deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-310-orange {
+  background-image: linear-gradient(310deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-320-orange {
+  background-image: linear-gradient(320deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-330-orange {
+  background-image: linear-gradient(330deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-340-orange {
+  background-image: linear-gradient(340deg, #FFB550, #FF895D);
+}
+
+.bg-gradient-350-orange {
+  background-image: linear-gradient(350deg, #FFB550, #FF895D);
+}
+
 .bg-gradient-purple-blue {
   background-image: linear-gradient(to right, #9f7aea, #4299e1);
 }
@@ -8791,6 +8859,154 @@ video {
 
 .hover\:bg-gradient-350-blue-green:hover {
   background-image: linear-gradient(350deg, #4299e1, #48bb78);
+}
+
+.hover\:bg-gradient-orange:hover {
+  background-image: linear-gradient(to right, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-0-orange:hover {
+  background-image: linear-gradient(0deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-10-orange:hover {
+  background-image: linear-gradient(10deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-20-orange:hover {
+  background-image: linear-gradient(20deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-30-orange:hover {
+  background-image: linear-gradient(30deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-40-orange:hover {
+  background-image: linear-gradient(40deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-50-orange:hover {
+  background-image: linear-gradient(50deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-60-orange:hover {
+  background-image: linear-gradient(60deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-70-orange:hover {
+  background-image: linear-gradient(70deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-80-orange:hover {
+  background-image: linear-gradient(80deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-90-orange:hover {
+  background-image: linear-gradient(90deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-100-orange:hover {
+  background-image: linear-gradient(100deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-110-orange:hover {
+  background-image: linear-gradient(110deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-120-orange:hover {
+  background-image: linear-gradient(120deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-130-orange:hover {
+  background-image: linear-gradient(130deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-140-orange:hover {
+  background-image: linear-gradient(140deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-150-orange:hover {
+  background-image: linear-gradient(150deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-160-orange:hover {
+  background-image: linear-gradient(160deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-170-orange:hover {
+  background-image: linear-gradient(170deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-180-orange:hover {
+  background-image: linear-gradient(180deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-190-orange:hover {
+  background-image: linear-gradient(190deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-200-orange:hover {
+  background-image: linear-gradient(200deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-210-orange:hover {
+  background-image: linear-gradient(210deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-220-orange:hover {
+  background-image: linear-gradient(220deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-230-orange:hover {
+  background-image: linear-gradient(230deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-240-orange:hover {
+  background-image: linear-gradient(240deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-250-orange:hover {
+  background-image: linear-gradient(250deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-260-orange:hover {
+  background-image: linear-gradient(260deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-270-orange:hover {
+  background-image: linear-gradient(270deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-280-orange:hover {
+  background-image: linear-gradient(280deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-290-orange:hover {
+  background-image: linear-gradient(290deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-300-orange:hover {
+  background-image: linear-gradient(300deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-310-orange:hover {
+  background-image: linear-gradient(310deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-320-orange:hover {
+  background-image: linear-gradient(320deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-330-orange:hover {
+  background-image: linear-gradient(330deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-340-orange:hover {
+  background-image: linear-gradient(340deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-350-orange:hover {
+  background-image: linear-gradient(350deg, #FFB550, #FF895D);
 }
 
 .hover\:bg-gradient-purple-blue:hover {
@@ -11318,204 +11534,124 @@ video {
     border-color: #702459;
   }
 
-  .sm\:rounded-none {
-    border-radius: 0;
+  .sm\:rounded-xl {
+    border-radius: 1em;
   }
 
-  .sm\:rounded-sm {
-    border-radius: 0.125rem;
+  .sm\:rounded-2xl {
+    border-radius: 2em;
   }
 
-  .sm\:rounded {
-    border-radius: 0.25rem;
+  .sm\:rounded-3xl {
+    border-radius: 4em;
   }
 
-  .sm\:rounded-lg {
-    border-radius: 0.5rem;
+  .sm\:rounded-t-xl {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
 
-  .sm\:rounded-full {
-    border-radius: 9999px;
+  .sm\:rounded-r-xl {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
   }
 
-  .sm\:rounded-t-none {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  .sm\:rounded-b-xl {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .sm\:rounded-r-none {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  .sm\:rounded-l-xl {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .sm\:rounded-b-none {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  .sm\:rounded-t-2xl {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
   }
 
-  .sm\:rounded-l-none {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  .sm\:rounded-r-2xl {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
 
-  .sm\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+  .sm\:rounded-b-2xl {
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .sm\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+  .sm\:rounded-l-2xl {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .sm\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .sm\:rounded-t-3xl {
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
   }
 
-  .sm\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .sm\:rounded-r-3xl {
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
   }
 
-  .sm\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+  .sm\:rounded-b-3xl {
+    border-bottom-right-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .sm\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+  .sm\:rounded-l-3xl {
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .sm\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .sm\:rounded-tl-xl {
+    border-top-left-radius: 1em;
   }
 
-  .sm\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .sm\:rounded-tr-xl {
+    border-top-right-radius: 1em;
   }
 
-  .sm\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  .sm\:rounded-br-xl {
+    border-bottom-right-radius: 1em;
   }
 
-  .sm\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+  .sm\:rounded-bl-xl {
+    border-bottom-left-radius: 1em;
   }
 
-  .sm\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .sm\:rounded-tl-2xl {
+    border-top-left-radius: 2em;
   }
 
-  .sm\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .sm\:rounded-tr-2xl {
+    border-top-right-radius: 2em;
   }
 
-  .sm\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+  .sm\:rounded-br-2xl {
+    border-bottom-right-radius: 2em;
   }
 
-  .sm\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+  .sm\:rounded-bl-2xl {
+    border-bottom-left-radius: 2em;
   }
 
-  .sm\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .sm\:rounded-tl-3xl {
+    border-top-left-radius: 4em;
   }
 
-  .sm\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .sm\:rounded-tr-3xl {
+    border-top-right-radius: 4em;
   }
 
-  .sm\:rounded-tl-none {
-    border-top-left-radius: 0;
+  .sm\:rounded-br-3xl {
+    border-bottom-right-radius: 4em;
   }
 
-  .sm\:rounded-tr-none {
-    border-top-right-radius: 0;
-  }
-
-  .sm\:rounded-br-none {
-    border-bottom-right-radius: 0;
-  }
-
-  .sm\:rounded-bl-none {
-    border-bottom-left-radius: 0;
-  }
-
-  .sm\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
-  }
-
-  .sm\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
-  }
-
-  .sm\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
-  }
-
-  .sm\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
-  }
-
-  .sm\:rounded-tl {
-    border-top-left-radius: 0.25rem;
-  }
-
-  .sm\:rounded-tr {
-    border-top-right-radius: 0.25rem;
-  }
-
-  .sm\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
-  }
-
-  .sm\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
-  }
-
-  .sm\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
-  }
-
-  .sm\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
-  }
-
-  .sm\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .sm\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .sm\:rounded-tl-full {
-    border-top-left-radius: 9999px;
-  }
-
-  .sm\:rounded-tr-full {
-    border-top-right-radius: 9999px;
-  }
-
-  .sm\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
-  }
-
-  .sm\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+  .sm\:rounded-bl-3xl {
+    border-bottom-left-radius: 4em;
   }
 
   .sm\:border-solid {
@@ -16830,6 +16966,154 @@ video {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
   }
 
+  .sm\:bg-gradient-orange {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-0-orange {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-10-orange {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-20-orange {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-30-orange {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-40-orange {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-50-orange {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-60-orange {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-70-orange {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-80-orange {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-90-orange {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-100-orange {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-110-orange {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-120-orange {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-130-orange {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-140-orange {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-150-orange {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-160-orange {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-170-orange {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-180-orange {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-190-orange {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-200-orange {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-210-orange {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-220-orange {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-230-orange {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-240-orange {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-250-orange {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-260-orange {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-270-orange {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-280-orange {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-290-orange {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-300-orange {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-310-orange {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-320-orange {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-330-orange {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-340-orange {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .sm\:bg-gradient-350-orange {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
   .sm\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -17124,6 +17408,154 @@ video {
 
   .sm\:hover\:bg-gradient-350-blue-green:hover {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
+  }
+
+  .sm\:hover\:bg-gradient-orange:hover {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-0-orange:hover {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-10-orange:hover {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-20-orange:hover {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-30-orange:hover {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-40-orange:hover {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-50-orange:hover {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-60-orange:hover {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-70-orange:hover {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-80-orange:hover {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-90-orange:hover {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-100-orange:hover {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-110-orange:hover {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-120-orange:hover {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-130-orange:hover {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-140-orange:hover {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-150-orange:hover {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-160-orange:hover {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-170-orange:hover {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-180-orange:hover {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-190-orange:hover {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-200-orange:hover {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-210-orange:hover {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-220-orange:hover {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-230-orange:hover {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-240-orange:hover {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-250-orange:hover {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-260-orange:hover {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-270-orange:hover {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-280-orange:hover {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-290-orange:hover {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-300-orange:hover {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-310-orange:hover {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-320-orange:hover {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-330-orange:hover {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-340-orange:hover {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-350-orange:hover {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
   .sm\:hover\:bg-gradient-purple-blue:hover {
@@ -19652,204 +20084,124 @@ video {
     border-color: #702459;
   }
 
-  .md\:rounded-none {
-    border-radius: 0;
+  .md\:rounded-xl {
+    border-radius: 1em;
   }
 
-  .md\:rounded-sm {
-    border-radius: 0.125rem;
+  .md\:rounded-2xl {
+    border-radius: 2em;
   }
 
-  .md\:rounded {
-    border-radius: 0.25rem;
+  .md\:rounded-3xl {
+    border-radius: 4em;
   }
 
-  .md\:rounded-lg {
-    border-radius: 0.5rem;
+  .md\:rounded-t-xl {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
 
-  .md\:rounded-full {
-    border-radius: 9999px;
+  .md\:rounded-r-xl {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
   }
 
-  .md\:rounded-t-none {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  .md\:rounded-b-xl {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .md\:rounded-r-none {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  .md\:rounded-l-xl {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .md\:rounded-b-none {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  .md\:rounded-t-2xl {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
   }
 
-  .md\:rounded-l-none {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  .md\:rounded-r-2xl {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
 
-  .md\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+  .md\:rounded-b-2xl {
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .md\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+  .md\:rounded-l-2xl {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .md\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .md\:rounded-t-3xl {
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
   }
 
-  .md\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .md\:rounded-r-3xl {
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
   }
 
-  .md\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+  .md\:rounded-b-3xl {
+    border-bottom-right-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .md\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+  .md\:rounded-l-3xl {
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .md\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .md\:rounded-tl-xl {
+    border-top-left-radius: 1em;
   }
 
-  .md\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .md\:rounded-tr-xl {
+    border-top-right-radius: 1em;
   }
 
-  .md\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  .md\:rounded-br-xl {
+    border-bottom-right-radius: 1em;
   }
 
-  .md\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+  .md\:rounded-bl-xl {
+    border-bottom-left-radius: 1em;
   }
 
-  .md\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .md\:rounded-tl-2xl {
+    border-top-left-radius: 2em;
   }
 
-  .md\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .md\:rounded-tr-2xl {
+    border-top-right-radius: 2em;
   }
 
-  .md\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+  .md\:rounded-br-2xl {
+    border-bottom-right-radius: 2em;
   }
 
-  .md\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+  .md\:rounded-bl-2xl {
+    border-bottom-left-radius: 2em;
   }
 
-  .md\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .md\:rounded-tl-3xl {
+    border-top-left-radius: 4em;
   }
 
-  .md\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .md\:rounded-tr-3xl {
+    border-top-right-radius: 4em;
   }
 
-  .md\:rounded-tl-none {
-    border-top-left-radius: 0;
+  .md\:rounded-br-3xl {
+    border-bottom-right-radius: 4em;
   }
 
-  .md\:rounded-tr-none {
-    border-top-right-radius: 0;
-  }
-
-  .md\:rounded-br-none {
-    border-bottom-right-radius: 0;
-  }
-
-  .md\:rounded-bl-none {
-    border-bottom-left-radius: 0;
-  }
-
-  .md\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
-  }
-
-  .md\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
-  }
-
-  .md\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
-  }
-
-  .md\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
-  }
-
-  .md\:rounded-tl {
-    border-top-left-radius: 0.25rem;
-  }
-
-  .md\:rounded-tr {
-    border-top-right-radius: 0.25rem;
-  }
-
-  .md\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
-  }
-
-  .md\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
-  }
-
-  .md\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
-  }
-
-  .md\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
-  }
-
-  .md\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .md\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .md\:rounded-tl-full {
-    border-top-left-radius: 9999px;
-  }
-
-  .md\:rounded-tr-full {
-    border-top-right-radius: 9999px;
-  }
-
-  .md\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
-  }
-
-  .md\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+  .md\:rounded-bl-3xl {
+    border-bottom-left-radius: 4em;
   }
 
   .md\:border-solid {
@@ -25164,6 +25516,154 @@ video {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
   }
 
+  .md\:bg-gradient-orange {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-0-orange {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-10-orange {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-20-orange {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-30-orange {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-40-orange {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-50-orange {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-60-orange {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-70-orange {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-80-orange {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-90-orange {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-100-orange {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-110-orange {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-120-orange {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-130-orange {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-140-orange {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-150-orange {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-160-orange {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-170-orange {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-180-orange {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-190-orange {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-200-orange {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-210-orange {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-220-orange {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-230-orange {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-240-orange {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-250-orange {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-260-orange {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-270-orange {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-280-orange {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-290-orange {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-300-orange {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-310-orange {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-320-orange {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-330-orange {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-340-orange {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .md\:bg-gradient-350-orange {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
   .md\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -25458,6 +25958,154 @@ video {
 
   .md\:hover\:bg-gradient-350-blue-green:hover {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
+  }
+
+  .md\:hover\:bg-gradient-orange:hover {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-0-orange:hover {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-10-orange:hover {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-20-orange:hover {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-30-orange:hover {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-40-orange:hover {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-50-orange:hover {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-60-orange:hover {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-70-orange:hover {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-80-orange:hover {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-90-orange:hover {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-100-orange:hover {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-110-orange:hover {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-120-orange:hover {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-130-orange:hover {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-140-orange:hover {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-150-orange:hover {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-160-orange:hover {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-170-orange:hover {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-180-orange:hover {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-190-orange:hover {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-200-orange:hover {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-210-orange:hover {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-220-orange:hover {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-230-orange:hover {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-240-orange:hover {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-250-orange:hover {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-260-orange:hover {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-270-orange:hover {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-280-orange:hover {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-290-orange:hover {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-300-orange:hover {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-310-orange:hover {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-320-orange:hover {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-330-orange:hover {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-340-orange:hover {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-350-orange:hover {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
   .md\:hover\:bg-gradient-purple-blue:hover {
@@ -27986,204 +28634,124 @@ video {
     border-color: #702459;
   }
 
-  .lg\:rounded-none {
-    border-radius: 0;
+  .lg\:rounded-xl {
+    border-radius: 1em;
   }
 
-  .lg\:rounded-sm {
-    border-radius: 0.125rem;
+  .lg\:rounded-2xl {
+    border-radius: 2em;
   }
 
-  .lg\:rounded {
-    border-radius: 0.25rem;
+  .lg\:rounded-3xl {
+    border-radius: 4em;
   }
 
-  .lg\:rounded-lg {
-    border-radius: 0.5rem;
+  .lg\:rounded-t-xl {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
 
-  .lg\:rounded-full {
-    border-radius: 9999px;
+  .lg\:rounded-r-xl {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
   }
 
-  .lg\:rounded-t-none {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  .lg\:rounded-b-xl {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .lg\:rounded-r-none {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  .lg\:rounded-l-xl {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .lg\:rounded-b-none {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  .lg\:rounded-t-2xl {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
   }
 
-  .lg\:rounded-l-none {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  .lg\:rounded-r-2xl {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
 
-  .lg\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+  .lg\:rounded-b-2xl {
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .lg\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+  .lg\:rounded-l-2xl {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .lg\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .lg\:rounded-t-3xl {
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
   }
 
-  .lg\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .lg\:rounded-r-3xl {
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
   }
 
-  .lg\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+  .lg\:rounded-b-3xl {
+    border-bottom-right-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .lg\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+  .lg\:rounded-l-3xl {
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .lg\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .lg\:rounded-tl-xl {
+    border-top-left-radius: 1em;
   }
 
-  .lg\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .lg\:rounded-tr-xl {
+    border-top-right-radius: 1em;
   }
 
-  .lg\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  .lg\:rounded-br-xl {
+    border-bottom-right-radius: 1em;
   }
 
-  .lg\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+  .lg\:rounded-bl-xl {
+    border-bottom-left-radius: 1em;
   }
 
-  .lg\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .lg\:rounded-tl-2xl {
+    border-top-left-radius: 2em;
   }
 
-  .lg\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .lg\:rounded-tr-2xl {
+    border-top-right-radius: 2em;
   }
 
-  .lg\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+  .lg\:rounded-br-2xl {
+    border-bottom-right-radius: 2em;
   }
 
-  .lg\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+  .lg\:rounded-bl-2xl {
+    border-bottom-left-radius: 2em;
   }
 
-  .lg\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .lg\:rounded-tl-3xl {
+    border-top-left-radius: 4em;
   }
 
-  .lg\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .lg\:rounded-tr-3xl {
+    border-top-right-radius: 4em;
   }
 
-  .lg\:rounded-tl-none {
-    border-top-left-radius: 0;
+  .lg\:rounded-br-3xl {
+    border-bottom-right-radius: 4em;
   }
 
-  .lg\:rounded-tr-none {
-    border-top-right-radius: 0;
-  }
-
-  .lg\:rounded-br-none {
-    border-bottom-right-radius: 0;
-  }
-
-  .lg\:rounded-bl-none {
-    border-bottom-left-radius: 0;
-  }
-
-  .lg\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
-  }
-
-  .lg\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
-  }
-
-  .lg\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
-  }
-
-  .lg\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
-  }
-
-  .lg\:rounded-tl {
-    border-top-left-radius: 0.25rem;
-  }
-
-  .lg\:rounded-tr {
-    border-top-right-radius: 0.25rem;
-  }
-
-  .lg\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
-  }
-
-  .lg\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
-  }
-
-  .lg\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
-  }
-
-  .lg\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
-  }
-
-  .lg\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .lg\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .lg\:rounded-tl-full {
-    border-top-left-radius: 9999px;
-  }
-
-  .lg\:rounded-tr-full {
-    border-top-right-radius: 9999px;
-  }
-
-  .lg\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
-  }
-
-  .lg\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+  .lg\:rounded-bl-3xl {
+    border-bottom-left-radius: 4em;
   }
 
   .lg\:border-solid {
@@ -33498,6 +34066,154 @@ video {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
   }
 
+  .lg\:bg-gradient-orange {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-0-orange {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-10-orange {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-20-orange {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-30-orange {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-40-orange {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-50-orange {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-60-orange {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-70-orange {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-80-orange {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-90-orange {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-100-orange {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-110-orange {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-120-orange {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-130-orange {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-140-orange {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-150-orange {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-160-orange {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-170-orange {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-180-orange {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-190-orange {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-200-orange {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-210-orange {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-220-orange {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-230-orange {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-240-orange {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-250-orange {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-260-orange {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-270-orange {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-280-orange {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-290-orange {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-300-orange {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-310-orange {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-320-orange {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-330-orange {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-340-orange {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .lg\:bg-gradient-350-orange {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
   .lg\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -33792,6 +34508,154 @@ video {
 
   .lg\:hover\:bg-gradient-350-blue-green:hover {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
+  }
+
+  .lg\:hover\:bg-gradient-orange:hover {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-0-orange:hover {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-10-orange:hover {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-20-orange:hover {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-30-orange:hover {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-40-orange:hover {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-50-orange:hover {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-60-orange:hover {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-70-orange:hover {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-80-orange:hover {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-90-orange:hover {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-100-orange:hover {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-110-orange:hover {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-120-orange:hover {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-130-orange:hover {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-140-orange:hover {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-150-orange:hover {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-160-orange:hover {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-170-orange:hover {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-180-orange:hover {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-190-orange:hover {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-200-orange:hover {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-210-orange:hover {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-220-orange:hover {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-230-orange:hover {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-240-orange:hover {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-250-orange:hover {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-260-orange:hover {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-270-orange:hover {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-280-orange:hover {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-290-orange:hover {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-300-orange:hover {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-310-orange:hover {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-320-orange:hover {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-330-orange:hover {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-340-orange:hover {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-350-orange:hover {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
   .lg\:hover\:bg-gradient-purple-blue:hover {
@@ -36320,204 +37184,124 @@ video {
     border-color: #702459;
   }
 
-  .xl\:rounded-none {
-    border-radius: 0;
+  .xl\:rounded-xl {
+    border-radius: 1em;
   }
 
-  .xl\:rounded-sm {
-    border-radius: 0.125rem;
+  .xl\:rounded-2xl {
+    border-radius: 2em;
   }
 
-  .xl\:rounded {
-    border-radius: 0.25rem;
+  .xl\:rounded-3xl {
+    border-radius: 4em;
   }
 
-  .xl\:rounded-lg {
-    border-radius: 0.5rem;
+  .xl\:rounded-t-xl {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
 
-  .xl\:rounded-full {
-    border-radius: 9999px;
+  .xl\:rounded-r-xl {
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
   }
 
-  .xl\:rounded-t-none {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  .xl\:rounded-b-xl {
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .xl\:rounded-r-none {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  .xl\:rounded-l-xl {
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
   }
 
-  .xl\:rounded-b-none {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  .xl\:rounded-t-2xl {
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
   }
 
-  .xl\:rounded-l-none {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+  .xl\:rounded-r-2xl {
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
 
-  .xl\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+  .xl\:rounded-b-2xl {
+    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .xl\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+  .xl\:rounded-l-2xl {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
   }
 
-  .xl\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .xl\:rounded-t-3xl {
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
   }
 
-  .xl\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+  .xl\:rounded-r-3xl {
+    border-top-right-radius: 4em;
+    border-bottom-right-radius: 4em;
   }
 
-  .xl\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+  .xl\:rounded-b-3xl {
+    border-bottom-right-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .xl\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+  .xl\:rounded-l-3xl {
+    border-top-left-radius: 4em;
+    border-bottom-left-radius: 4em;
   }
 
-  .xl\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .xl\:rounded-tl-xl {
+    border-top-left-radius: 1em;
   }
 
-  .xl\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+  .xl\:rounded-tr-xl {
+    border-top-right-radius: 1em;
   }
 
-  .xl\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+  .xl\:rounded-br-xl {
+    border-bottom-right-radius: 1em;
   }
 
-  .xl\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+  .xl\:rounded-bl-xl {
+    border-bottom-left-radius: 1em;
   }
 
-  .xl\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .xl\:rounded-tl-2xl {
+    border-top-left-radius: 2em;
   }
 
-  .xl\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  .xl\:rounded-tr-2xl {
+    border-top-right-radius: 2em;
   }
 
-  .xl\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+  .xl\:rounded-br-2xl {
+    border-bottom-right-radius: 2em;
   }
 
-  .xl\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+  .xl\:rounded-bl-2xl {
+    border-bottom-left-radius: 2em;
   }
 
-  .xl\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .xl\:rounded-tl-3xl {
+    border-top-left-radius: 4em;
   }
 
-  .xl\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+  .xl\:rounded-tr-3xl {
+    border-top-right-radius: 4em;
   }
 
-  .xl\:rounded-tl-none {
-    border-top-left-radius: 0;
+  .xl\:rounded-br-3xl {
+    border-bottom-right-radius: 4em;
   }
 
-  .xl\:rounded-tr-none {
-    border-top-right-radius: 0;
-  }
-
-  .xl\:rounded-br-none {
-    border-bottom-right-radius: 0;
-  }
-
-  .xl\:rounded-bl-none {
-    border-bottom-left-radius: 0;
-  }
-
-  .xl\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
-  }
-
-  .xl\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
-  }
-
-  .xl\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
-  }
-
-  .xl\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
-  }
-
-  .xl\:rounded-tl {
-    border-top-left-radius: 0.25rem;
-  }
-
-  .xl\:rounded-tr {
-    border-top-right-radius: 0.25rem;
-  }
-
-  .xl\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
-  }
-
-  .xl\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
-  }
-
-  .xl\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
-  }
-
-  .xl\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
-  }
-
-  .xl\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  .xl\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  .xl\:rounded-tl-full {
-    border-top-left-radius: 9999px;
-  }
-
-  .xl\:rounded-tr-full {
-    border-top-right-radius: 9999px;
-  }
-
-  .xl\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
-  }
-
-  .xl\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+  .xl\:rounded-bl-3xl {
+    border-bottom-left-radius: 4em;
   }
 
   .xl\:border-solid {
@@ -41832,6 +42616,154 @@ video {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
   }
 
+  .xl\:bg-gradient-orange {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-0-orange {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-10-orange {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-20-orange {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-30-orange {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-40-orange {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-50-orange {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-60-orange {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-70-orange {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-80-orange {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-90-orange {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-100-orange {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-110-orange {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-120-orange {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-130-orange {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-140-orange {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-150-orange {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-160-orange {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-170-orange {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-180-orange {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-190-orange {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-200-orange {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-210-orange {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-220-orange {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-230-orange {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-240-orange {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-250-orange {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-260-orange {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-270-orange {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-280-orange {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-290-orange {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-300-orange {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-310-orange {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-320-orange {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-330-orange {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-340-orange {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .xl\:bg-gradient-350-orange {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
   .xl\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -42126,6 +43058,154 @@ video {
 
   .xl\:hover\:bg-gradient-350-blue-green:hover {
     background-image: linear-gradient(350deg, #4299e1, #48bb78);
+  }
+
+  .xl\:hover\:bg-gradient-orange:hover {
+    background-image: linear-gradient(to right, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-0-orange:hover {
+    background-image: linear-gradient(0deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-10-orange:hover {
+    background-image: linear-gradient(10deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-20-orange:hover {
+    background-image: linear-gradient(20deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-30-orange:hover {
+    background-image: linear-gradient(30deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-40-orange:hover {
+    background-image: linear-gradient(40deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-50-orange:hover {
+    background-image: linear-gradient(50deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-60-orange:hover {
+    background-image: linear-gradient(60deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-70-orange:hover {
+    background-image: linear-gradient(70deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-80-orange:hover {
+    background-image: linear-gradient(80deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-90-orange:hover {
+    background-image: linear-gradient(90deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-100-orange:hover {
+    background-image: linear-gradient(100deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-110-orange:hover {
+    background-image: linear-gradient(110deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-120-orange:hover {
+    background-image: linear-gradient(120deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-130-orange:hover {
+    background-image: linear-gradient(130deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-140-orange:hover {
+    background-image: linear-gradient(140deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-150-orange:hover {
+    background-image: linear-gradient(150deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-160-orange:hover {
+    background-image: linear-gradient(160deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-170-orange:hover {
+    background-image: linear-gradient(170deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-180-orange:hover {
+    background-image: linear-gradient(180deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-190-orange:hover {
+    background-image: linear-gradient(190deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-200-orange:hover {
+    background-image: linear-gradient(200deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-210-orange:hover {
+    background-image: linear-gradient(210deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-220-orange:hover {
+    background-image: linear-gradient(220deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-230-orange:hover {
+    background-image: linear-gradient(230deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-240-orange:hover {
+    background-image: linear-gradient(240deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-250-orange:hover {
+    background-image: linear-gradient(250deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-260-orange:hover {
+    background-image: linear-gradient(260deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-270-orange:hover {
+    background-image: linear-gradient(270deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-280-orange:hover {
+    background-image: linear-gradient(280deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-290-orange:hover {
+    background-image: linear-gradient(290deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-300-orange:hover {
+    background-image: linear-gradient(300deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-310-orange:hover {
+    background-image: linear-gradient(310deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-320-orange:hover {
+    background-image: linear-gradient(320deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-330-orange:hover {
+    background-image: linear-gradient(330deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-340-orange:hover {
+    background-image: linear-gradient(340deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-350-orange:hover {
+    background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
   .xl\:hover\:bg-gradient-purple-blue:hover {
