@@ -6,6 +6,9 @@ module.exports = {
       '2xl': '2em',
       '3xl': '4em',
     },
+    height: {
+      '36': '9em'
+    },
     gradients: theme => ({
       'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
       'orange': ['#FFB550', '#FF895D'],
