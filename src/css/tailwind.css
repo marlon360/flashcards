@@ -8481,6 +8481,154 @@ video {
   background-image: linear-gradient(350deg, #FFB550, #FF895D);
 }
 
+.bg-gradient-blue {
+  background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-0-blue {
+  background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-10-blue {
+  background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-20-blue {
+  background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-30-blue {
+  background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-40-blue {
+  background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-50-blue {
+  background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-60-blue {
+  background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-70-blue {
+  background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-80-blue {
+  background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-90-blue {
+  background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-100-blue {
+  background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-110-blue {
+  background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-120-blue {
+  background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-130-blue {
+  background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-140-blue {
+  background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-150-blue {
+  background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-160-blue {
+  background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-170-blue {
+  background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-180-blue {
+  background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-190-blue {
+  background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-200-blue {
+  background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-210-blue {
+  background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-220-blue {
+  background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-230-blue {
+  background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-240-blue {
+  background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-250-blue {
+  background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-260-blue {
+  background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-270-blue {
+  background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-280-blue {
+  background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-290-blue {
+  background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-300-blue {
+  background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-310-blue {
+  background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-320-blue {
+  background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-330-blue {
+  background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-340-blue {
+  background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+}
+
+.bg-gradient-350-blue {
+  background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+}
+
 .bg-gradient-purple-blue {
   background-image: linear-gradient(to right, #9f7aea, #4299e1);
 }
@@ -8923,6 +9071,154 @@ video {
 
 .hover\:bg-gradient-350-orange:hover {
   background-image: linear-gradient(350deg, #FFB550, #FF895D);
+}
+
+.hover\:bg-gradient-blue:hover {
+  background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-0-blue:hover {
+  background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-10-blue:hover {
+  background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-20-blue:hover {
+  background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-30-blue:hover {
+  background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-40-blue:hover {
+  background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-50-blue:hover {
+  background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-60-blue:hover {
+  background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-70-blue:hover {
+  background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-80-blue:hover {
+  background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-90-blue:hover {
+  background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-100-blue:hover {
+  background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-110-blue:hover {
+  background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-120-blue:hover {
+  background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-130-blue:hover {
+  background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-140-blue:hover {
+  background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-150-blue:hover {
+  background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-160-blue:hover {
+  background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-170-blue:hover {
+  background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-180-blue:hover {
+  background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-190-blue:hover {
+  background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-200-blue:hover {
+  background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-210-blue:hover {
+  background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-220-blue:hover {
+  background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-230-blue:hover {
+  background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-240-blue:hover {
+  background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-250-blue:hover {
+  background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-260-blue:hover {
+  background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-270-blue:hover {
+  background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-280-blue:hover {
+  background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-290-blue:hover {
+  background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-300-blue:hover {
+  background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-310-blue:hover {
+  background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-320-blue:hover {
+  background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-330-blue:hover {
+  background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-340-blue:hover {
+  background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-350-blue:hover {
+  background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
 }
 
 .hover\:bg-gradient-purple-blue:hover {
@@ -16946,6 +17242,154 @@ video {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
+  .sm\:bg-gradient-blue {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-0-blue {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-10-blue {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-20-blue {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-30-blue {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-40-blue {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-50-blue {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-60-blue {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-70-blue {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-80-blue {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-90-blue {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-100-blue {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-110-blue {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-120-blue {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-130-blue {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-140-blue {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-150-blue {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-160-blue {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-170-blue {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-180-blue {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-190-blue {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-200-blue {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-210-blue {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-220-blue {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-230-blue {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-240-blue {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-250-blue {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-260-blue {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-270-blue {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-280-blue {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-290-blue {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-300-blue {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-310-blue {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-320-blue {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-330-blue {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-340-blue {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:bg-gradient-350-blue {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
   .sm\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -17388,6 +17832,154 @@ video {
 
   .sm\:hover\:bg-gradient-350-orange:hover {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
+  .sm\:hover\:bg-gradient-blue:hover {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-0-blue:hover {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-10-blue:hover {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-20-blue:hover {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-30-blue:hover {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-40-blue:hover {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-50-blue:hover {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-60-blue:hover {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-70-blue:hover {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-80-blue:hover {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-90-blue:hover {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-100-blue:hover {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-110-blue:hover {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-120-blue:hover {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-130-blue:hover {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-140-blue:hover {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-150-blue:hover {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-160-blue:hover {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-170-blue:hover {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-180-blue:hover {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-190-blue:hover {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-200-blue:hover {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-210-blue:hover {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-220-blue:hover {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-230-blue:hover {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-240-blue:hover {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-250-blue:hover {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-260-blue:hover {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-270-blue:hover {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-280-blue:hover {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-290-blue:hover {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-300-blue:hover {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-310-blue:hover {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-320-blue:hover {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-330-blue:hover {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-340-blue:hover {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-350-blue:hover {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
   .sm\:hover\:bg-gradient-purple-blue:hover {
@@ -25412,6 +26004,154 @@ video {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
+  .md\:bg-gradient-blue {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-0-blue {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-10-blue {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-20-blue {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-30-blue {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-40-blue {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-50-blue {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-60-blue {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-70-blue {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-80-blue {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-90-blue {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-100-blue {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-110-blue {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-120-blue {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-130-blue {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-140-blue {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-150-blue {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-160-blue {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-170-blue {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-180-blue {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-190-blue {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-200-blue {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-210-blue {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-220-blue {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-230-blue {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-240-blue {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-250-blue {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-260-blue {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-270-blue {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-280-blue {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-290-blue {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-300-blue {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-310-blue {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-320-blue {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-330-blue {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-340-blue {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:bg-gradient-350-blue {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
   .md\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -25854,6 +26594,154 @@ video {
 
   .md\:hover\:bg-gradient-350-orange:hover {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
+  .md\:hover\:bg-gradient-blue:hover {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-0-blue:hover {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-10-blue:hover {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-20-blue:hover {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-30-blue:hover {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-40-blue:hover {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-50-blue:hover {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-60-blue:hover {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-70-blue:hover {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-80-blue:hover {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-90-blue:hover {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-100-blue:hover {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-110-blue:hover {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-120-blue:hover {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-130-blue:hover {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-140-blue:hover {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-150-blue:hover {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-160-blue:hover {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-170-blue:hover {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-180-blue:hover {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-190-blue:hover {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-200-blue:hover {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-210-blue:hover {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-220-blue:hover {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-230-blue:hover {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-240-blue:hover {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-250-blue:hover {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-260-blue:hover {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-270-blue:hover {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-280-blue:hover {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-290-blue:hover {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-300-blue:hover {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-310-blue:hover {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-320-blue:hover {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-330-blue:hover {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-340-blue:hover {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-350-blue:hover {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
   .md\:hover\:bg-gradient-purple-blue:hover {
@@ -33878,6 +34766,154 @@ video {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
+  .lg\:bg-gradient-blue {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-0-blue {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-10-blue {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-20-blue {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-30-blue {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-40-blue {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-50-blue {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-60-blue {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-70-blue {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-80-blue {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-90-blue {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-100-blue {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-110-blue {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-120-blue {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-130-blue {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-140-blue {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-150-blue {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-160-blue {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-170-blue {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-180-blue {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-190-blue {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-200-blue {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-210-blue {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-220-blue {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-230-blue {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-240-blue {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-250-blue {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-260-blue {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-270-blue {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-280-blue {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-290-blue {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-300-blue {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-310-blue {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-320-blue {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-330-blue {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-340-blue {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:bg-gradient-350-blue {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
   .lg\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -34320,6 +35356,154 @@ video {
 
   .lg\:hover\:bg-gradient-350-orange:hover {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
+  .lg\:hover\:bg-gradient-blue:hover {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-0-blue:hover {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-10-blue:hover {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-20-blue:hover {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-30-blue:hover {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-40-blue:hover {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-50-blue:hover {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-60-blue:hover {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-70-blue:hover {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-80-blue:hover {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-90-blue:hover {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-100-blue:hover {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-110-blue:hover {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-120-blue:hover {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-130-blue:hover {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-140-blue:hover {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-150-blue:hover {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-160-blue:hover {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-170-blue:hover {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-180-blue:hover {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-190-blue:hover {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-200-blue:hover {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-210-blue:hover {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-220-blue:hover {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-230-blue:hover {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-240-blue:hover {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-250-blue:hover {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-260-blue:hover {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-270-blue:hover {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-280-blue:hover {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-290-blue:hover {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-300-blue:hover {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-310-blue:hover {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-320-blue:hover {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-330-blue:hover {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-340-blue:hover {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-350-blue:hover {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
   .lg\:hover\:bg-gradient-purple-blue:hover {
@@ -42344,6 +43528,154 @@ video {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
   }
 
+  .xl\:bg-gradient-blue {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-0-blue {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-10-blue {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-20-blue {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-30-blue {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-40-blue {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-50-blue {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-60-blue {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-70-blue {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-80-blue {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-90-blue {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-100-blue {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-110-blue {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-120-blue {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-130-blue {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-140-blue {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-150-blue {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-160-blue {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-170-blue {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-180-blue {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-190-blue {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-200-blue {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-210-blue {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-220-blue {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-230-blue {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-240-blue {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-250-blue {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-260-blue {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-270-blue {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-280-blue {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-290-blue {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-300-blue {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-310-blue {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-320-blue {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-330-blue {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-340-blue {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:bg-gradient-350-blue {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
   .xl\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -42786,6 +44118,154 @@ video {
 
   .xl\:hover\:bg-gradient-350-orange:hover {
     background-image: linear-gradient(350deg, #FFB550, #FF895D);
+  }
+
+  .xl\:hover\:bg-gradient-blue:hover {
+    background-image: linear-gradient(to right, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-0-blue:hover {
+    background-image: linear-gradient(0deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-10-blue:hover {
+    background-image: linear-gradient(10deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-20-blue:hover {
+    background-image: linear-gradient(20deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-30-blue:hover {
+    background-image: linear-gradient(30deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-40-blue:hover {
+    background-image: linear-gradient(40deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-50-blue:hover {
+    background-image: linear-gradient(50deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-60-blue:hover {
+    background-image: linear-gradient(60deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-70-blue:hover {
+    background-image: linear-gradient(70deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-80-blue:hover {
+    background-image: linear-gradient(80deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-90-blue:hover {
+    background-image: linear-gradient(90deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-100-blue:hover {
+    background-image: linear-gradient(100deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-110-blue:hover {
+    background-image: linear-gradient(110deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-120-blue:hover {
+    background-image: linear-gradient(120deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-130-blue:hover {
+    background-image: linear-gradient(130deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-140-blue:hover {
+    background-image: linear-gradient(140deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-150-blue:hover {
+    background-image: linear-gradient(150deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-160-blue:hover {
+    background-image: linear-gradient(160deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-170-blue:hover {
+    background-image: linear-gradient(170deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-180-blue:hover {
+    background-image: linear-gradient(180deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-190-blue:hover {
+    background-image: linear-gradient(190deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-200-blue:hover {
+    background-image: linear-gradient(200deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-210-blue:hover {
+    background-image: linear-gradient(210deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-220-blue:hover {
+    background-image: linear-gradient(220deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-230-blue:hover {
+    background-image: linear-gradient(230deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-240-blue:hover {
+    background-image: linear-gradient(240deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-250-blue:hover {
+    background-image: linear-gradient(250deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-260-blue:hover {
+    background-image: linear-gradient(260deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-270-blue:hover {
+    background-image: linear-gradient(270deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-280-blue:hover {
+    background-image: linear-gradient(280deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-290-blue:hover {
+    background-image: linear-gradient(290deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-300-blue:hover {
+    background-image: linear-gradient(300deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-310-blue:hover {
+    background-image: linear-gradient(310deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-320-blue:hover {
+    background-image: linear-gradient(320deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-330-blue:hover {
+    background-image: linear-gradient(330deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-340-blue:hover {
+    background-image: linear-gradient(340deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-350-blue:hover {
+    background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
   .xl\:hover\:bg-gradient-purple-blue:hover {

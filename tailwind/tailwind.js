@@ -12,6 +12,7 @@ module.exports = {
     gradients: theme => ({
       'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
       'orange': ['#FFB550', '#FF895D'],
+      'blue': ['#50CCFF', '#5D71FF'],
       'purple-blue': [theme('colors.purple.500'), theme('colors.blue.500')]
     })
   },

@@ -1,9 +1,10 @@
 import React from 'react';
 import CirclePercentage from './circle-percentage/circle-percentage.component.js';
 function Course(props) {
+    const gradient = props.gradient || 'orange';
     return (
         <div className="w-full relative max-w-lg mb-12">
-            <div className="bg-gradient-140-orange p-6 pb-16 rounded-xl text-white shadow-xl flex justify-center">
+            <div className={`bg-gradient-140-${gradient} p-6 pb-16 rounded-xl text-white shadow-xl flex justify-center`}>
                 <h2 className="flex-1 text-3xl font-bold truncate">{props.name}</h2>
                 <div className="w-16 -mt-2">
                     <CirclePercentage className="w-full max-w-xs text-white float-right" percentage={props.percentage} strokeWidth="5" />
