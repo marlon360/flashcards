@@ -13,6 +13,7 @@ module.exports = {
       'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
       'orange': ['#FFB550', '#FF895D'],
       'blue': ['#50CCFF', '#5D71FF'],
+      'white': ['#FCFCFC', '#FFFFFF'],
       'purple-blue': [theme('colors.purple.500'), theme('colors.blue.500')]
     })
   },

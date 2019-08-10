@@ -8629,6 +8629,154 @@ video {
   background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
 }
 
+.bg-gradient-white {
+  background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-0-white {
+  background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-10-white {
+  background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-20-white {
+  background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-30-white {
+  background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-40-white {
+  background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-50-white {
+  background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-60-white {
+  background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-70-white {
+  background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-80-white {
+  background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-90-white {
+  background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-100-white {
+  background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-110-white {
+  background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-120-white {
+  background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-130-white {
+  background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-140-white {
+  background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-150-white {
+  background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-160-white {
+  background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-170-white {
+  background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-180-white {
+  background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-190-white {
+  background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-200-white {
+  background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-210-white {
+  background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-220-white {
+  background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-230-white {
+  background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-240-white {
+  background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-250-white {
+  background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-260-white {
+  background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-270-white {
+  background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-280-white {
+  background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-290-white {
+  background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-300-white {
+  background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-310-white {
+  background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-320-white {
+  background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-330-white {
+  background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-340-white {
+  background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+}
+
+.bg-gradient-350-white {
+  background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
+}
+
 .bg-gradient-purple-blue {
   background-image: linear-gradient(to right, #9f7aea, #4299e1);
 }
@@ -9219,6 +9367,154 @@ video {
 
 .hover\:bg-gradient-350-blue:hover {
   background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+}
+
+.hover\:bg-gradient-white:hover {
+  background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-0-white:hover {
+  background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-10-white:hover {
+  background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-20-white:hover {
+  background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-30-white:hover {
+  background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-40-white:hover {
+  background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-50-white:hover {
+  background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-60-white:hover {
+  background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-70-white:hover {
+  background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-80-white:hover {
+  background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-90-white:hover {
+  background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-100-white:hover {
+  background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-110-white:hover {
+  background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-120-white:hover {
+  background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-130-white:hover {
+  background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-140-white:hover {
+  background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-150-white:hover {
+  background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-160-white:hover {
+  background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-170-white:hover {
+  background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-180-white:hover {
+  background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-190-white:hover {
+  background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-200-white:hover {
+  background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-210-white:hover {
+  background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-220-white:hover {
+  background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-230-white:hover {
+  background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-240-white:hover {
+  background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-250-white:hover {
+  background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-260-white:hover {
+  background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-270-white:hover {
+  background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-280-white:hover {
+  background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-290-white:hover {
+  background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-300-white:hover {
+  background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-310-white:hover {
+  background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-320-white:hover {
+  background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-330-white:hover {
+  background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-340-white:hover {
+  background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+}
+
+.hover\:bg-gradient-350-white:hover {
+  background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
 }
 
 .hover\:bg-gradient-purple-blue:hover {
@@ -17390,6 +17686,154 @@ video {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
+  .sm\:bg-gradient-white {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-0-white {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-10-white {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-20-white {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-30-white {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-40-white {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-50-white {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-60-white {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-70-white {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-80-white {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-90-white {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-100-white {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-110-white {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-120-white {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-130-white {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-140-white {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-150-white {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-160-white {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-170-white {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-180-white {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-190-white {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-200-white {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-210-white {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-220-white {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-230-white {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-240-white {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-250-white {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-260-white {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-270-white {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-280-white {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-290-white {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-300-white {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-310-white {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-320-white {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-330-white {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-340-white {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:bg-gradient-350-white {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
+  }
+
   .sm\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -17980,6 +18424,154 @@ video {
 
   .sm\:hover\:bg-gradient-350-blue:hover {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
+  .sm\:hover\:bg-gradient-white:hover {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-0-white:hover {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-10-white:hover {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-20-white:hover {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-30-white:hover {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-40-white:hover {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-50-white:hover {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-60-white:hover {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-70-white:hover {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-80-white:hover {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-90-white:hover {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-100-white:hover {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-110-white:hover {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-120-white:hover {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-130-white:hover {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-140-white:hover {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-150-white:hover {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-160-white:hover {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-170-white:hover {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-180-white:hover {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-190-white:hover {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-200-white:hover {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-210-white:hover {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-220-white:hover {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-230-white:hover {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-240-white:hover {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-250-white:hover {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-260-white:hover {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-270-white:hover {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-280-white:hover {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-290-white:hover {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-300-white:hover {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-310-white:hover {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-320-white:hover {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-330-white:hover {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-340-white:hover {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .sm\:hover\:bg-gradient-350-white:hover {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
   }
 
   .sm\:hover\:bg-gradient-purple-blue:hover {
@@ -26152,6 +26744,154 @@ video {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
+  .md\:bg-gradient-white {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-0-white {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-10-white {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-20-white {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-30-white {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-40-white {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-50-white {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-60-white {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-70-white {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-80-white {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-90-white {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-100-white {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-110-white {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-120-white {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-130-white {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-140-white {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-150-white {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-160-white {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-170-white {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-180-white {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-190-white {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-200-white {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-210-white {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-220-white {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-230-white {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-240-white {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-250-white {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-260-white {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-270-white {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-280-white {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-290-white {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-300-white {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-310-white {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-320-white {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-330-white {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-340-white {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:bg-gradient-350-white {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
+  }
+
   .md\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -26742,6 +27482,154 @@ video {
 
   .md\:hover\:bg-gradient-350-blue:hover {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
+  .md\:hover\:bg-gradient-white:hover {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-0-white:hover {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-10-white:hover {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-20-white:hover {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-30-white:hover {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-40-white:hover {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-50-white:hover {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-60-white:hover {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-70-white:hover {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-80-white:hover {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-90-white:hover {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-100-white:hover {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-110-white:hover {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-120-white:hover {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-130-white:hover {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-140-white:hover {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-150-white:hover {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-160-white:hover {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-170-white:hover {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-180-white:hover {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-190-white:hover {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-200-white:hover {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-210-white:hover {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-220-white:hover {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-230-white:hover {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-240-white:hover {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-250-white:hover {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-260-white:hover {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-270-white:hover {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-280-white:hover {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-290-white:hover {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-300-white:hover {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-310-white:hover {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-320-white:hover {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-330-white:hover {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-340-white:hover {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .md\:hover\:bg-gradient-350-white:hover {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
   }
 
   .md\:hover\:bg-gradient-purple-blue:hover {
@@ -34914,6 +35802,154 @@ video {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
+  .lg\:bg-gradient-white {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-0-white {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-10-white {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-20-white {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-30-white {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-40-white {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-50-white {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-60-white {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-70-white {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-80-white {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-90-white {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-100-white {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-110-white {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-120-white {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-130-white {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-140-white {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-150-white {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-160-white {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-170-white {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-180-white {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-190-white {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-200-white {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-210-white {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-220-white {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-230-white {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-240-white {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-250-white {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-260-white {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-270-white {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-280-white {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-290-white {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-300-white {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-310-white {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-320-white {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-330-white {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-340-white {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:bg-gradient-350-white {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
+  }
+
   .lg\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -35504,6 +36540,154 @@ video {
 
   .lg\:hover\:bg-gradient-350-blue:hover {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
+  .lg\:hover\:bg-gradient-white:hover {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-0-white:hover {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-10-white:hover {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-20-white:hover {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-30-white:hover {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-40-white:hover {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-50-white:hover {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-60-white:hover {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-70-white:hover {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-80-white:hover {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-90-white:hover {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-100-white:hover {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-110-white:hover {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-120-white:hover {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-130-white:hover {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-140-white:hover {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-150-white:hover {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-160-white:hover {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-170-white:hover {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-180-white:hover {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-190-white:hover {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-200-white:hover {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-210-white:hover {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-220-white:hover {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-230-white:hover {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-240-white:hover {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-250-white:hover {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-260-white:hover {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-270-white:hover {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-280-white:hover {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-290-white:hover {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-300-white:hover {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-310-white:hover {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-320-white:hover {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-330-white:hover {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-340-white:hover {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .lg\:hover\:bg-gradient-350-white:hover {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
   }
 
   .lg\:hover\:bg-gradient-purple-blue:hover {
@@ -43676,6 +44860,154 @@ video {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
   }
 
+  .xl\:bg-gradient-white {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-0-white {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-10-white {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-20-white {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-30-white {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-40-white {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-50-white {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-60-white {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-70-white {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-80-white {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-90-white {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-100-white {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-110-white {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-120-white {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-130-white {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-140-white {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-150-white {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-160-white {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-170-white {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-180-white {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-190-white {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-200-white {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-210-white {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-220-white {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-230-white {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-240-white {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-250-white {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-260-white {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-270-white {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-280-white {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-290-white {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-300-white {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-310-white {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-320-white {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-330-white {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-340-white {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:bg-gradient-350-white {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
+  }
+
   .xl\:bg-gradient-purple-blue {
     background-image: linear-gradient(to right, #9f7aea, #4299e1);
   }
@@ -44266,6 +45598,154 @@ video {
 
   .xl\:hover\:bg-gradient-350-blue:hover {
     background-image: linear-gradient(350deg, #50CCFF, #5D71FF);
+  }
+
+  .xl\:hover\:bg-gradient-white:hover {
+    background-image: linear-gradient(to right, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-0-white:hover {
+    background-image: linear-gradient(0deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-10-white:hover {
+    background-image: linear-gradient(10deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-20-white:hover {
+    background-image: linear-gradient(20deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-30-white:hover {
+    background-image: linear-gradient(30deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-40-white:hover {
+    background-image: linear-gradient(40deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-50-white:hover {
+    background-image: linear-gradient(50deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-60-white:hover {
+    background-image: linear-gradient(60deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-70-white:hover {
+    background-image: linear-gradient(70deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-80-white:hover {
+    background-image: linear-gradient(80deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-90-white:hover {
+    background-image: linear-gradient(90deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-100-white:hover {
+    background-image: linear-gradient(100deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-110-white:hover {
+    background-image: linear-gradient(110deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-120-white:hover {
+    background-image: linear-gradient(120deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-130-white:hover {
+    background-image: linear-gradient(130deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-140-white:hover {
+    background-image: linear-gradient(140deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-150-white:hover {
+    background-image: linear-gradient(150deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-160-white:hover {
+    background-image: linear-gradient(160deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-170-white:hover {
+    background-image: linear-gradient(170deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-180-white:hover {
+    background-image: linear-gradient(180deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-190-white:hover {
+    background-image: linear-gradient(190deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-200-white:hover {
+    background-image: linear-gradient(200deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-210-white:hover {
+    background-image: linear-gradient(210deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-220-white:hover {
+    background-image: linear-gradient(220deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-230-white:hover {
+    background-image: linear-gradient(230deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-240-white:hover {
+    background-image: linear-gradient(240deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-250-white:hover {
+    background-image: linear-gradient(250deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-260-white:hover {
+    background-image: linear-gradient(260deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-270-white:hover {
+    background-image: linear-gradient(270deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-280-white:hover {
+    background-image: linear-gradient(280deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-290-white:hover {
+    background-image: linear-gradient(290deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-300-white:hover {
+    background-image: linear-gradient(300deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-310-white:hover {
+    background-image: linear-gradient(310deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-320-white:hover {
+    background-image: linear-gradient(320deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-330-white:hover {
+    background-image: linear-gradient(330deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-340-white:hover {
+    background-image: linear-gradient(340deg, #FCFCFC, #FFFFFF);
+  }
+
+  .xl\:hover\:bg-gradient-350-white:hover {
+    background-image: linear-gradient(350deg, #FCFCFC, #FFFFFF);
   }
 
   .xl\:hover\:bg-gradient-purple-blue:hover {
