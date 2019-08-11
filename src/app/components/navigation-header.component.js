@@ -5,7 +5,7 @@ import Left from './../icons/left.svg';
 function NavigationHeader(props) {
 
     return (
-        <div className="w-full px-4 pb-2 bg-transparent">
+        <div className="w-full max-w-xl m-auto px-4 pb-2 bg-transparent">
             <div className="h-12 mb-4 pt-6 text-blue-500 flex justify-between items-center">
                 <div>
                 <div onClick={props.onBackButtonClicked} className={`flex justify-center cursor-pointer ${props.backButton ? '' : 'hidden'}`}>
