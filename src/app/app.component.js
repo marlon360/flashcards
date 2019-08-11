@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/tailwind.css';
 import Course from './components/course.component';
 import Lesson from './components/lesson.component';
 import CoursePage from './pages/course.page';
