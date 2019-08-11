@@ -7,7 +7,7 @@ function CirclePercentage(props) {
     return (
         <svg className={props.className} viewBox="0 0 36 36">
         <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <linearGradient id={`gradient-${startColor}-${endColor}`} x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stopColor={`${startColor}`} />
                 <stop offset={`${props.percentage}%`} stopColor={`${endColor}`} />
             </linearGradient>
@@ -21,7 +21,7 @@ function CirclePercentage(props) {
             a 15 15 0 0 1 0 -30"
         />
         <path fill="none" strokeLinecap="round"
-            stroke="url(#gradient)"
+            stroke={`url(#gradient-${startColor}-${endColor})`}
             strokeWidth={`${props.strokeWidth}`}
             strokeDasharray={`${props.percentage}, 100`}
             d="M18 3.0845
