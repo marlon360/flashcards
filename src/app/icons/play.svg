@@ -1,0 +1,16 @@
+
+<svg width="28px" height="31px" viewBox="0 0 28 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M23.3984375,36.734375 C21.7988281,36.734375 20.4863281,35.5722656 20.4863281,33.4941406 L20.4863281,14.8046875 C20.4863281,12.7128906 21.7988281,11.5507812 23.3984375,11.5507812 C24.1914062,11.5507812 24.8203125,11.7011719 25.5585938,12.1386719 L41.0488281,21.1074219 C42.4433594,21.9140625 43.2910156,22.7617188 43.2910156,24.1425781 C43.2910156,25.5234375 42.4433594,26.3710938 41.0488281,27.1777344 L25.5585938,36.1464844 C24.8203125,36.5839844 24.1914062,36.734375 23.3984375,36.734375 Z" id="path-1"></path>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lektion_Box-Copy" transform="translate(-50.000000, -269.000000)">
+            <g id="Group-9" transform="translate(32.000000, 259.000000)">
+                <g>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
