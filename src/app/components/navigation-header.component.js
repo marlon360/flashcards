@@ -20,7 +20,7 @@ function NavigationHeader(props) {
                     <img className="w-full h-auto" src={Plus} alt="Plus"></img>
                 </div>
             </div>
-            <h1 className="text-4xl font-bold">{props.title}</h1>
+            <h1 className="text-4xl font-bold leading-tight">{props.title}</h1>
         </div>
     );
 }
