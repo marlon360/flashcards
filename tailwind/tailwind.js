@@ -5,6 +5,9 @@ module.exports = {
         '36': '9rem',
         '44': '11rem',
       },
+      width: {
+        '14': '3.5rem',
+      },
       borderRadius: {
         'xl': '1em',
         '2xl': '2em',
