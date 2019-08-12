@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 import CoursePage from './app/pages/course.page';
 import LessonPage from './app/pages/lesson.page';
+import CardsPage from './app/pages/cards.page';
 
 const routing = (
     <Router>
@@ -13,6 +14,7 @@ const routing = (
             <Route exact path="/" component={CoursePage} />
             <Route path="/courses" component={CoursePage} />
             <Route path="/course/:course" component={LessonPage} />
+            <Route path="/cards" component={CardsPage} />
         </div>
     </Router>
 )

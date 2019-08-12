@@ -3920,6 +3920,10 @@ video {
   height: 100vh;
 }
 
+.h-8\/10 {
+  height: 80%;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -6706,6 +6710,13 @@ video {
   left: 0;
 }
 
+.inset-10 {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
 .inset-auto {
   top: auto;
   right: auto;
@@ -6721,6 +6732,16 @@ video {
 .inset-x-0 {
   right: 0;
   left: 0;
+}
+
+.inset-y-10 {
+  top: 10px;
+  bottom: 10px;
+}
+
+.inset-x-10 {
+  right: 10px;
+  left: 10px;
 }
 
 .inset-y-auto {
@@ -6747,6 +6768,22 @@ video {
 
 .left-0 {
   left: 0;
+}
+
+.top-10 {
+  top: 10px;
+}
+
+.right-10 {
+  right: 10px;
+}
+
+.bottom-10 {
+  bottom: 10px;
+}
+
+.left-10 {
+  left: 10px;
 }
 
 .top-auto {
@@ -10786,6 +10823,52 @@ video {
   src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
 }
 
+.cards > div.move-0 {
+  transform: translateY(55px) scale(0.88);
+  opacity: 0;
+  z-index: 0;
+}
+
+.cards > div.move-1 {
+  transform: translateY(40px) scale(0.92);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.cards > div.move-2  {
+  transform: translateY(20px) scale(0.96);
+  opacity: 1;
+  z-index: 2;
+}
+
+.cards > div.move-3 {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.cards > div.move-4 {
+  transform: translateX(100%) scale(1);
+  opacity: 0;
+  z-index:3;
+}
+
+/* @keyframes MOVE-OUT {
+    0%   { transform: translatex(0%); opacity: 1; z-index: 3; }
+    50%  { transform: translatex(100%) scale(1); opacity: 0; z-index: 3;}
+    100% { transform: translateY(55px) scale(0.88); opacity: 0; z-index: 0; }
+}
+@-webkit-keyframes MOVE-OUT {
+    0%   { transform: translatex(0%); opacity: 1; z-index: 3; }
+    50%  { transform: translatex(100%) scale(1); opacity: 0; z-index: 3;}
+    100% { transform: translateY(55px) scale(0.88); opacity: 0; z-index: 0; }
+}
+
+.cards > div.move-0 {
+    animation: MOVE-OUT 0.75s forwards;
+    -webkit-animation: MOVE-OUT 0.75s forwards;
+} */
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
@@ -14093,6 +14176,10 @@ video {
     height: 100vh;
   }
 
+  .sm\:h-8\/10 {
+    height: 80%;
+  }
+
   .sm\:leading-none {
     line-height: 1;
   }
@@ -16879,6 +16966,13 @@ video {
     left: 0;
   }
 
+  .sm\:inset-10 {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+
   .sm\:inset-auto {
     top: auto;
     right: auto;
@@ -16894,6 +16988,16 @@ video {
   .sm\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .sm\:inset-y-10 {
+    top: 10px;
+    bottom: 10px;
+  }
+
+  .sm\:inset-x-10 {
+    right: 10px;
+    left: 10px;
   }
 
   .sm\:inset-y-auto {
@@ -16920,6 +17024,22 @@ video {
 
   .sm\:left-0 {
     left: 0;
+  }
+
+  .sm\:top-10 {
+    top: 10px;
+  }
+
+  .sm\:right-10 {
+    right: 10px;
+  }
+
+  .sm\:bottom-10 {
+    bottom: 10px;
+  }
+
+  .sm\:left-10 {
+    left: 10px;
   }
 
   .sm\:top-auto {
@@ -23855,6 +23975,10 @@ video {
     height: 100vh;
   }
 
+  .md\:h-8\/10 {
+    height: 80%;
+  }
+
   .md\:leading-none {
     line-height: 1;
   }
@@ -26641,6 +26765,13 @@ video {
     left: 0;
   }
 
+  .md\:inset-10 {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+
   .md\:inset-auto {
     top: auto;
     right: auto;
@@ -26656,6 +26787,16 @@ video {
   .md\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .md\:inset-y-10 {
+    top: 10px;
+    bottom: 10px;
+  }
+
+  .md\:inset-x-10 {
+    right: 10px;
+    left: 10px;
   }
 
   .md\:inset-y-auto {
@@ -26682,6 +26823,22 @@ video {
 
   .md\:left-0 {
     left: 0;
+  }
+
+  .md\:top-10 {
+    top: 10px;
+  }
+
+  .md\:right-10 {
+    right: 10px;
+  }
+
+  .md\:bottom-10 {
+    bottom: 10px;
+  }
+
+  .md\:left-10 {
+    left: 10px;
   }
 
   .md\:top-auto {
@@ -33617,6 +33774,10 @@ video {
     height: 100vh;
   }
 
+  .lg\:h-8\/10 {
+    height: 80%;
+  }
+
   .lg\:leading-none {
     line-height: 1;
   }
@@ -36403,6 +36564,13 @@ video {
     left: 0;
   }
 
+  .lg\:inset-10 {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+
   .lg\:inset-auto {
     top: auto;
     right: auto;
@@ -36418,6 +36586,16 @@ video {
   .lg\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .lg\:inset-y-10 {
+    top: 10px;
+    bottom: 10px;
+  }
+
+  .lg\:inset-x-10 {
+    right: 10px;
+    left: 10px;
   }
 
   .lg\:inset-y-auto {
@@ -36444,6 +36622,22 @@ video {
 
   .lg\:left-0 {
     left: 0;
+  }
+
+  .lg\:top-10 {
+    top: 10px;
+  }
+
+  .lg\:right-10 {
+    right: 10px;
+  }
+
+  .lg\:bottom-10 {
+    bottom: 10px;
+  }
+
+  .lg\:left-10 {
+    left: 10px;
   }
 
   .lg\:top-auto {
@@ -43379,6 +43573,10 @@ video {
     height: 100vh;
   }
 
+  .xl\:h-8\/10 {
+    height: 80%;
+  }
+
   .xl\:leading-none {
     line-height: 1;
   }
@@ -46165,6 +46363,13 @@ video {
     left: 0;
   }
 
+  .xl\:inset-10 {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+
   .xl\:inset-auto {
     top: auto;
     right: auto;
@@ -46180,6 +46385,16 @@ video {
   .xl\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .xl\:inset-y-10 {
+    top: 10px;
+    bottom: 10px;
+  }
+
+  .xl\:inset-x-10 {
+    right: 10px;
+    left: 10px;
   }
 
   .xl\:inset-y-auto {
@@ -46206,6 +46421,22 @@ video {
 
   .xl\:left-0 {
     left: 0;
+  }
+
+  .xl\:top-10 {
+    top: 10px;
+  }
+
+  .xl\:right-10 {
+    right: 10px;
+  }
+
+  .xl\:bottom-10 {
+    bottom: 10px;
+  }
+
+  .xl\:left-10 {
+    left: 10px;
   }
 
   .xl\:top-auto {

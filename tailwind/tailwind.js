@@ -4,6 +4,7 @@ module.exports = {
       height: {
         '36': '9rem',
         '44': '11rem',
+        '8/10': '80%',
       },
       width: {
         '14': '3.5rem',
@@ -13,6 +14,9 @@ module.exports = {
         '2xl': '2em',
         '3xl': '4em',
       },
+      inset: {
+        '10': '10px'
+      }
     },
         fontFamily: {
           'sans': ['SF Text'],

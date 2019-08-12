@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CirclePercentage from './circle-percentage/circle-percentage.component.js';
 import Play from './../icons/play.svg';
 import Pencil from './../icons/pencil.svg';
-
+import { Link } from 'react-router-dom';
 function Lesson(props) {
     const [open, setOpen] = useState(false);
 
@@ -18,12 +18,14 @@ function Lesson(props) {
                 </div>
             </div>
             <div className={`${open ? 'h-44' : 'h-0'} transition-all transition-500 overflow-auto text-white font-bold text-xl`}>
+                <Link className="w-full flex justify-center" to="/cards">
                 <div className="bg-gradient-120-green-blue px-6 py-4 rounded-xl shadow-md w-full max-w-lg mt-5 flex">
                     <div className="w-12">
                         <img src={Play} alt="Start"></img>
                     </div>
                     Lernen
                 </div>
+                </Link>
                 <div className="bg-gradient-120-purple-blue px-6 py-4 rounded-xl shadow-md w-full max-w-lg mt-5 flex">
                     <div className="w-12">
                         <img src={Pencil} alt="Bearbeiten"></img>
