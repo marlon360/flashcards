@@ -27,9 +27,10 @@ module.exports = {
       'card-1': 'translateY(0px) scale(1)',
       'card-2-right': 'translateX(100%) scale(1)',
       'card-2-left': 'translateX(-100%) scale(1)',
-      'card-3': 'translateY(55px) scale(0.88)',
-      'card-4': 'translateY(40px) scale(0.92)',
-      'card-5': 'translateY(20px) scale(0.96)',
+      'card-3': 'translateY(75px) scale(0.88)',
+      'card-4': 'translateY(60px) scale(0.92)',
+      'card-5': 'translateY(30px) scale(0.96)',
+      'card-flipped': 'translateX(-100%) rotateY(-180deg)'
     },
     translate: { // defaults to {}
       '1/2': '50%',
@@ -44,11 +45,17 @@ module.exports = {
       '96': '0.96',
       '100': '1',
     },
+    rotate: {
+      '180': '180deg'
+    },
+    perspective: { // defaults to {}
+      '1000': '1000px',
+    },
     gradients: theme => ({
       'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
       'orange': ['#FFB550', '#FF895D'],
       'blue': ['#50CCFF', '#5D71FF'],
-      'white': ['#FCFCFC', '#FFFFFF'],
+      'white': ['#F8F8F8', '#FFFFFF'],
       'green-blue': ["#79EABC", "#47C4F2"],
       'purple-blue': ["#C1A6E5", "#47A6F2"]
     })
@@ -60,7 +67,7 @@ module.exports = {
     require('./plugins/gradients'),
     require('tailwindcss-transitions')(),
     require('tailwindcss-transforms')({
-      '3d': false, // defaults to false
+      '3d': true,
     })
   ]
 }
