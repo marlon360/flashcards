@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import NavigationHeader from '../components/navigation-header.component';
 import Course from '../components/course.component';
+import Xmark from '../icons/x.svg';
 
 import { Link } from 'react-router-dom';
 
 const MoveDirection = {
     LEFT: 1,
     RIGHT: 2,
-  };
+};
 
 function mapMove(move) {
     return move % 5;
@@ -43,16 +44,21 @@ function getFlipClasses(move, front) {
 }
 
 function CardsPage(props) {
-    
+
     const [moveDir, setMoveDir] = useState(MoveDirection.LEFT);
     const [move, setMove] = useState(0);
     const [front, setFront] = useState(true);
-    
+
     const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-center text-3xl font-bold ';
     return (
         <div>
-            <div className="bg-gray-100 h-screen scale-90">
-                <div className="p-4 h-6/10 overflow-hidden mb-4">
+            <div className="bg-gray-100 h-screen">
+                <div className="px-6 py-4 w-full my-4">
+                    <Link to="/course/Mathematik">
+                        <img src={Xmark} alt="close"></img>
+                    </Link>
+                </div>
+                <div className="px-4 h-6/10 overflow-hidden">
                     <div className="relative w-full max-w-xl m-auto h-8/10">
                         <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move), moveDir)}>
                             <div className={`${getFlipClasses(mapMove(move), front)}`}>
@@ -65,7 +71,7 @@ function CardsPage(props) {
                             </div>
                         </div>
                         <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 1), moveDir)}>
-                        <div className={`${getFlipClasses(mapMove(move + 1), front)}`}>
+                            <div className={`${getFlipClasses(mapMove(move + 1), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
                                     Was ist eine Kurve?
                                 </div>
@@ -75,7 +81,7 @@ function CardsPage(props) {
                             </div>
                         </div>
                         <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 2), moveDir)}>
-                        <div className={`${getFlipClasses(mapMove(move + 2), front)}`}>
+                            <div className={`${getFlipClasses(mapMove(move + 2), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
                                     Was ist eine Kurve?
                                 </div>
@@ -83,9 +89,9 @@ function CardsPage(props) {
                                     Eine Kurve ist eine Kurve.
                                 </div>
                             </div>
-                    </div>
+                        </div>
                         <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 3), moveDir)}>
-                        <div className={`${getFlipClasses(mapMove(move + 3), front)}`}>
+                            <div className={`${getFlipClasses(mapMove(move + 3), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
                                     Was ist eine Kurve?
                                 </div>
@@ -95,7 +101,7 @@ function CardsPage(props) {
                             </div>
                         </div>
                         <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4), moveDir)}>
-                        <div className={`${getFlipClasses(mapMove(move + 4), front)}`}>
+                            <div className={`${getFlipClasses(mapMove(move + 4), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-md rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
                                     Was ist eine Kurve?
                                 </div>
@@ -106,19 +112,19 @@ function CardsPage(props) {
                         </div>
                     </div>
                 </div>
-            <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${front ? 'hidden' : ''}`}>
-                <div onClick={() => { setMoveDir(MoveDirection.LEFT); setFront(true); setMove(move + 1)}} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 text-red-700 cursor-pointer">
-                    Falsch
+                <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${front ? 'hidden' : ''}`}>
+                    <div onClick={() => { setMoveDir(MoveDirection.LEFT); setFront(true); setMove(move + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 text-red-700 cursor-pointer">
+                        Falsch
                 </div>
-                <div onClick={() => { setMoveDir(MoveDirection.RIGHT); setFront(true); setMove(move + 1)}} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 cursor-pointer">
-                    Richtig
+                    <div onClick={() => { setMoveDir(MoveDirection.RIGHT); setFront(true); setMove(move + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 cursor-pointer">
+                        Richtig
                 </div>
-            </div>
-            <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${!front ? 'hidden' : ''}`}>
-                <div onClick={() => {setFront(false)}} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
-                    Umdrehen
                 </div>
-            </div>
+                <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${!front ? 'hidden' : ''}`}>
+                    <div onClick={() => { setFront(false) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                        Umdrehen
+                </div>
+                </div>
             </div>
         </div>
     );
