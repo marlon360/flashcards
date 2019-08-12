@@ -4,7 +4,9 @@ module.exports = {
       height: {
         '36': '9rem',
         '44': '11rem',
+        '6/10': '60%',
         '8/10': '80%',
+        '11/12': '91.666%',
       },
       width: {
         '14': '3.5rem',
@@ -16,11 +18,32 @@ module.exports = {
       },
       inset: {
         '10': '10px'
-      }
+      },
     },
-        fontFamily: {
-          'sans': ['SF Text'],
-        },
+    fontFamily: {
+      'sans': ['SF Text'],
+    },
+    transform: {
+      'card-1': 'translateY(0px) scale(1)',
+      'card-2-right': 'translateX(100%) scale(1)',
+      'card-2-left': 'translateX(-100%) scale(1)',
+      'card-3': 'translateY(55px) scale(0.88)',
+      'card-4': 'translateY(40px) scale(0.92)',
+      'card-5': 'translateY(20px) scale(0.96)',
+    },
+    translate: { // defaults to {}
+      '1/2': '50%',
+      'full': '100%',
+      '55': '55px',
+      '40': '40px',
+      '20': '20px',
+    },
+    scale: { // defaults to {}
+      '88': '0.88',
+      '92': '0.92',
+      '96': '0.96',
+      '100': '1',
+    },
     gradients: theme => ({
       'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],
       'orange': ['#FFB550', '#FF895D'],
@@ -34,7 +57,10 @@ module.exports = {
     gradients: ['responsive', 'hover'],
   },
   plugins: [
-      require('./plugins/gradients'),
-      require('tailwindcss-transitions')()
+    require('./plugins/gradients'),
+    require('tailwindcss-transitions')(),
+    require('tailwindcss-transforms')({
+      '3d': false, // defaults to false
+    })
   ]
 }
