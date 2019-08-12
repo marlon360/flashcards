@@ -5,7 +5,7 @@ import CoursePage from './pages/course.page';
 
 function App() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-200">
       <CoursePage></CoursePage>
     </div>
   );

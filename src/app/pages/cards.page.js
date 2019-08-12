@@ -52,7 +52,7 @@ function CardsPage(props) {
     const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-center text-3xl font-bold ';
     return (
         <div>
-            <div className="bg-gray-100 h-screen">
+            <div className="h-screen">
                 <div className="px-6 py-4 w-full my-4">
                     <Link to="/course/Mathematik">
                         <img src={Xmark} alt="close"></img>

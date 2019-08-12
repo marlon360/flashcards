@@ -9,7 +9,7 @@ function CoursePage(props) {
     return (
         <div>
             <NavigationHeader title="Kurse"></NavigationHeader>
-            <div className="bg-gray-100 p-4 flex flex-col items-center justify-center">
+            <div className="p-4 flex flex-col items-center justify-center">
                 <Link className="w-full flex justify-center" to="/course/Mathematik">
                     <Course name="Mathematik" lessons="4" cards="12" percentage="12"></Course>
                 </Link>
