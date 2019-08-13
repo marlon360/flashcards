@@ -47,66 +47,70 @@ function CardsPage(props) {
 
     const cards = [
         {
-            front: '1. Was ist eine Kurve?',
-            back: 'Eine Kurve ist eine Funktion.'
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: '2. Was ist eine Fläche?',
-            back: 'Eine Kurve ist eine Funktion.'
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: '3. Was ist ein offenes Intervall?',
-            back: 'Eine Kurve ist eine Funktion.'
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: '4. Was ist eine parametrisierte Kurve?',
-            back: 'Eine Kurve ist eine Funktion.'
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: '5. Was ist die Krümmung einer Kurve?',
-            back: 'Eine Kurve ist eine Funktion.'
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: '6. Frage?',
-            back: 'Eine Kurve ist eine Funktion.'
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
+        },
+        {
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion."
         },
     ]
 
     const [moveDir, setMoveDir] = useState(MoveDirection.LEFT);
     const [move, setMove] = useState(0);
     const [front, setFront] = useState(true);
-    const [cardIndices, setCardIndices] = useState([0,1,2,3,4]);
+    const [cardIndices, setCardIndices] = useState([0, 1, 2, 3, 4]);
 
     if (mapMove(move + 4) === 1) {
-        const newIndex = 0 + (Math.floor(((move+4)/5)) * 5);
+        const newIndex = 0 + (Math.floor(((move + 4) / 5)) * 5);
         if (newIndex !== cardIndices[0]) {
             cardIndices[0] = newIndex;
             setCardIndices(cardIndices);
         }
     }
     if (mapMove(move + 3) === 1) {
-        const newIndex = 1 + (Math.floor(((move+3)/5)) * 5);
+        const newIndex = 1 + (Math.floor(((move + 3) / 5)) * 5);
         if (newIndex !== cardIndices[1]) {
             cardIndices[1] = newIndex;
             setCardIndices(cardIndices);
         }
     }
     if (mapMove(move + 2) === 1) {
-        const newIndex = 2 + (Math.floor(((move+2)/5)) * 5);
+        const newIndex = 2 + (Math.floor(((move + 2) / 5)) * 5);
         if (newIndex !== cardIndices[2]) {
             cardIndices[2] = newIndex;
             setCardIndices(cardIndices);
         }
     }
     if (mapMove(move + 1) === 1) {
-        const newIndex = 3 + (Math.floor(((move+1)/5)) * 5);
+        const newIndex = 3 + (Math.floor(((move + 1) / 5)) * 5);
         if (newIndex !== cardIndices[3]) {
             cardIndices[3] = newIndex;
             setCardIndices(cardIndices);
         }
     }
     if (mapMove(move + 0) === 1) {
-        const newIndex = 4 + (Math.floor(((move+0)/5)) * 5);
+        const newIndex = 4 + (Math.floor(((move + 0) / 5)) * 5);
         if (newIndex !== cardIndices[4]) {
             cardIndices[4] = newIndex;
             setCardIndices(cardIndices);
@@ -124,33 +128,48 @@ function CardsPage(props) {
                 </div>
                 <div className="px-4 h-6/10 overflow-hidden">
                     <div className="relative w-full max-w-xl m-auto h-8/10">
-                        {[0,1,2,3,4].map((v,i) => {
+                        {[0, 1, 2, 3, 4].map((v, i) => {
                             return (cardIndices[i] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4 - i), moveDir)}>
-                            <div className={`${getFlipClasses(mapMove(move + 4 - i), front)}`}>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[i]].front}
+                                <div className={`${getFlipClasses(mapMove(move + 4 - i), front)}`}>
+                                    <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
+                                        {cards[cardIndices[i]].front}
+                                    </div>
+                                    <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
+                                        {cards[cardIndices[i]].back}
+                                    </div>
                                 </div>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[i]].back}
-                                </div>
-                            </div>
-                        </div> : null)
+                            </div> : null)
                         })}
+                        {(move >= cards.length ?
+                            <div className="h-full p-12 flex flex-col justify-center items-center text-2xl text-gray-600 font-bold text-center">
+                                Du hast alle Karten dieser Box korrekt beantwortet!
+                            </div>
+                            : null)}
                     </div>
                 </div>
-                <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${front ? 'hidden' : ''}`}>
-                    <div onClick={() => { setMoveDir(MoveDirection.LEFT); setFront(true); setMove(move + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 border border-red-300 text-red-700 cursor-pointer">
-                        Falsch
-                </div>
-                    <div onClick={() => { setMoveDir(MoveDirection.RIGHT); setFront(true); setMove(move + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 border border-green-300 cursor-pointer">
-                        Richtig
-                </div>
-                </div>
-                <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${!front ? 'hidden' : ''}`}>
-                    <div onClick={() => { setFront(false) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
-                        Umdrehen
-                </div>
-                </div>
+                {(move < cards.length ?
+                    <div>
+                        <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${front ? 'hidden' : ''}`}>
+                            <div onClick={() => { setMoveDir(MoveDirection.LEFT); setFront(true); setMove(move + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 border border-red-300 text-red-700 cursor-pointer">
+                                Falsch
+                            </div>
+                            <div onClick={() => { setMoveDir(MoveDirection.RIGHT); setFront(true); setMove(move + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 border border-green-300 cursor-pointer">
+                                Richtig
+                            </div>
+                        </div>
+                        <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${!front ? 'hidden' : ''}`}>
+                            <div onClick={() => { setFront(false) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                                Umdrehen
+                            </div>
+                        </div>
+                    </div>
+                    : 
+                    <div className="flex justify-between max-w-xl p-4 m-auto text-center">
+                            <div onClick={() => {}} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                                Nächste Box lernen
+                            </div>
+                        </div>
+                    )}
             </div>
         </div>
     );
