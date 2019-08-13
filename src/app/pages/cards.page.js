@@ -47,23 +47,27 @@ function CardsPage(props) {
 
     const cards = [
         {
-            front: 'Was ist eine Kurve?',
+            front: '1. Was ist eine Kurve?',
             back: 'Eine Kurve ist eine Funktion.'
         },
         {
-            front: 'Was ist eine Fläche?',
+            front: '2. Was ist eine Fläche?',
             back: 'Eine Kurve ist eine Funktion.'
         },
         {
-            front: 'Was ist ein offenes Intervall?',
+            front: '3. Was ist ein offenes Intervall?',
             back: 'Eine Kurve ist eine Funktion.'
         },
         {
-            front: 'Was ist eine parametrisierte Kurve?',
+            front: '4. Was ist eine parametrisierte Kurve?',
             back: 'Eine Kurve ist eine Funktion.'
         },
         {
-            front: 'Was ist die Krümmung einer Kurve?',
+            front: '5. Was ist die Krümmung einer Kurve?',
+            back: 'Eine Kurve ist eine Funktion.'
+        },
+        {
+            front: '6. Frage?',
             back: 'Eine Kurve ist eine Funktion.'
         },
     ]
@@ -71,6 +75,43 @@ function CardsPage(props) {
     const [moveDir, setMoveDir] = useState(MoveDirection.LEFT);
     const [move, setMove] = useState(0);
     const [front, setFront] = useState(true);
+    const [cardIndices, setCardIndices] = useState([0,1,2,3,4]);
+
+    if (mapMove(move + 4) === 1) {
+        const newIndex = 0 + (Math.floor(((move+4)/5)) * 5);
+        if (newIndex !== cardIndices[0]) {
+            cardIndices[0] = newIndex;
+            setCardIndices(cardIndices);
+        }
+    }
+    if (mapMove(move + 3) === 1) {
+        const newIndex = 1 + (Math.floor(((move+3)/5)) * 5);
+        if (newIndex !== cardIndices[1]) {
+            cardIndices[1] = newIndex;
+            setCardIndices(cardIndices);
+        }
+    }
+    if (mapMove(move + 2) === 1) {
+        const newIndex = 2 + (Math.floor(((move+2)/5)) * 5);
+        if (newIndex !== cardIndices[2]) {
+            cardIndices[2] = newIndex;
+            setCardIndices(cardIndices);
+        }
+    }
+    if (mapMove(move + 1) === 1) {
+        const newIndex = 3 + (Math.floor(((move+1)/5)) * 5);
+        if (newIndex !== cardIndices[3]) {
+            cardIndices[3] = newIndex;
+            setCardIndices(cardIndices);
+        }
+    }
+    if (mapMove(move + 0) === 1) {
+        const newIndex = 4 + (Math.floor(((move+0)/5)) * 5);
+        if (newIndex !== cardIndices[4]) {
+            cardIndices[4] = newIndex;
+            setCardIndices(cardIndices);
+        }
+    }
 
     const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-center text-3xl font-bold ';
     return (
@@ -83,53 +124,53 @@ function CardsPage(props) {
                 </div>
                 <div className="px-4 h-6/10 overflow-hidden">
                     <div className="relative w-full max-w-xl m-auto h-8/10">
-                        {(true ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4), moveDir)}>
+                        {(cardIndices[0] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4), moveDir)}>
                             <div className={`${getFlipClasses(mapMove(move + 4), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[0].front}
+                                    {cards[cardIndices[0]].front}
                                 </div>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[0].back}
+                                    {cards[cardIndices[0]].back}
                                 </div>
                             </div>
                         </div> : null)}
-                        {(true ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 3), moveDir)}>
+                        {(cardIndices[1] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 3), moveDir)}>
                             <div className={`${getFlipClasses(mapMove(move + 3), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[1].front}
+                                    {cards[cardIndices[1]].front}
                                 </div>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[1].back}
+                                    {cards[cardIndices[1]].back}
                                 </div>
                             </div>
                         </div> : null)}
-                        {(true ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 2), moveDir)}>
+                        {(cardIndices[2] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 2), moveDir)}>
                             <div className={`${getFlipClasses(mapMove(move + 2), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[2].front}
+                                    {cards[cardIndices[2]].front}
                                 </div>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[2].back}
+                                    {cards[cardIndices[2]].back}
                                 </div>
                             </div>
                         </div> : null)}
-                        {(true ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 1), moveDir)}>
+                        {(cardIndices[3] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 1), moveDir)}>
                             <div className={`${getFlipClasses(mapMove(move + 1), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[3].front}
+                                    {cards[cardIndices[3]].front}
                                 </div>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[3].back}
+                                    {cards[cardIndices[3]].back}
                                 </div>
                             </div>
                         </div> : null)}
-                        {(true ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move), moveDir)}>
+                        {(cardIndices[4] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move), moveDir)}>
                             <div className={`${getFlipClasses(mapMove(move), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-md rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[4].front}
+                                    {cards[cardIndices[4]].front}
                                 </div>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-md rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[4].back}
+                                    {cards[cardIndices[4]].back}
                                 </div>
                             </div>
                         </div> : null)}
