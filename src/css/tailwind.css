@@ -10419,28 +10419,28 @@ video {
   will-change: transform;
 }
 
-.transform-card-1 {
-  transform: translateY(0px) scale(1);
-}
-
-.transform-card-2-right {
+.transform-card-1-right {
   transform: translateX(100%) scale(1);
 }
 
-.transform-card-2-left {
+.transform-card-1-left {
   transform: translateX(-100%) scale(1);
 }
 
-.transform-card-3 {
+.transform-card-2 {
   transform: translateY(75px) scale(0.88);
 }
 
-.transform-card-4 {
+.transform-card-3 {
   transform: translateY(60px) scale(0.92);
 }
 
-.transform-card-5 {
+.transform-card-4 {
   transform: translateY(30px) scale(0.96);
+}
+
+.transform-card-5 {
+  transform: translateY(0px) scale(1);
 }
 
 .transform-card-flipped {
@@ -20899,28 +20899,28 @@ video {
     will-change: transform;
   }
 
-  .sm\:transform-card-1 {
-    transform: translateY(0px) scale(1);
-  }
-
-  .sm\:transform-card-2-right {
+  .sm\:transform-card-1-right {
     transform: translateX(100%) scale(1);
   }
 
-  .sm\:transform-card-2-left {
+  .sm\:transform-card-1-left {
     transform: translateX(-100%) scale(1);
   }
 
-  .sm\:transform-card-3 {
+  .sm\:transform-card-2 {
     transform: translateY(75px) scale(0.88);
   }
 
-  .sm\:transform-card-4 {
+  .sm\:transform-card-3 {
     transform: translateY(60px) scale(0.92);
   }
 
-  .sm\:transform-card-5 {
+  .sm\:transform-card-4 {
     transform: translateY(30px) scale(0.96);
+  }
+
+  .sm\:transform-card-5 {
+    transform: translateY(0px) scale(1);
   }
 
   .sm\:transform-card-flipped {
@@ -30968,28 +30968,28 @@ video {
     will-change: transform;
   }
 
-  .md\:transform-card-1 {
-    transform: translateY(0px) scale(1);
-  }
-
-  .md\:transform-card-2-right {
+  .md\:transform-card-1-right {
     transform: translateX(100%) scale(1);
   }
 
-  .md\:transform-card-2-left {
+  .md\:transform-card-1-left {
     transform: translateX(-100%) scale(1);
   }
 
-  .md\:transform-card-3 {
+  .md\:transform-card-2 {
     transform: translateY(75px) scale(0.88);
   }
 
-  .md\:transform-card-4 {
+  .md\:transform-card-3 {
     transform: translateY(60px) scale(0.92);
   }
 
-  .md\:transform-card-5 {
+  .md\:transform-card-4 {
     transform: translateY(30px) scale(0.96);
+  }
+
+  .md\:transform-card-5 {
+    transform: translateY(0px) scale(1);
   }
 
   .md\:transform-card-flipped {
@@ -41037,28 +41037,28 @@ video {
     will-change: transform;
   }
 
-  .lg\:transform-card-1 {
-    transform: translateY(0px) scale(1);
-  }
-
-  .lg\:transform-card-2-right {
+  .lg\:transform-card-1-right {
     transform: translateX(100%) scale(1);
   }
 
-  .lg\:transform-card-2-left {
+  .lg\:transform-card-1-left {
     transform: translateX(-100%) scale(1);
   }
 
-  .lg\:transform-card-3 {
+  .lg\:transform-card-2 {
     transform: translateY(75px) scale(0.88);
   }
 
-  .lg\:transform-card-4 {
+  .lg\:transform-card-3 {
     transform: translateY(60px) scale(0.92);
   }
 
-  .lg\:transform-card-5 {
+  .lg\:transform-card-4 {
     transform: translateY(30px) scale(0.96);
+  }
+
+  .lg\:transform-card-5 {
+    transform: translateY(0px) scale(1);
   }
 
   .lg\:transform-card-flipped {
@@ -51106,28 +51106,28 @@ video {
     will-change: transform;
   }
 
-  .xl\:transform-card-1 {
-    transform: translateY(0px) scale(1);
-  }
-
-  .xl\:transform-card-2-right {
+  .xl\:transform-card-1-right {
     transform: translateX(100%) scale(1);
   }
 
-  .xl\:transform-card-2-left {
+  .xl\:transform-card-1-left {
     transform: translateX(-100%) scale(1);
   }
 
-  .xl\:transform-card-3 {
+  .xl\:transform-card-2 {
     transform: translateY(75px) scale(0.88);
   }
 
-  .xl\:transform-card-4 {
+  .xl\:transform-card-3 {
     transform: translateY(60px) scale(0.92);
   }
 
-  .xl\:transform-card-5 {
+  .xl\:transform-card-4 {
     transform: translateY(30px) scale(0.96);
+  }
+
+  .xl\:transform-card-5 {
+    transform: translateY(0px) scale(1);
   }
 
   .xl\:transform-card-flipped {

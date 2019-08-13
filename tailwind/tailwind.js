@@ -24,12 +24,12 @@ module.exports = {
       'sans': ['SF Text'],
     },
     transform: {
-      'card-1': 'translateY(0px) scale(1)',
-      'card-2-right': 'translateX(100%) scale(1)',
-      'card-2-left': 'translateX(-100%) scale(1)',
-      'card-3': 'translateY(75px) scale(0.88)',
-      'card-4': 'translateY(60px) scale(0.92)',
-      'card-5': 'translateY(30px) scale(0.96)',
+      'card-1-right': 'translateX(100%) scale(1)',
+      'card-1-left': 'translateX(-100%) scale(1)',
+      'card-2': 'translateY(75px) scale(0.88)',
+      'card-3': 'translateY(60px) scale(0.92)',
+      'card-4': 'translateY(30px) scale(0.96)',
+      'card-5': 'translateY(0px) scale(1)',
       'card-flipped': 'translateX(-100%) rotateY(-180deg)'
     },
     translate: { // defaults to {}
