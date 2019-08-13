@@ -51,29 +51,17 @@ function CardsPage(props) {
             back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: "Was ist eine Kurve?",
+            front: "Was ist eine Fläche?",
             back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: "Was ist eine Kurve?",
+            front: "Was ist ein offenes Intervall?",
             back: "Eine Kurve ist eine Funktion."
         },
         {
-            front: "Was ist eine Kurve?",
+            front: "Was ist die Krümmung einer Kurve?",
             back: "Eine Kurve ist eine Funktion."
-        },
-        {
-            front: "Was ist eine Kurve?",
-            back: "Eine Kurve ist eine Funktion."
-        },
-        {
-            front: "Was ist eine Kurve?",
-            back: "Eine Kurve ist eine Funktion."
-        },
-        {
-            front: "Was ist eine Kurve?",
-            back: "Eine Kurve ist eine Funktion."
-        },
+        }
     ]
 
     const [moveDir, setMoveDir] = useState(MoveDirection.LEFT);
@@ -117,7 +105,7 @@ function CardsPage(props) {
         }
     }
 
-    const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-center text-3xl font-bold ';
+    const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
     return (
         <div>
             <div className="h-screen">
@@ -129,10 +117,14 @@ function CardsPage(props) {
                 <div className="px-4 h-6/10 overflow-hidden">
                     <div className="relative w-full max-w-xl m-auto h-8/10">
                         {[0, 1, 2, 3, 4].map((v, i) => {
-                            return (cardIndices[i] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4 - i), moveDir)}>
+                            return (cardIndices[i] < cards.length ?
+                            <div key={i.toString()} onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4 - i), moveDir)}>
                                 <div className={`${getFlipClasses(mapMove(move + 4 - i), front)}`}>
-                                    <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                        {cards[cardIndices[i]].front}
+                                    <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden">
+                                        <div className="absolute inset-1 flex overflow-scroll backface-hidden leading-snug">
+                                            <span className="m-auto">{cards[cardIndices[i]].front}</span>
+                                        </div>
+                                        
                                     </div>
                                     <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
                                         {cards[cardIndices[i]].back}

@@ -17,6 +17,7 @@ module.exports = {
         '3xl': '4em',
       },
       inset: {
+        '1': '1rem',
         '10': '10px'
       },
     },
