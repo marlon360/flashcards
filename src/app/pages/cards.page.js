@@ -124,56 +124,18 @@ function CardsPage(props) {
                 </div>
                 <div className="px-4 h-6/10 overflow-hidden">
                     <div className="relative w-full max-w-xl m-auto h-8/10">
-                        {(cardIndices[0] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4), moveDir)}>
-                            <div className={`${getFlipClasses(mapMove(move + 4), front)}`}>
+                        {[0,1,2,3,4].map((v,i) => {
+                            return (cardIndices[i] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4 - i), moveDir)}>
+                            <div className={`${getFlipClasses(mapMove(move + 4 - i), front)}`}>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[0]].front}
+                                    {cards[cardIndices[i]].front}
                                 </div>
                                 <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[0]].back}
+                                    {cards[cardIndices[i]].back}
                                 </div>
                             </div>
-                        </div> : null)}
-                        {(cardIndices[1] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 3), moveDir)}>
-                            <div className={`${getFlipClasses(mapMove(move + 3), front)}`}>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[1]].front}
-                                </div>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[1]].back}
-                                </div>
-                            </div>
-                        </div> : null)}
-                        {(cardIndices[2] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 2), moveDir)}>
-                            <div className={`${getFlipClasses(mapMove(move + 2), front)}`}>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[2]].front}
-                                </div>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[2]].back}
-                                </div>
-                            </div>
-                        </div> : null)}
-                        {(cardIndices[3] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 1), moveDir)}>
-                            <div className={`${getFlipClasses(mapMove(move + 1), front)}`}>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[3]].front}
-                                </div>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[3]].back}
-                                </div>
-                            </div>
-                        </div> : null)}
-                        {(cardIndices[4] < cards.length ? <div onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move), moveDir)}>
-                            <div className={`${getFlipClasses(mapMove(move), front)}`}>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-md rounded-xl absolute inset-0 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[4]].front}
-                                </div>
-                                <div className="bg-gradient-120-white border border-gray-300 shadow-md rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                    {cards[cardIndices[4]].back}
-                                </div>
-                            </div>
-                        </div> : null)}
+                        </div> : null)
+                        })}
                     </div>
                 </div>
                 <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${front ? 'hidden' : ''}`}>
