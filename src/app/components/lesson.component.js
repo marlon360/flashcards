@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CirclePercentage from './circle-percentage/circle-percentage.component.js';
 import Play from './../icons/play.svg';
-import Pencil from './../icons/pencil.svg';
+import PencilIcon from './../icons/pencil.icon';
 import { Link } from 'react-router-dom';
 function Lesson(props) {
     const [open, setOpen] = useState(false);
@@ -28,7 +28,7 @@ function Lesson(props) {
                 </Link>
                 <div className="bg-gradient-120-purple-blue px-6 py-4 rounded-xl shadow-md w-full max-w-lg mt-5 flex">
                     <div className="w-12">
-                        <img src={Pencil} alt="Bearbeiten"></img>
+                        <PencilIcon className="w-8" alt="Bearbeiten"></PencilIcon>
                     </div>
                     Karten bearbeiten
                 </div>

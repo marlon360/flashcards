@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import NavigationHeader from '../components/navigation-header.component';
 import Course from '../components/course.component';
-import Xmark from '../icons/x.svg';
+import XmarkIcon from '../icons/xamrk.icon';
+import BoxIcon from '../icons/box.icon';
+import Down from '../icons/down.svg';
+import PencilIcon from '../icons/pencil.icon';
 
 import { Link } from 'react-router-dom';
 
@@ -15,18 +18,18 @@ function mapMove(move) {
 }
 
 function getClasses(move, moveDir) {
-    const moveRightStyle = 'transform-card-1-right z-50 opacity-0';
-    const moveLeftStyle = 'transform-card-1-left z-50 opacity-0';
+    const moveRightStyle = 'transform-card-1-right z-40 opacity-0';
+    const moveLeftStyle = 'transform-card-1-left z-40 opacity-0';
     let moveDirection = moveRightStyle;
     if (moveDir === MoveDirection.LEFT) {
         moveDirection = moveLeftStyle;
     }
     let cardPositionClasses = [
         moveDirection,
-        'transform-card-2 z-20 opacity-0',
-        'transform-card-3 z-30 opacity-100',
-        'transform-card-4 z-40 opacity-100',
-        'transform-card-5 z-50 opacity-100',
+        'transform-card-2 z-10 opacity-0',
+        'transform-card-3 z-20 opacity-100',
+        'transform-card-4 z-30 opacity-100',
+        'transform-card-5 z-40 opacity-100',
     ];
     return cardPositionClasses[move];
 }
@@ -67,6 +70,7 @@ function CardsPage(props) {
     const [moveDir, setMoveDir] = useState(MoveDirection.LEFT);
     const [move, setMove] = useState(0);
     const [front, setFront] = useState(true);
+    const [popoverVisible, setPopoverVisible] = useState(false);
     const [cardIndices, setCardIndices] = useState([0, 1, 2, 3, 4]);
 
     if (mapMove(move + 4) === 1) {
@@ -108,29 +112,57 @@ function CardsPage(props) {
     const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
     return (
         <div>
-            <div className="h-screen">
-                <div className="px-6 py-4 w-full my-4">
-                    <Link to="/course/Mathematik">
-                        <img src={Xmark} alt="close"></img>
-                    </Link>
+            <div className="relative h-screen">
+                <div onClick={() => setPopoverVisible(!popoverVisible)} className={`absolute inset-0 bg-overlay z-50 transition-all ${popoverVisible ? 'opacity-100 block' : 'opacity-0 hidden'}`}>
+                    <div className="bg-white p-6 left-10 w-10/12 m-auto mt-16 rounded-xl">
+                    {[1, 2, 3, 4].map((v, i) => {
+                        return (
+                            <div key={i.toString()} className={`bg-gray-200 hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
+                            <div className="flex items-center">
+                                <BoxIcon className="mr-4 h-full w-8 text-gray-600" alt="box"></BoxIcon>
+                                <div className="text-gray-800">
+                                    <div className="text-md font-light">Box {v}</div>
+                                    <div className="text-xl font-bold -mt-1">18 Karten</div>
+                                </div>
+                            </div>
+                        </div>
+                        )
+                    })}
+                        
+                    </div>
+                </div>
+                <div className="px-6 py-4 w-full my-4 flex justify-between">
+                    <div>
+                        <Link to="/course/Mathematik">
+                            <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
+                        </Link>
+                    </div>
+                    <div onClick={() => setPopoverVisible(true)} className="flex cursor-pointer justify-center items-center font-bold text-blue-500 text-xl">
+                        <BoxIcon className="mr-1" alt="box"></BoxIcon>
+                        <span>Box 1</span>
+                        <img className="ml- transition-all" src={Down} alt="down"></img>
+                    </div>
+                    <div className="w-6">
+                        <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
+                    </div>
                 </div>
                 <div className="px-4 h-6/10 overflow-hidden">
                     <div className="relative w-full max-w-xl m-auto h-8/10">
                         {[0, 1, 2, 3, 4].map((v, i) => {
                             return (cardIndices[i] < cards.length ?
-                            <div key={i.toString()} onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4 - i), moveDir)}>
-                                <div className={`${getFlipClasses(mapMove(move + 4 - i), front)}`}>
-                                    <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden">
-                                        <div className="absolute inset-1 flex overflow-scroll backface-hidden leading-snug">
-                                            <span className="m-auto">{cards[cardIndices[i]].front}</span>
+                                <div key={i.toString()} onClick={() => setFront(!front)} className={cardClasses + getClasses(mapMove(move + 4 - i), moveDir)}>
+                                    <div className={`${getFlipClasses(mapMove(move + 4 - i), front)}`}>
+                                        <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden">
+                                            <div className="absolute inset-1 flex overflow-scroll backface-hidden leading-snug">
+                                                <span className="m-auto">{cards[cardIndices[i]].front}</span>
+                                            </div>
+
                                         </div>
-                                        
+                                        <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
+                                            {cards[cardIndices[i]].back}
+                                        </div>
                                     </div>
-                                    <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 rotate-y-180 backface-hidden flex justify-center items-center">
-                                        {cards[cardIndices[i]].back}
-                                    </div>
-                                </div>
-                            </div> : null)
+                                </div> : null)
                         })}
                         {(move >= cards.length ?
                             <div className="h-full p-12 flex flex-col justify-center items-center text-2xl text-gray-600 font-bold text-center">
@@ -155,13 +187,13 @@ function CardsPage(props) {
                             </div>
                         </div>
                     </div>
-                    : 
+                    :
                     <div className="flex justify-between max-w-xl p-4 m-auto text-center">
-                            <div onClick={() => {}} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
-                                Nächste Box lernen
+                        <div onClick={() => { }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                            Nächste Box lernen
                             </div>
-                        </div>
-                    )}
+                    </div>
+                )}
             </div>
         </div>
     );

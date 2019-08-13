@@ -20,6 +20,9 @@ module.exports = {
         '1': '1rem',
         '10': '10px'
       },
+      backgroundColor: {
+        'overlay': 'rgba(26, 32, 44, 0.6)'
+      } 
     },
     fontFamily: {
       'sans': ['SF Text'],
@@ -35,10 +38,13 @@ module.exports = {
     },
     translate: { // defaults to {}
       '1/2': '50%',
+      '1/10': '10%',
+      '1/5': '20%',
       'full': '100%',
       '55': '55px',
       '40': '40px',
       '20': '20px',
+      '1': '1rem',
     },
     scale: { // defaults to {}
       '88': '0.88',
@@ -63,6 +69,7 @@ module.exports = {
   },
   variants: {
     gradients: ['responsive', 'hover'],
+    translate: ['responsive', 'hover', 'group-hover'],
   },
   plugins: [
     require('./plugins/gradients'),
