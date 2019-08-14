@@ -18,11 +18,18 @@ module.exports = {
       },
       inset: {
         '1': '1rem',
-        '10': '10px'
+        '10': '10px',
+        '1/2': '50%'
       },
       backgroundColor: {
         'overlay': 'rgba(26, 32, 44, 0.6)'
-      } 
+      },
+      zIndex: {
+        '-10': '-10'
+      },
+      margin: {
+        '22': '5.5rem'
+      }
     },
     fontFamily: {
       'sans': ['SF Text'],
@@ -34,7 +41,8 @@ module.exports = {
       'card-3': 'translateY(60px) scale(0.92)',
       'card-4': 'translateY(30px) scale(0.96)',
       'card-5': 'translateY(0px) scale(1)',
-      'card-flipped': 'translateX(-100%) rotateY(-180deg)'
+      'card-flipped': 'translateX(-100%) rotateY(-180deg)',
+      'popoverCorner': 'translateX(-50%) translateY(-40%) rotate(45deg)'
     },
     translate: { // defaults to {}
       '1/2': '50%',
@@ -53,7 +61,8 @@ module.exports = {
       '100': '1',
     },
     rotate: {
-      '180': '180deg'
+      '180': '180deg',
+      '45': '45deg'
     },
     perspective: { // defaults to {}
       '1000': '1000px',

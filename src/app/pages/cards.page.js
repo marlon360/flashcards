@@ -114,7 +114,11 @@ function CardsPage(props) {
         <div>
             <div className="relative h-screen">
                 <div onClick={() => setPopoverVisible(!popoverVisible)} className={`absolute inset-0 bg-overlay z-50 transition-all ${popoverVisible ? 'opacity-100 block' : 'opacity-0 hidden'}`}>
-                    <div className="bg-white p-6 left-10 w-10/12 m-auto mt-16 rounded-xl">
+    
+                    <div className="relative bg-white p-6 w-10/12 m-auto mt-22 rounded-xl">
+                        <div className="absolute rounded top-0 left-1/2 -z-10 bg-white w-8 h-8 transform-popoverCorner">
+                            
+                        </div>
                     {[1, 2, 3, 4].map((v, i) => {
                         return (
                             <div key={i.toString()} className={`bg-gray-200 hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
@@ -131,7 +135,7 @@ function CardsPage(props) {
                         
                     </div>
                 </div>
-                <div className="px-6 py-4 w-full my-4 flex justify-between">
+                <div className="px-6 pb-4 pt-8 w-full flex justify-between">
                     <div>
                         <Link to="/course/Mathematik">
                             <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
@@ -140,7 +144,7 @@ function CardsPage(props) {
                     <div onClick={() => setPopoverVisible(true)} className="flex cursor-pointer justify-center items-center font-bold text-blue-500 text-xl">
                         <BoxIcon className="mr-1" alt="box"></BoxIcon>
                         <span>Box 1</span>
-                        <img className="ml- transition-all" src={Down} alt="down"></img>
+                        <img className="ml-1 transition-all" src={Down} alt="down"></img>
                     </div>
                     <div className="w-6">
                         <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
