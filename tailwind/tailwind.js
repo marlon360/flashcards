@@ -41,7 +41,7 @@ module.exports = {
       'card-3': 'translateY(60px) scale(0.92)',
       'card-4': 'translateY(30px) scale(0.96)',
       'card-5': 'translateY(0px) scale(1)',
-      'card-flipped': 'translateX(-100%) rotateY(-180deg)',
+      'card-flipped': 'rotateY(-180deg)',
       'popoverCorner': 'translateX(-50%) translateY(-40%) rotate(45deg)'
     },
     translate: { // defaults to {}
@@ -65,7 +65,7 @@ module.exports = {
       '45': '45deg'
     },
     perspective: { // defaults to {}
-      '1000': '1000px',
+      '1500': '1500px',
     },
     gradients: theme => ({
       'blue-green': [theme('colors.blue.500'), theme('colors.green.500')],

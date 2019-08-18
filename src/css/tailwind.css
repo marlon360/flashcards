@@ -10556,7 +10556,7 @@ video {
 }
 
 .transform-card-flipped {
-  transform: translateX(-100%) rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .transform-popoverCorner {
@@ -10971,8 +10971,8 @@ video {
   transform: rotateY(180deg);
 }
 
-.perspective-1000 {
-  perspective: 1000px;
+.perspective-1500 {
+  perspective: 1500px;
 }
 
 .perspective-t {
@@ -21392,7 +21392,7 @@ video {
   }
 
   .sm\:transform-card-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
+    transform: rotateY(-180deg);
   }
 
   .sm\:transform-popoverCorner {
@@ -21807,8 +21807,8 @@ video {
     transform: rotateY(180deg);
   }
 
-  .sm\:perspective-1000 {
-    perspective: 1000px;
+  .sm\:perspective-1500 {
+    perspective: 1500px;
   }
 
   .sm\:perspective-t {
@@ -31817,7 +31817,7 @@ video {
   }
 
   .md\:transform-card-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
+    transform: rotateY(-180deg);
   }
 
   .md\:transform-popoverCorner {
@@ -32232,8 +32232,8 @@ video {
     transform: rotateY(180deg);
   }
 
-  .md\:perspective-1000 {
-    perspective: 1000px;
+  .md\:perspective-1500 {
+    perspective: 1500px;
   }
 
   .md\:perspective-t {
@@ -42242,7 +42242,7 @@ video {
   }
 
   .lg\:transform-card-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
+    transform: rotateY(-180deg);
   }
 
   .lg\:transform-popoverCorner {
@@ -42657,8 +42657,8 @@ video {
     transform: rotateY(180deg);
   }
 
-  .lg\:perspective-1000 {
-    perspective: 1000px;
+  .lg\:perspective-1500 {
+    perspective: 1500px;
   }
 
   .lg\:perspective-t {
@@ -52667,7 +52667,7 @@ video {
   }
 
   .xl\:transform-card-flipped {
-    transform: translateX(-100%) rotateY(-180deg);
+    transform: rotateY(-180deg);
   }
 
   .xl\:transform-popoverCorner {
@@ -53082,8 +53082,8 @@ video {
     transform: rotateY(180deg);
   }
 
-  .xl\:perspective-1000 {
-    perspective: 1000px;
+  .xl\:perspective-1500 {
+    perspective: 1500px;
   }
 
   .xl\:perspective-t {

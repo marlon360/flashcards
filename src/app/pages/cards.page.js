@@ -115,7 +115,7 @@ class CardsPage extends Component {
 
     render() {
         this.calculateCardIndices(this.state.slideCounter, this.state.cardIndices);
-        const cardClasses = 'transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
+        const cardClasses = 'perspective-1500 transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
         return (
             <div>
                 <div className="relative h-screen">
@@ -156,12 +156,12 @@ class CardsPage extends Component {
                             <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
                         </div>
                     </div>
-                    <div className="px-4 h-6/10 overflow-hidden">
+                    <div className="px-4 h-6/10">
                         <div className="relative w-full max-w-xl m-auto h-8/10">
                             {[0, 1, 2, 3, 4].map((v, i) => {
                                 return (this.state.cardIndices[i] < this.state.cards.length ?
                                     <div key={i.toString()} onClick={() => this.setFrontSideVisibility(!this.state.isFrontSideVisible)} className={cardClasses + this.getClasses(this.mapMove(this.state.slideCounter + 4 - i), this.state.slideDirection)}>
-                                        <div className={`perspective-1000 transform-r relative w-full h-full p-6 bg-transparent transition-all transition-1000 transform-preserve-3d ${this.getFlipClass(this.mapMove(this.state.slideCounter + 4 - i), this.state.isFrontSideVisible)}`}>
+                                        <div className={`relative w-full h-full p-6 bg-transparent transition-all transition-1000 transform-preserve-3d ${this.getFlipClass(this.mapMove(this.state.slideCounter + 4 - i), this.state.isFrontSideVisible)}`}>
                                             <div className="bg-gradient-120-white border border-gray-300 shadow-lg rounded-xl absolute inset-0 backface-hidden">
                                                 <div className="absolute inset-1 flex overflow-scroll backface-hidden leading-snug">
                                                     <span className="m-auto">{this.state.cards[this.state.cardIndices[i]].front}</span>
