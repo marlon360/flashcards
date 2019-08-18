@@ -13,26 +13,31 @@ const SlideDirection = {
 
 class CardsPage extends Component {
 
+    cards = [
+        {
+            front: "Was ist eine Kurve?",
+            back: "Eine Kurve ist eine Funktion.",
+            box: 1
+        },
+        {
+            front: "Was ist eine Fläche?",
+            back: "Eine Kurve ist eine Funktion.",
+            box: 1
+        },
+        {
+            front: "Was ist ein offenes Intervall?",
+            back: "Eine Kurve ist eine Funktion.",
+            box: 2
+        },
+        {
+            front: "Was ist die Krümmung einer Kurve?",
+            back: "Eine Kurve ist eine Funktion.",
+            box: 3
+        }
+    ]
+
     constructor(props, context) {
         super(props, context);
-        const cards = [
-            {
-                front: "Was ist eine Kurve?",
-                back: "Eine Kurve ist eine Funktion."
-            },
-            {
-                front: "Was ist eine Fläche?",
-                back: "Eine Kurve ist eine Funktion."
-            },
-            {
-                front: "Was ist ein offenes Intervall?",
-                back: "Eine Kurve ist eine Funktion."
-            },
-            {
-                front: "Was ist die Krümmung einer Kurve?",
-                back: "Eine Kurve ist eine Funktion."
-            }
-        ]
 
         this.state = {
             slideDirection: SlideDirection.LEFT,
@@ -40,9 +45,16 @@ class CardsPage extends Component {
             isFrontSideVisible: true,
             isPopoverVisible: false,
             cardIndices: [0, 1, 2, 3, 4],
-            cards,
-            box: 2
+            cards: this.filterCards(this.cards, 1),
+            box: 1
         }
+
+    }
+
+    filterCards(cards, box) {
+        return cards.filter((card) => {
+            return card.box === box;
+        })
     }
 
     mapMove(move) {
@@ -113,6 +125,16 @@ class CardsPage extends Component {
         })
     }
 
+    setBox(num) {
+        this.setState({
+            box: num,
+            slideCounter: 0,
+            isFrontSideVisible: true,
+            cardIndices: [0, 1, 2, 3, 4],
+            cards: this.filterCards(this.cards, num),
+        });
+    }
+
     render() {
         this.calculateCardIndices(this.state.slideCounter, this.state.cardIndices);
         const cardClasses = 'perspective-1500 transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
@@ -127,12 +149,12 @@ class CardsPage extends Component {
                             </div>
                             {[1, 2, 3, 4].map((v, i) => {
                                 return (
-                                    <div key={i.toString()} className={`bg-gray-200 ${this.state.box === v ? 'bg-blue-100' : '' } hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
+                                    <div onClick={() => this.setBox(v)} key={i.toString()} className={`bg-gray-200 cursor-pointer ${this.state.box === v ? 'bg-blue-100' : '' } hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
                                         <div className="flex items-center">
                                             <BoxIcon className="mr-4 h-full w-8 text-gray-600" alt="box"></BoxIcon>
                                             <div className="text-gray-800">
                                                 <div className="text-md font-light">Box {v}</div>
-                                                <div className="text-xl font-bold -mt-1">18 Karten</div>
+                                                <div className="text-xl font-bold -mt-1">{this.filterCards(this.cards, v).length} Karten</div>
                                             </div>
                                         </div>
                                     </div>
