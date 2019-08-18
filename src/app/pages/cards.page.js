@@ -119,7 +119,7 @@ class CardsPage extends Component {
         return (
             <div>
                 <div className="relative h-screen">
-                    <div onClick={() => this.setPopoverVisibility(!this.state.isPopoverVisible)} className={`absolute inset-0 bg-overlay z-50 transition-all ${this.state.isPopoverVisible ? 'opacity-100 block' : 'opacity-0 hidden'}`}>
+                    <div onClick={() => this.setPopoverVisibility(!this.state.isPopoverVisible)} className={`absolute inset-0 overflow-hidden bg-overlay z-50 ${this.state.isPopoverVisible ? 'transition-fade-in opacity-100 max-h-full' : 'transition-fade-out opacity-0 max-h-0'}`}>
 
                         <div className="relative bg-white p-6 w-10/12 m-auto mt-22 rounded-xl">
                             <div className="absolute rounded top-0 left-1/2 -z-10 bg-white w-8 h-8 transform-popoverCorner">

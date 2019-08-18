@@ -29,6 +29,9 @@ module.exports = {
       },
       margin: {
         '22': '5.5rem'
+      },
+      maxHeight: {
+        '0': '0',
       }
     },
     fontFamily: {
