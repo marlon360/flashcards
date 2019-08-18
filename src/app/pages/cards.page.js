@@ -40,7 +40,8 @@ class CardsPage extends Component {
             isFrontSideVisible: true,
             isPopoverVisible: false,
             cardIndices: [0, 1, 2, 3, 4],
-            cards
+            cards,
+            box: 2
         }
     }
 
@@ -126,7 +127,7 @@ class CardsPage extends Component {
                             </div>
                             {[1, 2, 3, 4].map((v, i) => {
                                 return (
-                                    <div key={i.toString()} className={`bg-gray-200 hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
+                                    <div key={i.toString()} className={`bg-gray-200 ${this.state.box === v ? 'bg-blue-100' : '' } hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
                                         <div className="flex items-center">
                                             <BoxIcon className="mr-4 h-full w-8 text-gray-600" alt="box"></BoxIcon>
                                             <div className="text-gray-800">
@@ -148,7 +149,7 @@ class CardsPage extends Component {
                         </div>
                         <div onClick={() => this.setPopoverVisibility(true)} className="flex cursor-pointer justify-center items-center font-bold text-blue-500 text-xl">
                             <BoxIcon className="mr-1" alt="box"></BoxIcon>
-                            <span>Box 1</span>
+                            <span>Box {this.state.box}</span>
                             <img className="ml-1 transition-all" src={Down} alt="down"></img>
                         </div>
                         <div className="w-6">
