@@ -135,6 +135,22 @@ class CardsPage extends Component {
         });
     }
 
+    onCorrect() {
+        let card = this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]]
+        card.box = Math.min(card.box + 1, 4);
+        this.setSlideDirection(SlideDirection.RIGHT);
+        this.setFrontSideVisibility(true);
+        this.setSlideCounter(this.state.slideCounter + 1)
+    }
+
+    onFalse() {
+        let card = this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]]
+        card.box = Math.max(card.box - 1, 1);
+        this.setSlideDirection(SlideDirection.LEFT);
+        this.setFrontSideVisibility(true);
+        this.setSlideCounter(this.state.slideCounter + 1)
+    }
+
     render() {
         this.calculateCardIndices(this.state.slideCounter, this.state.cardIndices);
         const cardClasses = 'perspective-1500 transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
@@ -197,7 +213,7 @@ class CardsPage extends Component {
                             })}
                             {(this.state.slideCounter >= this.state.cards.length ?
                                 <div className="h-full p-12 flex flex-col justify-center items-center text-2xl text-gray-600 font-bold text-center">
-                                    Du hast alle Karten dieser Box korrekt beantwortet!
+                                    Du hast alle Karten dieser Box beantwortet!
                             </div>
                                 : null)}
                         </div>
@@ -205,10 +221,10 @@ class CardsPage extends Component {
                     {(this.state.slideCounter < this.state.cards.length ?
                         <div>
                             <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${this.state.isFrontSideVisible ? 'hidden' : ''}`}>
-                                <div onClick={() => { this.setSlideDirection(SlideDirection.LEFT); this.setFrontSideVisibility(true); this.setSlideCounter(this.state.slideCounter + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 border border-red-300 text-red-700 cursor-pointer">
+                                <div onClick={() => this.onFalse() } className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 border border-red-300 text-red-700 cursor-pointer">
                                     Falsch
                             </div>
-                                <div onClick={() => { this.setSlideDirection(SlideDirection.RIGHT); this.setFrontSideVisibility(true); this.setSlideCounter(this.state.slideCounter + 1) }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 border border-green-300 cursor-pointer">
+                                <div onClick={() => this.onCorrect()} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 border border-green-300 cursor-pointer">
                                     Richtig
                             </div>
                             </div>
@@ -219,9 +235,16 @@ class CardsPage extends Component {
                             </div>
                         </div>
                         :
-                        <div className="flex justify-between max-w-xl p-4 m-auto text-center">
-                            <div onClick={() => { }} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
-                                Nächste Box lernen
+                        <div className="flex flex-col justify-between max-w-xl p-4 m-auto text-center">
+                            {(this.filterCards(this.cards, this.state.box).length > 0 ?
+                            <div onClick={() => {this.setBox(this.state.box) }} className="mb-4 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                                Diese Box noch einmal lernen ({this.filterCards(this.cards, this.state.box).length} Karten)
+                            </div>
+                            :
+                            null
+                            )}
+                            <div onClick={() => this.setPopoverVisibility(true)} className="rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                                Eine andere Box lernen
                             </div>
                         </div>
                     )}
