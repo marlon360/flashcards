@@ -16,7 +16,7 @@ function NavigationHeader(props) {
                 </div>
                 </div>
 
-                <div className="cursor-pointer">
+                <div onClick={props.onPlusButtonClicked} className="cursor-pointer">
                     <img className="w-full h-auto" src={Plus} alt="Plus"></img>
                 </div>
             </div>

@@ -8,7 +8,7 @@ function CoursePage(props) {
 
     return (
         <div>
-            <NavigationHeader title="Kurse"></NavigationHeader>
+            <NavigationHeader onPlusButtonClicked={() => props.history.push('/new/course')} title="Kurse"></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 <Link className="w-full flex justify-center" to="/course/Mathematik">
                     <Course name="Mathematik" lessons="4" cards="12" percentage="12"></Course>
