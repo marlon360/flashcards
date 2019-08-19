@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import XmarkIcon from '../icons/xamrk.icon';
+import XmarkIcon from '../icons/xmark.icon';
 import BoxIcon from '../icons/box.icon';
 import Down from '../icons/down.svg';
 import PencilIcon from '../icons/pencil.icon';
