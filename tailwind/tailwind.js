@@ -82,6 +82,8 @@ module.exports = {
   variants: {
     gradients: ['responsive', 'hover'],
     translate: ['responsive', 'hover', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'disabled'],
+    cursor: ['responsive', 'hover', 'focus', 'disabled'],
   },
   plugins: [
     require('./plugins/gradients'),
