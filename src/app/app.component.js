@@ -11,24 +11,55 @@ function App() {
   const [courses, setCourses] = useState([
     {
       name: 'Mathematik',
-      lessonCount: 12,
-      cardCount: 23,
-      progress: 67
+      lessons: [
+        {
+          name: "Kapitel 1 - Kurven",
+          cards: [
+            {
+              front: "Was ist eine Kurve?",
+              back: "Eine Kurve ist eine Funktion.",
+              box: 1
+            },
+            {
+              front: "Was ist eine Fläche?",
+              back: "Eine Kurve ist eine Funktion.",
+              box: 1
+            },
+            {
+              front: "Was ist die Krümmung einer Kurve?",
+              back: "Eine Kurve ist eine Funktion.",
+              box: 1
+            },
+            {
+              front: "Was ist ein offenes Intervall?",
+              back: "Eine Kurve ist eine Funktion.",
+              box: 1
+            }
+          ]
+        }
+      ]
     },
     {
       name: 'Allgemeinwissen',
-      lessonCount: 20,
-      cardCount: 56,
-      progress: 43
+      lessons: [
+        {
+          name: "Hauptstädte",
+          cards: [
+            {
+              front: "Deutschland",
+              back: "Berlin",
+              box: 1
+            }
+          ]
+        }
+      ]
     }
   ]);
 
   const onNewCourse = (courseName) => {
     setCourses([...courses, {
       name: courseName,
-      lessonCount: 0,
-      cardCount: 0,
-      progress: 0
+      lessons: []
     }])
   }
   

@@ -11,6 +11,23 @@ function CoursePage(props) {
         "blue"
     ]
 
+    const cardCount = (course) => {
+        return course.lessons.reduce((acc,lesson) => acc + lesson.cards.length, 0);
+    }
+
+    const progress = (course) => {
+        const cards = cardCount(course);
+        const boxCount = 3;
+        let progress = 0;
+        course.lessons.forEach(lesson => {
+            lesson.cards.forEach((card) => {
+                let percentage = (card.box - 1) * (100 / boxCount);
+                progress += (percentage / cards)
+            })
+        });
+        return Math.floor(progress);
+    }
+
     return (
         <div>
             <NavigationHeader onPlusButtonClicked={() => props.history.push('/new/course')} title="Kurse"></NavigationHeader>
@@ -18,7 +35,7 @@ function CoursePage(props) {
                 {props.courses.map((course, index) => {
                     return (
                         <Link className="w-full flex justify-center" to="/course/Mathematik">
-                            <Course gradient={gradients[index % gradients.length]} {...course}></Course>
+                            <Course gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
                         </Link>
                     )
                 })}
