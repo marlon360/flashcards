@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import CoursePage from './pages/course.page';
 import LessonPage from './pages/lesson.page';
 import CardsPage from './pages/cards.page';
-import newCoursePage from './pages/newCourse.page';
+import NewCoursePage from './pages/new-course.page';
 
 function App() {
 
@@ -22,13 +22,22 @@ function App() {
       progress: 43
     }
   ]);
+
+  const onNewCourse = (courseName) => {
+    setCourses([...courses, {
+      name: courseName,
+      lessonCount: 0,
+      cardCount: 0,
+      progress: 0
+    }])
+  }
   
   return (
     <Router>
         <div>
-            <Route exact path="/" render={(props) => { return (<CoursePage {...props} courses={courses}/>)}} />
-            <Route path="/courses" render={(props) => { return (<CoursePage {...props} courses={courses}/>)}} />
-            <Route path="/new/course" component={newCoursePage} />
+            <Route exact path="/" render={(props) => <CoursePage {...props} courses={courses}/>} />
+            <Route path="/courses" render={(props) => <CoursePage {...props} courses={courses}/> } />
+            <Route path="/new/course" render={(props) => <NewCoursePage {...props} onNewCourse={onNewCourse}/>} />
             <Route path="/course/:course" component={LessonPage} />
             <Route path="/cards" component={CardsPage} />
         </div>
