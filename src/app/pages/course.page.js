@@ -1,8 +1,13 @@
 import React from 'react';
+import { connect } from "react-redux";
 import NavigationHeader from './../components/navigation-header.component';
 import Course from './../components/course.component';
 
-function CoursePage(props) {
+const mapStateToProps = state => {
+    return { courses: state.courses };
+};
+
+function ConnectedCoursePage(props) {
 
     const gradients = [
         "orange",
@@ -10,7 +15,7 @@ function CoursePage(props) {
     ]
 
     const cardCount = (course) => {
-        return course.lessons.reduce((acc,lesson) => acc + lesson.cards.length, 0);
+        return course.lessons.reduce((acc, lesson) => acc + lesson.cards.length, 0);
     }
 
     const progress = (course) => {
@@ -27,9 +32,9 @@ function CoursePage(props) {
     }
 
     const onSelectedCourse = (course) => {
-        props.history.push('/course/'+course.name);
+        props.history.push('/course/' + course.name);
         props.onSelectedCourse(course);
-    }; 
+    };
 
     return (
         <div>
@@ -46,5 +51,7 @@ function CoursePage(props) {
         </div>
     );
 }
+
+const CoursePage = connect(mapStateToProps)(ConnectedCoursePage);
 
 export default CoursePage;
