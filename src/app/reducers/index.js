@@ -1,4 +1,4 @@
-import { uuidv1 } from 'uuid';
+import uuidv1 from 'uuid';
 import { ADD_COURSE } from "../constants/action-types";
 
 const initialState = {
@@ -62,11 +62,13 @@ const initialState = {
 
 function rootReducer(state = initialState, action) {
     if (action.type === ADD_COURSE) {
-        return [...state.courses,{
-            name: action.payload.name,
-            lessons: [],
-            id: uuidv1()
-        }];
+        return {
+            courses: [...state.courses,{
+                name: action.payload.name,
+                lessons: [],
+                id: "678"
+            }]
+        };
     }
     return state;
 }

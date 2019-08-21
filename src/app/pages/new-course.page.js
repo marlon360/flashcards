@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
+import { connect } from "react-redux";
+
 import XmarkIcon from '../icons/xmark.icon';
 
 import { Link } from 'react-router-dom';
+import { addCourse } from '../actions';
+
+function mapDispatchToProps(dispatch) {
+    return {
+        addCourse: course => dispatch(addCourse(course))
+    };
+}
 
 function NewCoursePage(props) {
     const [courseInput, setCourseInput] = useState('');
@@ -15,7 +24,9 @@ function NewCoursePage(props) {
     }
 
     const onSubmit = () => {
-        props.onNewCourse(courseInput);
+        props.addCourse({
+            name: courseInput
+        });
         props.history.push('/courses')
     }
 
@@ -40,4 +51,4 @@ function NewCoursePage(props) {
     );
 }
 
-export default NewCoursePage;
+export default connect(null, mapDispatchToProps)(NewCoursePage);
