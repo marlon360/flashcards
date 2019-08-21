@@ -18,7 +18,12 @@ function Lesson(props) {
                 </div>
             </div>
             <div className={`${open ? 'h-44' : 'h-0'} transition-all transition-500 overflow-auto text-white font-bold text-xl`}>
-                <Link className="w-full flex justify-center" to="/cards">
+                <Link className="w-full flex justify-center" to={{
+                    pathname: '/cards',
+                    state: {
+                        course: props.course
+                    }
+                }}>
                 <div className="bg-gradient-120-green-blue px-6 py-4 rounded-xl shadow-md w-full max-w-lg mt-5 flex">
                     <div className="w-12">
                         <img src={Play} alt="Start"></img>

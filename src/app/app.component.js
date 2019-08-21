@@ -36,6 +36,10 @@ function App() {
               box: 1
             }
           ]
+        },
+        {
+          name: "Kapitel 2 - Flächen",
+          cards: []
         }
       ]
     },
@@ -56,20 +60,26 @@ function App() {
     }
   ]);
 
+  const [selectedCourse, setSelectedCourse] = useState({});
+
   const onNewCourse = (courseName) => {
     setCourses([...courses, {
       name: courseName,
       lessons: []
     }])
   }
+
+  const onSelectedCourse = (course) => {
+    setSelectedCourse(course);
+  };
   
   return (
     <Router>
         <div>
-            <Route exact path="/" render={(props) => <CoursePage {...props} courses={courses}/>} />
-            <Route path="/courses" render={(props) => <CoursePage {...props} courses={courses}/> } />
+            <Route exact path="/" render={(props) => <CoursePage {...props} courses={courses} onSelectedCourse={onSelectedCourse}/>} />
+            <Route path="/courses" render={(props) => <CoursePage {...props} courses={courses} onSelectedCourse={onSelectedCourse}/> } />
             <Route path="/new/course" render={(props) => <NewCoursePage {...props} onNewCourse={onNewCourse}/>} />
-            <Route path="/course/:course" component={LessonPage} />
+            <Route path="/course/:course" render={(props) => <LessonPage {...props} course={selectedCourse} />} />
             <Route path="/cards" component={CardsPage} />
         </div>
     </Router>
