@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
+
 import XmarkIcon from '../icons/xmark.icon';
 import BoxIcon from '../icons/box.icon';
 import Down from '../icons/down.svg';
@@ -11,35 +13,25 @@ const SlideDirection = {
     RIGHT: 2,
 };
 
+const mapStateToProps = state => {
+    return { courses: state.courses };
+};
+
 class CardsPage extends Component {
 
-    cards = [
-        {
-            front: "Was ist eine Kurve?",
-            back: "Eine Kurve ist eine Funktion.",
-            box: 1
-        },
-        {
-            front: "Was ist eine Fläche?",
-            back: "Eine Kurve ist eine Funktion.",
-            box: 1
-        },
-        {
-            front: "Was ist ein offenes Intervall?",
-            back: "Eine Kurve ist eine Funktion.",
-            box: 2
-        },
-        {
-            front: "Was ist die Krümmung einer Kurve?",
-            back: "Eine Kurve ist eine Funktion.",
-            box: 3
-        }
-    ]
+    cards = [];
 
     constructor(props, context) {
         super(props, context);
 
+        const { courseid, lessonid } = props.match.params;
+
+        const course = this.findCourse(props.courses, courseid);
+        const lesson = this.findLesson(course, lessonid);
+        this.cards = lesson.cards;
+
         this.state = {
+            courseid: course.id,
             slideDirection: SlideDirection.LEFT,
             slideCounter: 0,
             isFrontSideVisible: true,
@@ -49,6 +41,24 @@ class CardsPage extends Component {
             box: 1
         }
 
+    }
+
+    findCourse(courses, id) {
+        for (const course of courses) {
+            if (course.id === id) {
+                return course;
+            }
+        }
+        return null;
+    }
+
+    findLesson(course, id) {
+        for (const lesson of course.lessons) {
+            if (lesson.id === id) {
+                return lesson;
+            }
+        }
+        return null;
     }
 
     filterCards(cards, box) {
@@ -181,7 +191,7 @@ class CardsPage extends Component {
                     </div>
                     <div className="px-6 pb-4 pt-8 w-full flex justify-between">
                         <div>
-                            <Link to="/course/Mathematik">
+                            <Link to={`/course/${this.state.courseid}`}>
                                 <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
                             </Link>
                         </div>
@@ -254,4 +264,4 @@ class CardsPage extends Component {
     }
 }
 
-export default CardsPage;
+export default connect(mapStateToProps)(CardsPage);;

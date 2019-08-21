@@ -32,8 +32,7 @@ function CoursePage(props) {
     }
 
     const onSelectedCourse = (course) => {
-        props.history.push('/course/' + course.name);
-        props.onSelectedCourse(course);
+        props.history.push('/course/' + course.id);
     };
 
     return (
@@ -42,7 +41,7 @@ function CoursePage(props) {
             <div className="p-4 flex flex-col items-center justify-center">
                 {props.courses.map((course, index) => {
                     return (
-                        <div key={index.toString()} onClick={() => onSelectedCourse(course)} className="w-full flex justify-center cursor-pointer">
+                        <div key={course.id.toString()} onClick={() => onSelectedCourse(course)} className="w-full flex justify-center cursor-pointer">
                             <Course gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
                         </div>
                     )

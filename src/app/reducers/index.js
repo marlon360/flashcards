@@ -1,12 +1,15 @@
+import { uuidv1 } from 'uuid';
 import { ADD_COURSE } from "../constants/action-types";
 
 const initialState = {
     courses: [
         {
             name: 'Mathematik',
+            id: "1",
             lessons: [
                 {
                     name: "Kapitel 1 - Kurven",
+                    id: "1",
                     cards: [
                         {
                             front: "Was ist eine Kurve?",
@@ -32,15 +35,18 @@ const initialState = {
                 },
                 {
                     name: "Kapitel 2 - Flächen",
+                    id: "2",
                     cards: []
                 }
             ]
         },
         {
             name: 'Allgemeinwissen',
+            id: "2",
             lessons: [
                 {
                     name: "Hauptstädte",
+                    id: "1",
                     cards: [
                         {
                             front: "Deutschland",
@@ -56,7 +62,11 @@ const initialState = {
 
 function rootReducer(state = initialState, action) {
     if (action.type === ADD_COURSE) {
-        return [...state.courses, action.payload];
+        return [...state.courses,{
+            name: action.payload.name,
+            lessons: [],
+            id: uuidv1()
+        }];
     }
     return state;
 }
