@@ -7,7 +7,7 @@ const mapStateToProps = state => {
     return { courses: state.courses };
 };
 
-function ConnectedCoursePage(props) {
+function CoursePage(props) {
 
     const gradients = [
         "orange",
@@ -52,6 +52,4 @@ function ConnectedCoursePage(props) {
     );
 }
 
-const CoursePage = connect(mapStateToProps)(ConnectedCoursePage);
-
-export default CoursePage;
+export default connect(mapStateToProps)(CoursePage);
