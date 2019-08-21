@@ -66,7 +66,7 @@ function rootReducer(state = initialState, action) {
             courses: [...state.courses,{
                 name: action.payload.name,
                 lessons: [],
-                id: "678"
+                id: uuidv1()
             }]
         };
     }
