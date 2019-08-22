@@ -61,11 +61,7 @@ export const lessonSelector = createSelector(
         const { ref } = lesson;
         return {
             ...ref,
-            cards: lesson.cards.toRefArray().map(card => {
-                return {
-                    ...card
-                }
-            })
+            cards: lesson.cards.toRefArray().map(card => {return {...card}})
         }
     }
 )

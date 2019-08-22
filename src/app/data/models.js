@@ -1,7 +1,18 @@
 import { Model, attr, many, ORM } from "redux-orm";
-import { CREATE_COURSE } from "./action-types";
+import { CREATE_COURSE, CHANGE_BOX } from "./action-types";
 
-export class Card extends Model { }
+export class Card extends Model {
+    static reducer(action, Course, session) {
+        const { payload, type } = action;
+        switch (type) {
+            case CHANGE_BOX:
+                Course.withId(payload.id).update(payload);
+                break;
+            default:
+                return null;
+        }
+    }
+}
 Card.modelName = "Card";
 Card.fields = {
     front: attr(),
@@ -27,7 +38,7 @@ export class Course extends Model {
             default:
                 return null;
         }
-        
+
     }
 }
 Course.modelName = "Course";

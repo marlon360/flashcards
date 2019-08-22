@@ -8,6 +8,7 @@ import PencilIcon from '../icons/pencil.icon';
 
 import { Link } from 'react-router-dom';
 import { lessonSelector } from '../data/selectors';
+import { changeBox } from '../data/actions';
 
 const SlideDirection = {
     LEFT: 1,
@@ -19,6 +20,12 @@ const mapStateToProps = (state, props) => {
         lesson: lessonSelector(state, props.match.params.lessonid)
     };
 };
+
+function mapDispatchToProps(dispatch) {
+    return {
+        changeBox: payload => dispatch(changeBox(payload))
+    };
+}
 
 class CardsPage extends Component {
 
@@ -36,7 +43,7 @@ class CardsPage extends Component {
             isFrontSideVisible: true,
             isPopoverVisible: false,
             cardIndices: [0, 1, 2, 3, 4],
-            cards: this.filterCards(this.cards, 1),
+            cards: this.filterCards(props.lesson.cards, 1),
             box: 1
         }
 
@@ -128,6 +135,10 @@ class CardsPage extends Component {
 
     onCorrect() {
         let card = this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]]
+        this.props.changeBox({
+            id: card.id,
+            box: Math.min(card.box + 1, 4)
+        })
         card.box = Math.min(card.box + 1, 4);
         this.setSlideDirection(SlideDirection.RIGHT);
         this.setFrontSideVisibility(true);
@@ -136,6 +147,10 @@ class CardsPage extends Component {
 
     onFalse() {
         let card = this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]]
+        this.props.changeBox({
+            id: card.id,
+            box: Math.max(card.box - 1, 1)
+        })
         card.box = Math.max(card.box - 1, 1);
         this.setSlideDirection(SlideDirection.LEFT);
         this.setFrontSideVisibility(true);
@@ -156,7 +171,7 @@ class CardsPage extends Component {
                             </div>
                             {[1, 2, 3, 4].map((v, i) => {
                                 return (
-                                    <div onClick={() => this.setBox(v)} key={i.toString()} className={`bg-gray-200 cursor-pointer ${this.state.box === v ? 'bg-blue-100' : '' } hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
+                                    <div onClick={() => this.setBox(v)} key={i.toString()} className={`bg-gray-200 cursor-pointer ${this.state.box === v ? 'bg-blue-100' : ''} hover:bg-blue-100 p-4 rounded-xl ${i !== 3 ? 'mb-4' : ''}`}>
                                         <div className="flex items-center">
                                             <BoxIcon className="mr-4 h-full w-8 text-gray-600" alt="box"></BoxIcon>
                                             <div className="text-gray-800">
@@ -212,7 +227,7 @@ class CardsPage extends Component {
                     {(this.state.slideCounter < this.state.cards.length ?
                         <div>
                             <div className={`flex justify-between max-w-xl p-4 m-auto text-center ${this.state.isFrontSideVisible ? 'hidden' : ''}`}>
-                                <div onClick={() => this.onFalse() } className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 border border-red-300 text-red-700 cursor-pointer">
+                                <div onClick={() => this.onFalse()} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-red-200 border border-red-300 text-red-700 cursor-pointer">
                                     Falsch
                             </div>
                                 <div onClick={() => this.onCorrect()} className="flex-1 rounded-xl mx-2 px-2 py-4 bg-green-200 text-green-700 border border-green-300 cursor-pointer">
@@ -228,11 +243,11 @@ class CardsPage extends Component {
                         :
                         <div className="flex flex-col justify-between max-w-xl p-4 m-auto text-center">
                             {(this.filterCards(this.cards, this.state.box).length > 0 ?
-                            <div onClick={() => {this.setBox(this.state.box) }} className="mb-4 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
-                                Diese Box noch einmal lernen ({this.filterCards(this.cards, this.state.box).length} Karten)
+                                <div onClick={() => { this.setBox(this.state.box) }} className="mb-4 rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
+                                    Diese Box noch einmal lernen ({this.filterCards(this.cards, this.state.box).length} Karten)
                             </div>
-                            :
-                            null
+                                :
+                                null
                             )}
                             <div onClick={() => this.setPopoverVisibility(true)} className="rounded-xl mx-2 px-2 py-4 bg-blue-200 text-blue-700 cursor-pointer">
                                 Eine andere Box lernen
@@ -245,4 +260,4 @@ class CardsPage extends Component {
     }
 }
 
-export default connect(mapStateToProps)(CardsPage);;
+export default connect(mapStateToProps, mapDispatchToProps)(CardsPage);;

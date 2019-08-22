@@ -12,9 +12,14 @@ export default function bootstrap(schema) {
 
     // Start by creating entities whose props are not dependent
     // on others.
-    const card = Card.create({
+    const card1 = Card.create({
         front: 'Frage 1',
-        back: 'Frage 2',
+        back: 'Antwort 1',
+        box: 1
+    });
+    const card2 = Card.create({
+        front: 'Frage 2',
+        back: 'Antwort 2',
         box: 1
     });
 
@@ -27,7 +32,7 @@ export default function bootstrap(schema) {
     // Todo's for `user`
     const kapitel1 = Lesson.create({
         name: 'Kapitel 1',
-        cards: [card], // We could also pass ids instead of the Tag instances.
+        cards: [card1, card2], // We could also pass ids instead of the Tag instances.
     });
 
     const cities = Lesson.create({
