@@ -2,9 +2,10 @@ import React from 'react';
 import { connect } from "react-redux";
 import NavigationHeader from './../components/navigation-header.component';
 import Course from './../components/course.component';
+import { allCoursesSelector } from '../data/selectors';
 
 const mapStateToProps = state => {
-    return { courses: state.courses };
+    return { courses: allCoursesSelector(state) };
 };
 
 function CoursePage(props) {
@@ -42,7 +43,7 @@ function CoursePage(props) {
                 {props.courses.map((course, index) => {
                     return (
                         <div key={course.id.toString()} onClick={() => onSelectedCourse(course)} className="w-full flex justify-center cursor-pointer">
-                            <Course gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
+                            <Course gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course) }></Course>
                         </div>
                     )
                 })}

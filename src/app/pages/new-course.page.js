@@ -4,11 +4,11 @@ import { connect } from "react-redux";
 import XmarkIcon from '../icons/xmark.icon';
 
 import { Link } from 'react-router-dom';
-import { addCourse } from '../actions';
+import { createCourse } from '../data/actions';
 
 function mapDispatchToProps(dispatch) {
     return {
-        addCourse: course => dispatch(addCourse(course))
+        addCourse: course => dispatch(createCourse(course))
     };
 }
 

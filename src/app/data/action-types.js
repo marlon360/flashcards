@@ -1,0 +1,3 @@
+export const CREATE_COURSE = "CREATE_COURSE";
+export const SELECT_COURSE = "SELECT_COURSE";
+export const CHANGE_BOX = "CHANGE_BOX";

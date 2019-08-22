@@ -2,12 +2,11 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from "react-redux";
 
-import store from "./app/store/index";
+import store from "./app/data/store";
 import * as serviceWorker from './serviceWorker';
 
 import './css/tailwind.css';
 import App from './app/app.component'
-
 
 
 render(

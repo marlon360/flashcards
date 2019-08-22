@@ -7,14 +7,17 @@ import Down from '../icons/down.svg';
 import PencilIcon from '../icons/pencil.icon';
 
 import { Link } from 'react-router-dom';
+import { lessonSelector } from '../data/selectors';
 
 const SlideDirection = {
     LEFT: 1,
     RIGHT: 2,
 };
 
-const mapStateToProps = state => {
-    return { courses: state.courses };
+const mapStateToProps = (state, props) => {
+    return {
+        lesson: lessonSelector(state, props.match.params.lessonid)
+    };
 };
 
 class CardsPage extends Component {
@@ -24,14 +27,10 @@ class CardsPage extends Component {
     constructor(props, context) {
         super(props, context);
 
-        const { courseid, lessonid } = props.match.params;
-
-        const course = this.findCourse(props.courses, courseid);
-        const lesson = this.findLesson(course, lessonid);
-        this.cards = lesson.cards;
+        this.cards = props.lesson.cards;
 
         this.state = {
-            courseid: course.id,
+            courseid: props.match.params.courseid,
             slideDirection: SlideDirection.LEFT,
             slideCounter: 0,
             isFrontSideVisible: true,
@@ -41,24 +40,6 @@ class CardsPage extends Component {
             box: 1
         }
 
-    }
-
-    findCourse(courses, id) {
-        for (const course of courses) {
-            if (course.id === id) {
-                return course;
-            }
-        }
-        return null;
-    }
-
-    findLesson(course, id) {
-        for (const lesson of course.lessons) {
-            if (lesson.id === id) {
-                return lesson;
-            }
-        }
-        return null;
     }
 
     filterCards(cards, box) {
