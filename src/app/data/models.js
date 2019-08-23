@@ -1,5 +1,5 @@
-import { Model, attr, many, ORM } from "redux-orm";
-import { CREATE_COURSE, CHANGE_BOX } from "./action-types";
+import { Model, attr, fk, ORM } from "redux-orm";
+import { CREATE_COURSE, CHANGE_BOX, CREATE_LESSON } from "./action-types";
 
 export class Card extends Model {
     static reducer(action, Course, session) {
@@ -15,16 +15,30 @@ export class Card extends Model {
 }
 Card.modelName = "Card";
 Card.fields = {
+    lesson: fk("Lesson", "cards"),
     front: attr(),
     back: attr(),
     box: attr()
 };
 
-export class Lesson extends Model { }
+export class Lesson extends Model {
+    static reducer(action, Lesson, session) {
+        const { payload, type } = action;
+        switch (type) {
+            case CREATE_LESSON:
+                const props = Object.assign({}, payload);
+                Lesson.create(props);
+                break;
+            default:
+                return null;
+        }
+
+    }
+}
 Lesson.modelName = "Lesson";
 Lesson.fields = {
     name: attr(),
-    cards: many("Card"),
+    course: fk("Course", "lessons")
 };
 
 export class Course extends Model {
@@ -44,7 +58,6 @@ export class Course extends Model {
 Course.modelName = "Course";
 Course.fields = {
     name: attr(),
-    lessons: many("Lesson")
 }
 
 export const orm = new ORM();

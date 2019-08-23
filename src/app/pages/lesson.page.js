@@ -29,7 +29,7 @@ function LessonPage(props) {
 
     return (
         <div>
-            <NavigationHeader backButton={"Kurse"} onBackButtonClicked={() => props.history.push('/courses')} title={props.course.name} ></NavigationHeader>
+            <NavigationHeader onPlusButtonClicked={() => props.history.push('/course/'+props.course.id+'/new')} backButton={"Kurse"} onBackButtonClicked={() => props.history.push('/courses')} title={props.course.name} ></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 {props.course && props.course.lessons.map((lesson, index) => {
                     return (

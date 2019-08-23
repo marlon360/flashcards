@@ -10,47 +10,46 @@ export default function bootstrap(schema) {
     // Session instance.
     const { Course, Lesson, Card } = session;
 
-    // Start by creating entities whose props are not dependent
-    // on others.
-    const card1 = Card.create({
-        front: 'Frage 1',
-        back: 'Antwort 1',
-        box: 1
-    });
-    const card2 = Card.create({
-        front: 'Frage 2',
-        back: 'Antwort 2',
-        box: 1
+    const math = Course.create({
+        name: 'Mathematik'
     });
 
-    const ger = Card.create({
-        front: 'Deutschland',
-        back: 'Berlin',
-        box: 1
+    const allg = Course.create({
+        name: 'Allgemeinwissen'
     });
 
     // Todo's for `user`
     const kapitel1 = Lesson.create({
         name: 'Kapitel 1',
-        cards: [card1, card2], // We could also pass ids instead of the Tag instances.
+        course: math, // We could also pass ids instead of the Tag instances.
     });
 
     const cities = Lesson.create({
         name: 'Hauptstädte',
-        cards: [ger], // We could also pass ids instead of the Tag instances.
+        course: allg, // We could also pass ids instead of the Tag instances.
+    });
+
+    const card1 = Card.create({
+        front: 'Frage 1',
+        back: 'Antwort 1',
+        box: 1,
+        lesson: kapitel1
+    });
+    const card2 = Card.create({
+        front: 'Frage 2',
+        back: 'Antwort 2',
+        box: 1,
+        lesson: kapitel1
+    });
+
+    const ger = Card.create({
+        front: 'Deutschland',
+        back: 'Berlin',
+        box: 1,
+        lesson: cities
     });
 
 
-    // Todo's for `otherUser`
-    Course.create({
-        name: 'Mathematik',
-        lessons: [kapitel1],
-    });
-
-    Course.create({
-        name: 'Allgemeinwissen',
-        lessons: [cities],
-    });
 
     // Return the whole Redux initial state.
     return {
