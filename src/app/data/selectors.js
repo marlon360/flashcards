@@ -65,3 +65,16 @@ export const lessonSelector = createSelector(
         }
     }
 )
+
+export const cardSelector = createSelector(
+    orm,
+    dbStateSelector,
+    (state, cardId) => cardId,
+    (session, cardId) => {
+        const card = session.Card.withId(cardId);
+        const { ref } = card;
+        return {
+            ...ref
+        }
+    }
+)

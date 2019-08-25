@@ -1,12 +1,15 @@
 import { Model, attr, fk, ORM } from "redux-orm";
-import { CREATE_COURSE, CHANGE_BOX, CREATE_LESSON } from "./action-types";
+import { CREATE_COURSE, CHANGE_BOX, CREATE_LESSON, UPDATE_CARD } from "./action-types";
 
 export class Card extends Model {
-    static reducer(action, Course, session) {
+    static reducer(action, Card, session) {
         const { payload, type } = action;
         switch (type) {
             case CHANGE_BOX:
-                Course.withId(payload.id).update(payload);
+                Card.withId(payload.id).update(payload);
+                break;
+            case UPDATE_CARD:
+                Card.withId(payload.id).update(payload);
                 break;
             default:
                 return null;

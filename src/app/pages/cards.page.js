@@ -38,6 +38,7 @@ class CardsPage extends Component {
 
         this.state = {
             courseid: props.match.params.courseid,
+            lessonid: props.match.params.lessonid,
             slideDirection: SlideDirection.LEFT,
             slideCounter: 0,
             isFrontSideVisible: true,
@@ -133,6 +134,10 @@ class CardsPage extends Component {
         });
     }
 
+    getCurrentCard() {
+        return this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]];
+    }
+
     onCorrect() {
         let card = this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]]
         this.props.changeBox({
@@ -197,7 +202,9 @@ class CardsPage extends Component {
                             <img className="ml-1 transition-all" src={Down} alt="down"></img>
                         </div>
                         <div className="w-6">
-                            <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
+                            <Link to={`/cards/${this.state.courseid}/${this.state.lessonid}/${this.getCurrentCard().id}/edit`}>
+                                <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
+                            </Link>
                         </div>
                     </div>
                     <div className="px-4 h-6/10">

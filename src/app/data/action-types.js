@@ -1,4 +1,5 @@
 export const CREATE_COURSE = "CREATE_COURSE";
 export const SELECT_COURSE = "SELECT_COURSE";
 export const CHANGE_BOX = "CHANGE_BOX";
+export const UPDATE_CARD = "UPDATE_CARD";
 export const CREATE_LESSON = "CREATE_LESSON";
