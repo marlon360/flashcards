@@ -27,13 +27,17 @@ function LessonPage(props) {
         props.history.push('/cards/' + props.course.id + "/" + lesson.id);
     }
 
+    const onEdit = (lesson) => {
+        props.history.push('/course/' + props.course.id + "/" + lesson.id + "/cards");
+    }
+
     return (
         <div>
             <NavigationHeader onPlusButtonClicked={() => props.history.push('/course/'+props.course.id+'/new')} backButton={"Kurse"} onBackButtonClicked={() => props.history.push('/courses')} title={props.course.name} ></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 {props.course && props.course.lessons.map((lesson, index) => {
                     return (
-                        <Lesson key={index.toString()} onLearn={() => onLearn(lesson)} name={lesson.name} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
+                        <Lesson key={index.toString()} onLearn={() => onLearn(lesson)} name={lesson.name} onEdit={() => onEdit(lesson)} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
                     )
                 })}
             </div>

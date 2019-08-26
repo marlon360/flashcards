@@ -29,20 +29,32 @@ export default function bootstrap(schema) {
         course: allg, // We could also pass ids instead of the Tag instances.
     });
 
-    const card1 = Card.create({
-        front: 'Frage 1',
+    Card.create({
+        front: 'Was ist eine Frage?',
         back: 'Antwort 1',
         box: 1,
         lesson: kapitel1
     });
-    const card2 = Card.create({
-        front: 'Frage 2',
+    Card.create({
+        front: 'Was ist der Sinn der Menschheit?',
         back: 'Antwort 2',
         box: 1,
         lesson: kapitel1
     });
+    Card.create({
+        front: 'Warum ist die Banane krumm?',
+        back: 'Antwort 1',
+        box: 1,
+        lesson: kapitel1
+    });
+    Card.create({
+        front: 'Wie groß ist der Mond?',
+        back: 'Antwort 1',
+        box: 1,
+        lesson: kapitel1
+    });
 
-    const ger = Card.create({
+    Card.create({
         front: 'Deutschland',
         back: 'Berlin',
         box: 1,

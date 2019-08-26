@@ -58,9 +58,14 @@ export const lessonSelector = createSelector(
     (state, lessonId) => lessonId,
     (session, lessonId) => {
         const lesson = session.Lesson.withId(lessonId);
+        const course = session.Course.withId(lesson.ref.course);
+        const courseRef  = course.ref;
         const { ref } = lesson;
         return {
             ...ref,
+            course: {
+                ...courseRef
+            },
             cards: lesson.cards.toRefArray().map(card => { return { ...card } })
         }
     }
