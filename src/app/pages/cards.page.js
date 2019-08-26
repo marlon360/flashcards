@@ -135,7 +135,10 @@ class CardsPage extends Component {
     }
 
     getCurrentCard() {
-        return this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]];
+        if (this.state.cardIndices[this.mapMove(this.state.slideCounter)] < this.state.cards.length) {
+            return this.state.cards[this.state.cardIndices[this.mapMove(this.state.slideCounter)]];
+        }
+        return null;
     }
 
     onCorrect() {
@@ -202,9 +205,11 @@ class CardsPage extends Component {
                             <img className="ml-1 transition-all" src={Down} alt="down"></img>
                         </div>
                         <div className="w-6">
+                            {( this.getCurrentCard() !== null ? 
                             <Link to={`/cards/${this.state.courseid}/${this.state.lessonid}/${this.getCurrentCard().id}/edit`}>
                                 <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
                             </Link>
+                            : null )}
                         </div>
                     </div>
                     <div className="px-4 h-6/10">
