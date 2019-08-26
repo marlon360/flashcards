@@ -3,9 +3,8 @@ import { connect } from "react-redux";
 
 import XmarkIcon from '../icons/xmark.icon';
 
-import { Link } from 'react-router-dom';
 import { cardSelector } from '../data/selectors';
-import { updateCard } from '../data/actions';
+import { updateCard, deleteCard } from '../data/actions';
 
 
 const CardSide = {
@@ -21,7 +20,8 @@ const mapStateToProps = (state, props) => {
 
 function mapDispatchToProps(dispatch) {
     return {
-        updateCard: payload => dispatch(updateCard(payload))
+        updateCard: payload => dispatch(updateCard(payload)),
+        deleteCard: payload => dispatch(deleteCard(payload))
     };
 }
 
@@ -62,6 +62,15 @@ function EditCardPage(props) {
         }
     }
 
+    const onDelete = () => {
+        if (window.confirm("Diese Karte wirklich löschen?")) {
+            props.deleteCard({
+                id: props.card.id
+            });
+            props.history.push(`/cards/${courseid}/${lessonid}`);
+        }
+    }
+
     return (
         <div className="flex flex-col h-screen">
             <div className="px-6 pb-4 pt-8 w-full flex justify-between">
@@ -89,7 +98,7 @@ function EditCardPage(props) {
                         </div>
                     </div>
                     <div className="w-full px-4">
-                        <div className="bg-red-400 text-white rounded max-w-lg mx-auto w-full text-center px-8 py-4 m-8">
+                        <div onClick={() => onDelete()} className="bg-red-400 text-white rounded max-w-lg mx-auto w-full text-center px-8 py-4 m-8">
                             Löschen
                         </div>
                     </div>

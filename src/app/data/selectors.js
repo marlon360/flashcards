@@ -61,7 +61,7 @@ export const lessonSelector = createSelector(
         const { ref } = lesson;
         return {
             ...ref,
-            cards: lesson.cards.toRefArray().map(card => {return {...card}})
+            cards: lesson.cards.toRefArray().map(card => { return { ...card } })
         }
     }
 )
@@ -71,10 +71,14 @@ export const cardSelector = createSelector(
     dbStateSelector,
     (state, cardId) => cardId,
     (session, cardId) => {
-        const card = session.Card.withId(cardId);
-        const { ref } = card;
-        return {
-            ...ref
+        if (session.Card.idExists(cardId)) {
+            const card = session.Card.withId(cardId);
+            const { ref } = card;
+            return {
+                ...ref
+            }
+        } else {
+            return {}
         }
     }
 )
