@@ -17,13 +17,13 @@ function CardListPage(props) {
     }
 
     const onAddCard = () => {
-        
+        props.history.push(`/course/${props.lesson.course.id}/${props.lesson.id}/cards/new`)
     }
 
     return (
         <div>
             <NavigationHeader onPlusButtonClicked={() => onAddCard()} backButton={props.lesson.course.name} onBackButtonClicked={() => props.history.push(`/course/${props.lesson.course.id}`)} title={props.lesson.name} ></NavigationHeader>
-            <div className="p-2 flex justify-center flex-wrap w-full max-w-xl m-auto">
+            <div className="p-2 flex flex-wrap w-full max-w-xl m-auto">
                 {props.lesson.cards.map((card, index) => {
                     return (
                         <div key={index.toString()} className="w-1/2 p-2">

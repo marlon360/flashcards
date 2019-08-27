@@ -8,6 +8,7 @@ import NewCoursePage from './pages/new-course.page';
 import NewLessonPage from './pages/new-lesson.page';
 import EditCardPage from './pages/edit-card.page';
 import CardListPage from './pages/card-list.page';
+import newCardPage from './pages/new-card.page';
 
 function App() {
   
@@ -19,7 +20,8 @@ function App() {
             <Route path="/new/course" render={(props) => <NewCoursePage {...props}/>} />
             <Route path="/course/:id/new" render={(props) => <NewLessonPage {...props}/>} />
             <Route exact path="/course/:id" render={(props) => <LessonPage {...props}/>} />
-            <Route path="/course/:courseid/:lessonid/cards" component={CardListPage} />
+            <Route exact path="/course/:courseid/:lessonid/cards" component={CardListPage} />
+            <Route path="/course/:courseid/:lessonid/cards/new" component={newCardPage} />
             <Route path="/cards/:courseid/:lessonid/:cardid/edit" component={EditCardPage} />
             <Route exact path="/cards/:courseid/:lessonid" component={CardsPage} />
         </div>
