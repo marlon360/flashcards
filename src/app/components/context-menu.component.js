@@ -42,10 +42,18 @@ function ContextMenuComponent(props) {
         setEnabled(true);
     }
 
+    const onClick = () => {
+        if (!enabled) {
+            if (props.children.props.onClick) {
+                props.children.props.onClick();
+            }
+        }
+    }
+
 
     return (
         <React.Fragment>
-            <div ref={cardRef} {...longPress} onContextMenu={(ev) => onEnable(ev)} className={`${props.className} ${enabled ? 'z-20' : ''} relative`}>
+            <div {...longPress} onClick={() => onClick()} ref={cardRef} onContextMenu={(ev) => onEnable(ev)} className={`${props.className} ${enabled ? 'z-20' : ''} relative`}>
                 {props.children}
                     <div className={`absolute ${enabled ? '' : 'hidden'} bg-white-80 left-0 rounded-xl z-50 ${menuPosition === MenuPosition.TOP ? '-top-10 -translate-y-full' : '-bottom-10 translate-y-full'}`}>
                         {props.actions && props.actions.map((action, index) => {
