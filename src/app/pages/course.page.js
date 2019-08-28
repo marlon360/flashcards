@@ -5,10 +5,17 @@ import Course from './../components/course.component';
 import { allCoursesSelector } from '../data/selectors';
 import ContextMenuComponent from '../components/context-menu.component';
 import XmarkIcon from '../icons/xmark.icon';
+import { deleteCourse } from '../data/actions';
 
 const mapStateToProps = state => {
     return { courses: allCoursesSelector(state) };
 };
+
+function mapDispatchToProps(dispatch) {
+    return {
+        deleteCourse: payload => dispatch(deleteCourse(payload)),
+    };
+}
 
 function CoursePage(props) {
 
@@ -47,7 +54,7 @@ function CoursePage(props) {
                         <div key={course.id.toString()} className="w-full flex justify-center cursor-pointer max-w-lg mb-12">
                             <ContextMenuComponent actions={[
                                 {name: "Umbenennen"},
-                                {name: "Löschen"},
+                                {name: "Löschen", onClick: () => props.deleteCourse({id: course.id})},
                             ]} className="w-full flex justify-center">
                                 <Course onClick={() => onSelectedCourse(course)} gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course) }></Course>
                             </ContextMenuComponent>
@@ -59,4 +66,4 @@ function CoursePage(props) {
     );
 }
 
-export default connect(mapStateToProps)(CoursePage);
+export default connect(mapStateToProps, mapDispatchToProps)(CoursePage);

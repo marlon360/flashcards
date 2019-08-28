@@ -1,7 +1,11 @@
-import { CHANGE_BOX, CREATE_COURSE, SELECT_COURSE, CREATE_LESSON, UPDATE_CARD, DELETE_CARD, CREATE_CARD } from "./action-types";
+import { CHANGE_BOX, CREATE_COURSE, SELECT_COURSE, CREATE_LESSON, UPDATE_CARD, DELETE_CARD, CREATE_CARD, DELETE_COURSE } from "./action-types";
 
 export function createCourse(payload) {
     return { type: CREATE_COURSE, payload }
+};
+
+export function deleteCourse(payload) {
+    return { type: DELETE_COURSE, payload }
 };
 
 export function createLesson(payload) {
