@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
-import {useTransition, animated} from 'react-spring'
+import { useTransition, animated } from 'react-spring'
 import NavigationHeader from './../components/navigation-header.component';
 import Course from './../components/course.component';
 import { allCoursesSelector } from '../data/selectors';
@@ -18,7 +18,7 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-function CoursePage({courses, deleteCourse, history}) {
+function CoursePage({ courses, deleteCourse, history }) {
 
     const gradients = [
         "orange",
@@ -46,11 +46,13 @@ function CoursePage({courses, deleteCourse, history}) {
         history.push('/course/' + course.id);
     };
 
+    const AnimatedContextMenu = animated(ContextMenuComponent)
+
     const transitions = useTransition(courses, item => item.id, {
-        from: { opacity: 0, height: '167px' },
-        enter: { opacity: 1 },
-        leave: { opacity: 0, height: '0px', margin: '0px' },
-        trail: 200
+        from: { opacity: 0, height: '167px', transform: 'translate(0px, -100px) scale(0)' },
+        enter: { opacity: 1, transform: 'translate(0px, 0px) scale(1)' },
+        leave: { opacity: 0, height: '0px', margin: '0px', transform: 'translate(0px, 0px) scale(0)' },
+        trail: 150
     })
 
     return (
@@ -59,14 +61,15 @@ function CoursePage({courses, deleteCourse, history}) {
             <div className="p-4 flex flex-col items-center justify-center">
                 {transitions.map(({ item: course, props, key }) => {
                     return (
-                        <animated.div style={props} key={key} className="w-full relative flex justify-center cursor-pointer max-w-lg mb-12">
-                            <ContextMenuComponent actions={[
-                                {name: "Umbenennen"},
-                                {name: "Löschen", onClick: () => deleteCourse({id: course.id})},
-                            ]} className="w-full flex justify-center">
-                                <Course onClick={() => onSelectedCourse(course)} gradient={gradients[course.id % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course) }></Course>
-                            </ContextMenuComponent>
-                        </animated.div>
+                        <AnimatedContextMenu key={key} actions={[
+                            { name: "Umbenennen" },
+                            { name: "Löschen", onClick: () => deleteCourse({ id: course.id }) },
+                        ]} style={props} onClick={() => onSelectedCourse(course)} className="w-full relative flex justify-center cursor-pointer max-w-lg mb-12">
+                            <div className="w-full flex justify-center">
+
+                                <Course gradient={gradients[course.id % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
+                            </div>
+                        </AnimatedContextMenu>
                     )
                 })}
             </div>

@@ -43,22 +43,30 @@ function ContextMenuComponent(props) {
     }
 
     const onClick = () => {
+        console.log(props.children.props);
         if (!enabled) {
             if (props.children.props.onClick) {
                 props.children.props.onClick();
+            } else if (props.onClick) {
+                props.onClick();
             }
         }
+    }
+
+    const actionClick = (callback) => {
+        setEnabled(false);
+        callback();
     }
 
 
     return (
         <React.Fragment>
-            <div {...longPress} onClick={() => onClick()} ref={cardRef} onContextMenu={(ev) => onEnable(ev)} className={`${props.className} ${enabled ? 'z-20' : ''} relative`}>
+            <div style={{...props.style}} {...longPress} onClick={() => onClick()} ref={cardRef} onContextMenu={(ev) => onEnable(ev)} className={`${props.className} ${enabled ? 'z-20' : ''} relative will-change-transform`}>
                 {props.children}
                     <div className={`absolute ${enabled ? '' : 'hidden'} transition-all opacity-0 ${visible ? (menuPosition === MenuPosition.TOP ? '-translate-y-full opacity-100' : 'translate-y-full opacity-100') : ''} bg-white-80 left-0 rounded-xl z-50 ${menuPosition === MenuPosition.TOP ? '-top-10' : '-bottom-10 '}`}>
                         {props.actions && props.actions.map((action, index) => {
                             return (
-                                <div key={index.toString()} onClick={() => action.onClick()} className={`text-gray-900 text-lg px-4 py-4 flex items-center justify-between ${index < props.actions.length ? 'border-b-2 border-gray-10' : ''}`}>
+                                <div key={index.toString()} onClick={() => actionClick(action.onClick)} className={`text-gray-900 text-lg px-4 py-4 flex items-center justify-between ${index < props.actions.length ? 'border-b-2 border-gray-10' : ''}`}>
                                     <span className="mr-16">{action.name}</span>
                                     { action.icon ? <span className="">{action.icon}</span> : null }
                                 </div>
