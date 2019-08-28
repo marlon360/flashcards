@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import NavigationHeader from '../components/navigation-header.component';
 import Lesson from '../components/lesson.component';
 import { courseSelector } from '../data/selectors';
+import ContextMenuComponent from '../components/context-menu.component';
 
 const mapStateToProps = (state, props) => {
     const courseId = props.match.params.id;
@@ -37,7 +38,12 @@ function LessonPage(props) {
             <div className="p-4 flex flex-col items-center justify-center">
                 {props.course && props.course.lessons.map((lesson, index) => {
                     return (
-                        <Lesson key={index.toString()} onLearn={() => onLearn(lesson)} name={lesson.name} onEdit={() => onEdit(lesson)} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
+                        <ContextMenuComponent className="w-full max-w-lg" actions={[
+                            {name: "Umbenennen"},
+                            {name: "Löschen"},
+                        ]}>
+                            <Lesson key={index.toString()} onLearn={() => onLearn(lesson)} name={lesson.name} onEdit={() => onEdit(lesson)} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
+                        </ContextMenuComponent>
                     )
                 })}
             </div>
