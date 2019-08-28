@@ -1,6 +1,11 @@
 module.exports = {
   theme: {
     extend: {
+      colors: {
+        'gray-10': 'rgba(100,100,100,0.1)',
+        'white-80': 'rgba(255,255,255,0.8)',
+        'white-50': 'rgba(255,255,255,0.5)',
+      },
       height: {
         '36': '9rem',
         '44': '11rem',
@@ -19,6 +24,7 @@ module.exports = {
       inset: {
         '1': '1rem',
         '10': '10px',
+        '-10': '-10px',
         '1/2': '50%'
       },
       backgroundColor: {
@@ -49,9 +55,11 @@ module.exports = {
     },
     translate: { // defaults to {}
       '1/2': '50%',
+      '-1/2': '-50%',
       '1/10': '10%',
       '1/5': '20%',
       'full': '100%',
+      '-full': '-100%',
       '55': '55px',
       '40': '40px',
       '20': '20px',

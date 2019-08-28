@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import NavigationHeader from './../components/navigation-header.component';
 import Course from './../components/course.component';
 import { allCoursesSelector } from '../data/selectors';
+import ContextMenuComponent from '../components/context-menu.component';
+import XmarkIcon from '../icons/xmark.icon';
 
 const mapStateToProps = state => {
     return { courses: allCoursesSelector(state) };
@@ -42,8 +44,13 @@ function CoursePage(props) {
             <div className="p-4 flex flex-col items-center justify-center">
                 {props.courses.map((course, index) => {
                     return (
-                        <div key={course.id.toString()} onClick={() => onSelectedCourse(course)} className="w-full flex justify-center cursor-pointer">
-                            <Course gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course) }></Course>
+                        <div key={course.id.toString()} className="w-full flex justify-center cursor-pointer max-w-lg mb-12">
+                            <ContextMenuComponent actions={[
+                                {name: "Umbenennen"},
+                                {name: "Löschen"},
+                            ]} className="w-full flex justify-center">
+                                <Course onClick={() => onSelectedCourse(course)} gradient={gradients[index % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course) }></Course>
+                            </ContextMenuComponent>
                         </div>
                     )
                 })}
