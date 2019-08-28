@@ -3,7 +3,7 @@ import CirclePercentage from './circle-percentage/circle-percentage.component.js
 function Course(props) {
     const gradient = props.gradient || 'orange';
     return (
-        <div className="w-full relative max-w-lg">
+        <div className="w-full relative max-w-lg select-none">
             <div className={`bg-gradient-140-${gradient} p-6 pb-16 rounded-xl text-white shadow-xl flex justify-center`}>
                 <h2 className="flex-1 text-3xl font-bold truncate">{props.name}</h2>
                 <div className="w-14 pl-2">
