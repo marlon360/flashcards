@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import useLongPress from '../utils/useLongPress';
 
 const MenuPosition = {
     TOP: 1,
@@ -10,6 +11,8 @@ function ContextMenuComponent(props) {
     const [enabled, setEnabled] = useState(false);
     const [visible, setVisible] = useState(false);
     const [menuPosition, setMenuPosition] = useState(MenuPosition.BOTTOM);
+
+    const longPress = useLongPress(() => onEnable());
 
     const cardRef = React.createRef();
 
@@ -29,7 +32,7 @@ function ContextMenuComponent(props) {
     }
 
     const onEnable = (ev) => {
-        ev.preventDefault(); 
+        ev && ev.preventDefault(); 
         const elOffset = offset(cardRef.current);
         if (elOffset.top > elOffset.bottom) {
             setMenuPosition(MenuPosition.TOP);
@@ -42,7 +45,7 @@ function ContextMenuComponent(props) {
 
     return (
         <React.Fragment>
-            <div ref={cardRef} onContextMenu={(ev) => onEnable(ev)} className={`${props.className} ${enabled ? 'z-20' : ''} relative`}>
+            <div ref={cardRef} {...longPress} onContextMenu={(ev) => onEnable(ev)} className={`${props.className} ${enabled ? 'z-20' : ''} relative`}>
                 {props.children}
                     <div className={`absolute ${enabled ? '' : 'hidden'} bg-white-80 left-0 rounded-xl z-50 ${menuPosition === MenuPosition.TOP ? '-top-10 -translate-y-full' : '-bottom-10 translate-y-full'}`}>
                         {props.actions && props.actions.map((action, index) => {
