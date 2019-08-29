@@ -35,7 +35,7 @@ function NewLessonPage(props) {
     }
 
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col h-screen bg-gray-200">
             <div className="px-6 pb-4 pt-8 w-full flex justify-between">
                 <div>
                     <Link to={`/course/${courseId}`}>

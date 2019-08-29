@@ -11808,6 +11808,21 @@ video {
   -webkit-backdrop-filter: blur(10px);
 }
 
+#root {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#root > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  will-change: 'transform opacity';
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
