@@ -7,7 +7,7 @@ function Lesson(props) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="bg-gradient-120-white p-6 rounded-xl shadow-md w-full max-w-lg mb-5">
+        <div className="bg-gradient-120-white p-6 rounded-xl shadow-md w-full max-w-lg">
             <div onClick={() => setOpen(!open)} className="text-gray-800 flex justify-between cursor-pointer">
                 <div>
                     <div className="-mb-1 text-sm">{props.cards} Karten</div>

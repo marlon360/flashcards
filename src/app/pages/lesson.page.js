@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
+import { useTransition, animated } from 'react-spring'
 
 import NavigationHeader from '../components/navigation-header.component';
 import Lesson from '../components/lesson.component';
@@ -11,7 +12,7 @@ const mapStateToProps = (state, props) => {
     return { course: courseSelector(state, courseId) };
 };
 
-function LessonPage(props) {
+function LessonPage({course, history}) {
 
     const progress = (lesson) => {
         const cards = lesson.cards.length;
@@ -25,25 +26,34 @@ function LessonPage(props) {
     }
 
     const onLearn = (lesson) => {
-        props.history.push('/cards/' + props.course.id + "/" + lesson.id);
+        history.push('/cards/' + course.id + "/" + lesson.id);
     }
 
     const onEdit = (lesson) => {
-        props.history.push('/course/' + props.course.id + "/" + lesson.id + "/cards");
+        history.push('/course/' + course.id + "/" + lesson.id + "/cards");
     }
+
+    const AnimatedContextMenu = animated(ContextMenuComponent)
+
+    const transitions = useTransition(course.lessons, item => item.id, {
+        from: { opacity: 0, height: '101px', transform: 'translate(0px, -50px) scale(0.6)' },
+        enter: { opacity: 1, transform: 'translate(0px, 0px) scale(1)' },
+        leave: { opacity: 0, height: '0px', margin: '0px', transform: 'translate(0px, 0px) scale(0)' },
+        trail: 150
+    })
 
     return (
         <div>
-            <NavigationHeader onPlusButtonClicked={() => props.history.push('/course/'+props.course.id+'/new')} backButton={"Kurse"} onBackButtonClicked={() => props.history.push('/courses')} title={props.course.name} ></NavigationHeader>
+            <NavigationHeader onPlusButtonClicked={() => history.push('/course/'+course.id+'/new')} backButton={"Kurse"} onBackButtonClicked={() => history.push('/courses')} title={course.name} ></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
-                {props.course && props.course.lessons.map((lesson, index) => {
+                {course && transitions.map(({ item: lesson, props, key }) => {
                     return (
-                        <ContextMenuComponent className="w-full max-w-lg" actions={[
+                        <AnimatedContextMenu style={props} key={key} className="w-full max-w-lg mb-5" actions={[
                             {name: "Umbenennen"},
                             {name: "Löschen"},
                         ]}>
-                            <Lesson key={index.toString()} onLearn={() => onLearn(lesson)} name={lesson.name} onEdit={() => onEdit(lesson)} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
-                        </ContextMenuComponent>
+                            <Lesson onLearn={() => onLearn(lesson)} name={lesson.name} onEdit={() => onEdit(lesson)} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
+                        </AnimatedContextMenu>
                     )
                 })}
             </div>
