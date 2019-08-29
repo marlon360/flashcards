@@ -25,13 +25,13 @@ function App() {
     console.log(previous);
     if (!previous) {
       return {}
-    } else if (location.pathname.includes("/new")) {
+    } else if (location.pathname.includes("/new") || location.pathname.includes("/cards")) {
       return {
         from: { opacity: 1, transform: 'translate3d(0,100%,0)' },
         enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
         leave: { opacity: 0, transform: 'translate3d(0,0,0)' },
       }
-    } else if (previous.pathname.includes("/new")) {
+    } else if (previous.pathname.includes("/new") || previous.pathname.includes("/cards")) {
       return {
         from: { opacity: 0, transform: 'translate3d(0,0,0)' },
         enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
