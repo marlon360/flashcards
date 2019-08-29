@@ -49,7 +49,7 @@ function CoursePage({ courses, deleteCourse, history }) {
     const AnimatedContextMenu = animated(ContextMenuComponent)
 
     const transitions = useTransition(courses, item => item.id, {
-        from: { opacity: 0, height: '167px', transform: 'translate(0px, -100px) scale(0)' },
+        from: { opacity: 0, height: '167px', transform: 'translate(0px, -50px) scale(0.6)' },
         enter: { opacity: 1, transform: 'translate(0px, 0px) scale(1)' },
         leave: { opacity: 0, height: '0px', margin: '0px', transform: 'translate(0px, 0px) scale(0)' },
         trail: 150
