@@ -1,5 +1,5 @@
 import { Model, attr, fk, ORM } from "redux-orm";
-import { CREATE_COURSE, CHANGE_BOX, CREATE_LESSON, UPDATE_CARD, DELETE_CARD, CREATE_CARD, DELETE_COURSE } from "./action-types";
+import { CREATE_COURSE, CHANGE_BOX, CREATE_LESSON, UPDATE_CARD, DELETE_CARD, CREATE_CARD, DELETE_COURSE, DELETE_LESSON } from "./action-types";
 
 export class Card extends Model {
     static reducer(action, Card, session) {
@@ -38,6 +38,9 @@ export class Lesson extends Model {
             case CREATE_LESSON:
                 const props = Object.assign({}, payload);
                 Lesson.create(props);
+                break;
+            case DELETE_LESSON:
+                Lesson.withId(payload.id).delete();
                 break;
             default:
                 return null;

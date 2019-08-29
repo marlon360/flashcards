@@ -6,13 +6,20 @@ import NavigationHeader from '../components/navigation-header.component';
 import Lesson from '../components/lesson.component';
 import { courseSelector } from '../data/selectors';
 import ContextMenuComponent from '../components/context-menu.component';
+import { deleteLesson } from '../data/actions';
 
 const mapStateToProps = (state, props) => {
     const courseId = props.match.params.id;
     return { course: courseSelector(state, courseId) };
 };
 
-function LessonPage({course, history}) {
+const mapDispatchToProps = (dispatch) => {
+    return {
+        deleteLesson: payload => dispatch(deleteLesson(payload)),
+    };
+}
+
+function LessonPage({course, history, deleteLesson}) {
 
     const progress = (lesson) => {
         const cards = lesson.cards.length;
@@ -50,7 +57,7 @@ function LessonPage({course, history}) {
                     return (
                         <AnimatedContextMenu style={props} key={key} className="w-full max-w-lg mb-5" actions={[
                             {name: "Umbenennen"},
-                            {name: "Löschen"},
+                            {name: "Löschen", onClick: () => deleteLesson({id: lesson.id})},
                         ]}>
                             <Lesson onLearn={() => onLearn(lesson)} name={lesson.name} onEdit={() => onEdit(lesson)} cards={lesson.cards.length} percentage={progress(lesson)}></Lesson>
                         </AnimatedContextMenu>
@@ -61,4 +68,4 @@ function LessonPage({course, history}) {
     );
 }
 
-export default connect(mapStateToProps)(LessonPage);
+export default connect(mapStateToProps, mapDispatchToProps)(LessonPage);
