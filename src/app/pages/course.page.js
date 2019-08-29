@@ -65,10 +65,7 @@ function CoursePage({ courses, deleteCourse, history }) {
                             { name: "Umbenennen" },
                             { name: "Löschen", onClick: () => deleteCourse({ id: course.id }) },
                         ]} style={props} onClick={() => onSelectedCourse(course)} className="w-full relative flex justify-center cursor-pointer max-w-lg mb-12">
-                            <div className="w-full flex justify-center">
-
                                 <Course gradient={gradients[course.id % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
-                            </div>
                         </AnimatedContextMenu>
                     )
                 })}
