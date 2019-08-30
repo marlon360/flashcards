@@ -9,6 +9,7 @@ import PencilIcon from '../icons/pencil.icon';
 import { Link } from 'react-router-dom';
 import { lessonSelector } from '../data/selectors';
 import { changeBox } from '../data/actions';
+import { SlideDown } from '../transitions/transitions';
 
 const SlideDirection = {
     LEFT: 1,
@@ -165,12 +166,21 @@ class CardsPage extends Component {
         this.setSlideCounter(this.state.slideCounter + 1)
     }
 
+    onClose() {
+        this.props.history.push({
+            pathname: `/course/${this.state.courseid}`,
+            state: {
+                ...SlideDown
+            }
+        });
+    }
+
     render() {
         this.calculateCardIndices(this.state.slideCounter, this.state.cardIndices);
         const cardClasses = 'perspective-1500 transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
         return (
             <div>
-                <div className="relative h-screen">
+                <div className="relative h-screen bg-gray-200">
                     <div onClick={() => this.setPopoverVisibility(!this.state.isPopoverVisible)} className={`absolute inset-0 overflow-hidden bg-overlay z-50 ${this.state.isPopoverVisible ? 'transition-fade-in opacity-100 max-h-full' : 'transition-fade-out opacity-0 max-h-0'}`}>
 
                         <div className="relative bg-white p-6 w-10/12 m-auto mt-22 rounded-xl">
@@ -194,10 +204,8 @@ class CardsPage extends Component {
                         </div>
                     </div>
                     <div className="px-6 pb-4 pt-8 w-full flex justify-between">
-                        <div>
-                            <Link to={`/course/${this.state.courseid}`}>
-                                <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
-                            </Link>
+                        <div onClick={() => this.onClose()}>
+                            <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
                         </div>
                         <div onClick={() => this.setPopoverVisibility(true)} className="flex cursor-pointer justify-center items-center font-bold text-blue-500 text-xl">
                             <BoxIcon className="mr-1" alt="box"></BoxIcon>

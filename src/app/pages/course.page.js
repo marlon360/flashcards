@@ -8,6 +8,8 @@ import ContextMenuComponent from '../components/context-menu.component';
 import XmarkIcon from '../icons/xmark.icon';
 import { deleteCourse } from '../data/actions';
 
+import { SlideLeft, SlideOverFromBottom } from './../transitions/transitions';
+
 const mapStateToProps = state => {
     return { courses: allCoursesSelector(state) };
 };
@@ -43,7 +45,12 @@ function CoursePage({ courses, deleteCourse, history }) {
     }
 
     const onSelectedCourse = (course) => {
-        history.push('/course/' + course.id);
+        history.push({
+            pathname: '/course/' + course.id,
+            state: {
+                ...SlideLeft
+            }
+        });
     };
 
     const AnimatedContextMenu = animated(ContextMenuComponent)
@@ -55,9 +62,19 @@ function CoursePage({ courses, deleteCourse, history }) {
         trail: 150
     })
 
+    const onPlusButton = () => {
+        history.push({
+            pathname: '/new/course',
+            state: {
+                ...SlideOverFromBottom,
+                modal: true
+            }
+        });
+    }
+
     return (
-        <div>
-            <NavigationHeader onPlusButtonClicked={() => history.push('/new/course')} title="Kurse"></NavigationHeader>
+        <div className="bg-gray-200">
+            <NavigationHeader onPlusButtonClicked={() => onPlusButton()} title="Kurse"></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 {transitions.map(({ item: course, props, key }) => {
                     return (
@@ -65,7 +82,7 @@ function CoursePage({ courses, deleteCourse, history }) {
                             { name: "Umbenennen" },
                             { name: "Löschen", onClick: () => deleteCourse({ id: course.id }) },
                         ]} style={props} onClick={() => onSelectedCourse(course)} className="w-full relative flex justify-center cursor-pointer max-w-lg mb-12">
-                                <Course gradient={gradients[course.id % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
+                            <Course gradient={gradients[course.id % gradients.length]} name={course.name} lessonCount={course.lessons.length} cardCount={cardCount(course)} progress={progress(course)}></Course>
                         </AnimatedContextMenu>
                     )
                 })}

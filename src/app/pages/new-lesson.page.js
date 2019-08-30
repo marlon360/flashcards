@@ -6,6 +6,7 @@ import XmarkIcon from '../icons/xmark.icon';
 
 import { Link } from 'react-router-dom';
 import { createLesson } from '../data/actions';
+import { SlideDown } from '../transitions/transitions';
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -31,16 +32,28 @@ function NewLessonPage(props) {
             name: lessonInput,
             course: courseId
         });
-        props.history.push('/course/'+courseId)
+        props.history.push({
+            pathname: '/course/'+courseId,
+            state: {
+                ...SlideDown
+            }
+        });
+    }
+
+    const onClose = () => {
+        props.history.push({
+            pathname: '/course/'+courseId,
+            state: {
+                ...SlideDown
+            }
+        });
     }
 
     return (
         <div className="flex flex-col h-screen bg-gray-200">
             <div className="px-6 pb-4 pt-8 w-full flex justify-between">
-                <div>
-                    <Link to={`/course/${courseId}`}>
-                        <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
-                    </Link>
+                <div onClick={() => onClose()}>
+                    <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
                 </div>
             </div>
             <div className="flex-1 px-4 ">

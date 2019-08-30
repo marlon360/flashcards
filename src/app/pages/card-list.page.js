@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import NavigationHeader from '../components/navigation-header.component';
 import { lessonSelector } from '../data/selectors';
+import { SlideRight, SlideOverFromBottom } from '../transitions/transitions';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -17,12 +18,26 @@ function CardListPage(props) {
     }
 
     const onAddCard = () => {
-        props.history.push(`/course/${props.lesson.course.id}/${props.lesson.id}/cards/new`)
+        props.history.push({
+            pathname: `/course/${props.lesson.course.id}/${props.lesson.id}/cards/new`,
+            state: {
+                ...SlideOverFromBottom
+            }
+        });
+    }
+
+    const onBackButton = () => {
+        props.history.push({
+            pathname: `/course/${props.lesson.course.id}`,
+            state: {
+                ...SlideRight
+            }
+        });
     }
 
     return (
         <div>
-            <NavigationHeader onPlusButtonClicked={() => onAddCard()} backButton={props.lesson.course.name} onBackButtonClicked={() => props.history.push(`/course/${props.lesson.course.id}`)} title={props.lesson.name} ></NavigationHeader>
+            <NavigationHeader onPlusButtonClicked={() => onAddCard()} backButton={props.lesson.course.name} onBackButtonClicked={() => onBackButton()} title={props.lesson.name} ></NavigationHeader>
             <div className="p-2 flex flex-wrap w-full max-w-xl m-auto">
                 {props.lesson.cards.map((card, index) => {
                     return (

@@ -15,47 +15,35 @@ import { usePrevious } from './utils/usePrevios';
 
 function App() {
 
-  
-
   const { location } = useRouter();
 
-  const previous = usePrevious(location);
+  const prevLocation = usePrevious(location);
 
   const getCurrentTransition = () => {
-    console.log(previous);
-    if (!previous) {
-      return {}
-    } else if (location.pathname.includes("/new") || location.pathname.includes("/cards")) {
-      return {
-        from: { opacity: 1, transform: 'translate3d(0,100%,0)' },
-        enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-        leave: { opacity: 0, transform: 'translate3d(0,0,0)' },
-      }
-    } else if (previous.pathname.includes("/new") || previous.pathname.includes("/cards")) {
-      return {
-        from: { opacity: 0, transform: 'translate3d(0,0,0)' },
-        enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
-        leave: { opacity: 1, transform: 'translate3d(0,100%,0)' },
-      }
-    } else if (location.pathname === '/courses' && previous.pathname.includes("/course/")) {
-      return {
-        from: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
-        enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-        leave: { opacity: 0, transform: 'translate3d(100%,0,0)' },
-      }
+    console.log(location);
+    if (location.state && location.state.transition) {
+      return location.state.transition
     } else {
       return {
-        from: { opacity: 0, transform: 'translate3d(50%,0,0)' },
-        enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-        leave: { opacity: 0, transform: 'translate3d(-100%,0,0)' },
+        from: { opacity: 1, transform: 'translate3d(0%, 0, 0)' },
+        enter: { opacity: 1 },
+        leave: { opacity: 1 },
       }
     }
   }
 
-  const transitions = useTransition(location, location => location.pathname, getCurrentTransition())
+  const isModal = !!(
+    location.state &&
+    location.state.modal &&
+    prevLocation !== location
+  );
+
+  const transitions = useTransition(isModal && prevLocation ? prevLocation : location, location => location.pathname, getCurrentTransition());
+  const transitionsPrev = useTransition(isModal ? location : [], location => location.pathname, getCurrentTransition());
 
   return (
-      transitions.map(({ item, props, key }) => (
+    <React.Fragment>
+      {transitions.map(({ item, props, key }) => (
         <animated.div key={key} style={props}>
           <Switch location={item}>
             <Route exact path="/" render={(props) => <CoursePage {...props} />} />
@@ -69,7 +57,23 @@ function App() {
             <Route exact path="/cards/:courseid/:lessonid" component={CardsPage} />
           </Switch>
         </animated.div>
-      ))
+      ))}
+      {transitionsPrev.map(({ item, props, key }) => (
+        <animated.div key={key} style={props}>
+          <Switch location={item}>
+            <Route exact path="/" render={(props) => <CoursePage {...props} />} />
+            <Route path="/courses" render={(props) => <CoursePage {...props} />} />
+            <Route path="/new/course" render={(props) => <NewCoursePage {...props} />} />
+            <Route path="/course/:id/new" render={(props) => <NewLessonPage {...props} />} />
+            <Route exact path="/course/:id" render={(props) => <LessonPage {...props} />} />
+            <Route exact path="/course/:courseid/:lessonid/cards" component={CardListPage} />
+            <Route path="/course/:courseid/:lessonid/cards/new" component={newCardPage} />
+            <Route path="/cards/:courseid/:lessonid/:cardid/edit" component={EditCardPage} />
+            <Route exact path="/cards/:courseid/:lessonid" component={CardsPage} />
+          </Switch>
+        </animated.div>
+      ))}
+    </React.Fragment>
   );
 }
 

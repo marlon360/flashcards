@@ -7,6 +7,7 @@ import Lesson from '../components/lesson.component';
 import { courseSelector } from '../data/selectors';
 import ContextMenuComponent from '../components/context-menu.component';
 import { deleteLesson } from '../data/actions';
+import { SlideRight, SlideOverFromBottom, SlideLeft, SlideDown } from '../transitions/transitions';
 
 const mapStateToProps = (state, props) => {
     const courseId = props.match.params.id;
@@ -33,11 +34,22 @@ function LessonPage({course, history, deleteLesson}) {
     }
 
     const onLearn = (lesson) => {
-        history.push('/cards/' + course.id + "/" + lesson.id);
+        history.push({
+            pathname: '/cards/' + course.id + "/" + lesson.id,
+            state: {
+                ...SlideOverFromBottom,
+                modal: true
+            }
+        });
     }
 
     const onEdit = (lesson) => {
-        history.push('/course/' + course.id + "/" + lesson.id + "/cards");
+        history.push({
+            pathname: '/course/' + course.id + '/' + lesson.id + '/cards',
+            state: {
+                ...SlideLeft
+            }
+        });
     }
 
     const AnimatedContextMenu = animated(ContextMenuComponent)
@@ -49,9 +61,28 @@ function LessonPage({course, history, deleteLesson}) {
         trail: 150
     })
 
+    const onBackButton = () => {
+        history.push({
+            pathname: '/courses',
+            state: {
+                ...SlideRight
+            }
+        });
+    }
+
+    const onPlusButton = () => {
+        history.push({
+            pathname: '/course/'+course.id+'/new',
+            state: {
+                ...SlideOverFromBottom,
+                modal: true
+            }
+        });
+    }
+
     return (
-        <div>
-            <NavigationHeader onPlusButtonClicked={() => history.push('/course/'+course.id+'/new')} backButton={"Kurse"} onBackButtonClicked={() => history.push('/courses')} title={course.name} ></NavigationHeader>
+        <div className="bg-gray-200">
+            <NavigationHeader onPlusButtonClicked={() => onPlusButton()} backButton={"Kurse"} onBackButtonClicked={() => onBackButton()} title={course.name} ></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 {course && transitions.map(({ item: lesson, props, key }) => {
                     return (

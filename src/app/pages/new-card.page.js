@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import { createCard } from '../data/actions';
 import EditCardComponent from '../components/edit-card.component';
+import { SlideDown } from '../transitions/transitions';
 
 
 function mapDispatchToProps(dispatch) {
@@ -28,19 +29,36 @@ function NewCardPage(props) {
     const onClose = (content) => {
         if (content.frontContent !== '' || content.backContent !== '') {
             if (window.confirm("Geänderte Daten gehen verloren!")) {
-                props.history.push(`/course/${courseid}/${lessonid}/cards`);
+                props.history.push({
+                    pathname: `/course/${courseid}/${lessonid}/cards`,
+                    state: {
+                        ...SlideDown
+                    }
+                });
             }
         } else {
-            props.history.push(`/course/${courseid}/${lessonid}/cards`);
+            props.history.push({
+                pathname: `/course/${courseid}/${lessonid}/cards`,
+                state: {
+                    ...SlideDown
+                }
+            });
         }
     }
 
     const onDelete = () => {
-        props.history.push(`/course/${courseid}/${lessonid}/cards`);
+        props.history.push({
+            pathname: `/course/${courseid}/${lessonid}/cards`,
+            state: {
+                ...SlideDown
+            }
+        });
     }
 
     return (
-        <EditCardComponent front="" back="" onSave={(content) => onSave(content)} onDelete={() => onDelete()} onClose={(content) => onClose(content)} />
+        <div className="bg-gray-200">
+            <EditCardComponent front="" back="" onSave={(content) => onSave(content)} onDelete={() => onDelete()} onClose={(content) => onClose(content)} />
+        </div>
     );
 }
 
