@@ -58,7 +58,7 @@ function LessonPage({course, history, deleteLesson}) {
         initial: null,
         from: { opacity: 0, transform: 'translate(0px, -50px) scale(0.6)' },
         enter: { opacity: 1, transform: 'translate(0px, 0px) scale(1)' },
-        leave: { opacity: 0, margin: '0px', transform: 'translate(0px, 0px) scale(0)' },
+        leave: { opacity: 0, transform: 'translate(0px, 0px) scale(0)' },
         trail: 150
     })
 
