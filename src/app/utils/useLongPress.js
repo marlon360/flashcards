@@ -29,5 +29,6 @@ export default function useLongPress(callback = () => { }, ms = 300) {
         onMouseLeave: stop,
         onTouchStart: start,
         onTouchEnd: stop,
+        onTouchMove: stop
     };
 }
