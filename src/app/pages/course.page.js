@@ -9,6 +9,7 @@ import XmarkIcon from '../icons/xmark.icon';
 import { deleteCourse } from '../data/actions';
 
 import { SlideLeft, SlideOverFromBottom } from './../transitions/transitions';
+import Page from '../components/page.component';
 
 const mapStateToProps = state => {
     return { courses: allCoursesSelector(state) };
@@ -74,7 +75,7 @@ function CoursePage({ courses, deleteCourse, history }) {
     }
 
     return (
-        <div className="bg-gray-200">
+        <Page>
             <NavigationHeader onPlusButtonClicked={() => onPlusButton()} title="Kurse"></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 {transitions.map(({ item: course, props, key }) => {
@@ -88,7 +89,7 @@ function CoursePage({ courses, deleteCourse, history }) {
                     )
                 })}
             </div>
-        </div>
+        </Page>
     );
 }
 

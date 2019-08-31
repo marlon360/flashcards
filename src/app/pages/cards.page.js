@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import { lessonSelector } from '../data/selectors';
 import { changeBox } from '../data/actions';
 import { SlideDown } from '../transitions/transitions';
+import Page from '../components/page.component';
 
 const SlideDirection = {
     LEFT: 1,
@@ -179,7 +180,7 @@ class CardsPage extends Component {
         this.calculateCardIndices(this.state.slideCounter, this.state.cardIndices);
         const cardClasses = 'perspective-1500 transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
         return (
-            <div>
+            <Page>
                 <div className="relative h-screen bg-gray-200">
                     <div onClick={() => this.setPopoverVisibility(!this.state.isPopoverVisible)} className={`absolute inset-0 overflow-hidden bg-overlay z-50 ${this.state.isPopoverVisible ? 'transition-fade-in opacity-100 max-h-full' : 'transition-fade-out opacity-0 max-h-0'}`}>
 
@@ -275,7 +276,7 @@ class CardsPage extends Component {
                         </div>
                     )}
                 </div>
-            </div>
+            </Page>
         );
     }
 }

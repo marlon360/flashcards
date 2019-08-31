@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { cardSelector } from '../data/selectors';
 import { updateCard, deleteCard } from '../data/actions';
 import EditCardComponent from '../components/edit-card.component';
+import Page from '../components/page.component';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -52,7 +53,9 @@ function EditCardPage(props) {
     }
 
     return (
-        <EditCardComponent front={props.card.front} back={props.card.back} onSave={(content) => onSave(content)} onDelete={() => onDelete()} onClose={(content) => onClose(content)} />
+        <Page>
+            <EditCardComponent front={props.card.front} back={props.card.back} onSave={(content) => onSave(content)} onDelete={() => onDelete()} onClose={(content) => onClose(content)} />
+        </Page>
     );
 }
 

@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { createCard } from '../data/actions';
 import EditCardComponent from '../components/edit-card.component';
 import { SlideDown } from '../transitions/transitions';
+import Page from '../components/page.component';
 
 
 function mapDispatchToProps(dispatch) {
@@ -56,9 +57,9 @@ function NewCardPage(props) {
     }
 
     return (
-        <div className="bg-gray-200">
+        <Page>
             <EditCardComponent front="" back="" onSave={(content) => onSave(content)} onDelete={() => onDelete()} onClose={(content) => onClose(content)} />
-        </div>
+        </Page>
     );
 }
 

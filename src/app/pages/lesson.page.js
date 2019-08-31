@@ -8,6 +8,7 @@ import { courseSelector } from '../data/selectors';
 import ContextMenuComponent from '../components/context-menu.component';
 import { deleteLesson } from '../data/actions';
 import { SlideRight, SlideOverFromBottom, SlideLeft, SlideDown } from '../transitions/transitions';
+import Page from '../components/page.component';
 
 const mapStateToProps = (state, props) => {
     const courseId = props.match.params.id;
@@ -82,7 +83,7 @@ function LessonPage({course, history, deleteLesson}) {
     }
 
     return (
-        <div className="bg-gray-200">
+        <Page>
             <NavigationHeader onPlusButtonClicked={() => onPlusButton()} backButton={"Kurse"} onBackButtonClicked={() => onBackButton()} title={course.name} ></NavigationHeader>
             <div className="p-4 flex flex-col items-center justify-center">
                 {course && transitions.map(({ item: lesson, props, key }) => {
@@ -96,7 +97,7 @@ function LessonPage({course, history, deleteLesson}) {
                     )
                 })}
             </div>
-        </div>
+        </Page>
     );
 }
 

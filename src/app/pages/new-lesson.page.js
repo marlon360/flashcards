@@ -7,6 +7,7 @@ import XmarkIcon from '../icons/xmark.icon';
 import { Link } from 'react-router-dom';
 import { createLesson } from '../data/actions';
 import { SlideDown } from '../transitions/transitions';
+import Page from '../components/page.component';
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -33,7 +34,7 @@ function NewLessonPage(props) {
             course: courseId
         });
         props.history.push({
-            pathname: '/course/'+courseId,
+            pathname: '/course/' + courseId,
             state: {
                 ...SlideDown
             }
@@ -42,7 +43,7 @@ function NewLessonPage(props) {
 
     const onClose = () => {
         props.history.push({
-            pathname: '/course/'+courseId,
+            pathname: '/course/' + courseId,
             state: {
                 ...SlideDown
             }
@@ -50,21 +51,23 @@ function NewLessonPage(props) {
     }
 
     return (
-        <div className="flex flex-col h-screen bg-gray-200">
-            <div className="px-6 pb-4 pt-8 w-full flex justify-between">
-                <div onClick={() => onClose()}>
-                    <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
+        <Page>
+            <div className="flex flex-col h-screen">
+                <div className="px-6 pb-4 pt-8 w-full flex justify-between">
+                    <div onClick={() => onClose()}>
+                        <XmarkIcon className="text-gray-600" alt="close"></XmarkIcon>
+                    </div>
+                </div>
+                <div className="flex-1 px-4 ">
+                    <div className="flex flex-col items-center py-8 px-4">
+                        <h1 className="text-3xl text-gray-800 font-bold mb-4">Neue Lektion anlegen!</h1>
+                        <h2 className="text-xl text-gray-600 mb-12">Gib hier den Namen deiner neuen Lektion ein.</h2>
+                        <input onChange={onInputChanged} className="p-4 text-xl w-full text-gray-800 max-w-sm rounded mb-8 outline-none focus:shadow-outline" placeholder="Meine Lektion"></input>
+                        <button onClick={onSubmit} disabled={isButtonDisabled(lessonInput)} className="text-xl bg-blue-500 text-white px-8 py-4 rounded-lg shadow-lg outline-none disabled:opacity-50 disabled:cursor-not-allowed">Lektion anlegen</button>
+                    </div>
                 </div>
             </div>
-            <div className="flex-1 px-4 ">
-                <div className="flex flex-col items-center py-8 px-4">
-                    <h1 className="text-3xl text-gray-800 font-bold mb-4">Neue Lektion anlegen!</h1>
-                    <h2 className="text-xl text-gray-600 mb-12">Gib hier den Namen deiner neuen Lektion ein.</h2>
-                    <input onChange={onInputChanged} className="p-4 text-xl w-full text-gray-800 max-w-sm rounded mb-8 outline-none focus:shadow-outline" placeholder="Meine Lektion"></input>
-                    <button onClick={onSubmit} disabled={isButtonDisabled(lessonInput)} className="text-xl bg-blue-500 text-white px-8 py-4 rounded-lg shadow-lg outline-none disabled:opacity-50 disabled:cursor-not-allowed">Lektion anlegen</button>
-                </div>
-            </div>
-        </div>
+        </Page>
     );
 }
 

@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import NavigationHeader from '../components/navigation-header.component';
 import { lessonSelector } from '../data/selectors';
 import { SlideRight, SlideOverFromBottom } from '../transitions/transitions';
+import Page from '../components/page.component';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -36,7 +37,7 @@ function CardListPage(props) {
     }
 
     return (
-        <div>
+        <Page>
             <NavigationHeader onPlusButtonClicked={() => onAddCard()} backButton={props.lesson.course.name} onBackButtonClicked={() => onBackButton()} title={props.lesson.name} ></NavigationHeader>
             <div className="p-2 flex flex-wrap w-full max-w-xl m-auto">
                 {props.lesson.cards.map((card, index) => {
@@ -49,7 +50,7 @@ function CardListPage(props) {
                     )
                 })}
             </div>
-        </div>
+        </Page>
     );
 }
 
