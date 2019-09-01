@@ -22,7 +22,8 @@ function CardListPage(props) {
         props.history.push({
             pathname: `/course/${props.lesson.course.id}/${props.lesson.id}/cards/new`,
             state: {
-                ...SlideOverFromBottom
+                ...SlideOverFromBottom,
+                modal: true
             }
         });
     }
