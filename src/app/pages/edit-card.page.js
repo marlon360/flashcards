@@ -27,37 +27,35 @@ function EditCardPage(props) {
 
     const { courseid, lessonid } = props.match.params;
 
+    const hasGoBackPath = () => {
+        return location.state && location.state.prevLocation;
+    }
+
+    const goBack = () => {
+        hasGoBackPath() ? props.history.push({
+            pathname:location.state.prevLocation.pathname,
+            state: {
+                ...SlideDown
+            }
+        }) : props.history.goBack();
+    }
+
     const onSave = (content) => {
         props.updateCard({
             id: props.card.id,
             front: content.frontContent,
             back: content.backContent
         });
-        props.history.push({
-            pathname:location.state.prevLocation.pathname,
-            state: {
-                ...SlideDown
-            }
-        });
+        goBack();
     }
 
     const onClose = (content) => {
         if (content.frontContent !== props.card.front || content.backContent !== props.card.back) {
             if (window.confirm("Geänderte Daten gehen verloren!")) {
-                props.history.push({
-                    pathname:location.state.prevLocation.pathname,
-                    state: {
-                        ...SlideDown
-                    }
-                });
+                goBack();
             }
         } else {
-            props.history.push({
-                pathname:location.state.prevLocation.pathname,
-                state: {
-                    ...SlideDown
-                }
-            });
+            goBack();
         }
     }
 
@@ -66,12 +64,7 @@ function EditCardPage(props) {
             props.deleteCard({
                 id: props.card.id
             });
-            props.history.push({
-                pathname:location.state.prevLocation.pathname,
-                state: {
-                    ...SlideDown
-                }
-            });
+            goBack();
         }
     }
 
