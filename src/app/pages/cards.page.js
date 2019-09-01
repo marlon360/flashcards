@@ -9,7 +9,7 @@ import PencilIcon from '../icons/pencil.icon';
 import { Link } from 'react-router-dom';
 import { lessonSelector } from '../data/selectors';
 import { changeBox } from '../data/actions';
-import { SlideDown } from '../transitions/transitions';
+import { SlideDown, SlideOverFromBottom } from '../transitions/transitions';
 import Page from '../components/page.component';
 
 const SlideDirection = {
@@ -176,6 +176,15 @@ class CardsPage extends Component {
         });
     }
 
+    onEdit() {
+        this.props.history.push({
+            pathname: `/cards/${this.state.courseid}/${this.state.lessonid}/${this.getCurrentCard().id}/edit`,
+            state: {
+                prevLocation: this.props.history.location
+            }
+        });
+    }
+
     render() {
         this.calculateCardIndices(this.state.slideCounter, this.state.cardIndices);
         const cardClasses = 'perspective-1500 transition-all transition-750 absolute inset-0 bg-transparent w-full text-gray-800 text-center text-3xl font-bold ';
@@ -215,9 +224,9 @@ class CardsPage extends Component {
                         </div>
                         <div className="w-6">
                             {(this.getCurrentCard() !== null ?
-                                <Link to={`/cards/${this.state.courseid}/${this.state.lessonid}/${this.getCurrentCard().id}/edit`}>
+                                <div onClick={() => this.onEdit()}>
                                     <PencilIcon className="text-gray-600" alt="edit"></PencilIcon>
-                                </Link>
+                                </div>
                                 : null)}
                         </div>
                     </div>

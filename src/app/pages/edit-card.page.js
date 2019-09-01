@@ -5,6 +5,8 @@ import { cardSelector } from '../data/selectors';
 import { updateCard, deleteCard } from '../data/actions';
 import EditCardComponent from '../components/edit-card.component';
 import Page from '../components/page.component';
+import useRouter from '../utils/useRouter';
+import { SlideDown } from '../transitions/transitions';
 
 const mapStateToProps = (state, props) => {
     return {
@@ -21,6 +23,8 @@ function mapDispatchToProps(dispatch) {
 
 function EditCardPage(props) {
 
+    const { location } = useRouter();
+
     const { courseid, lessonid } = props.match.params;
 
     const onSave = (content) => {
@@ -29,17 +33,31 @@ function EditCardPage(props) {
             front: content.frontContent,
             back: content.backContent
         });
-        props.history.push(`/cards/${courseid}/${lessonid}`);
+        props.history.push({
+            pathname:location.state.prevLocation.pathname,
+            state: {
+                ...SlideDown
+            }
+        });
     }
 
     const onClose = (content) => {
         if (content.frontContent !== props.card.front || content.backContent !== props.card.back) {
             if (window.confirm("Geänderte Daten gehen verloren!")) {
-                props.history.goBack();
+                props.history.push({
+                    pathname:location.state.prevLocation.pathname,
+                    state: {
+                        ...SlideDown
+                    }
+                });
             }
         } else {
-            console.log(props.history);
-            props.history.goBack();
+            props.history.push({
+                pathname:location.state.prevLocation.pathname,
+                state: {
+                    ...SlideDown
+                }
+            });
         }
     }
 
@@ -48,7 +66,12 @@ function EditCardPage(props) {
             props.deleteCard({
                 id: props.card.id
             });
-            props.history.push(`/cards/${courseid}/${lessonid}`);
+            props.history.push({
+                pathname:location.state.prevLocation.pathname,
+                state: {
+                    ...SlideDown
+                }
+            });
         }
     }
 

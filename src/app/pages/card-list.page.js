@@ -15,7 +15,14 @@ const mapStateToProps = (state, props) => {
 function CardListPage(props) {
 
     const onCardClicked = (card) => {
-        props.history.push(`/cards/${props.lesson.course.id}/${props.lesson.id}/${card.id}/edit`)
+        props.history.push({
+            pathname: `/cards/${props.lesson.course.id}/${props.lesson.id}/${card.id}/edit`,
+            state: {
+                ...SlideOverFromBottom,
+                modal: true,
+                prevLocation: props.history.location
+            }
+        });
     }
 
     const onAddCard = () => {
