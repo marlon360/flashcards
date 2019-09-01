@@ -20,7 +20,6 @@ function App() {
   const prevLocation = usePrevious(location);
 
   const getCurrentTransition = () => {
-    console.log(location);
     if (location.state && location.state.transition) {
       return location.state.transition
     } else {
@@ -38,14 +37,11 @@ function App() {
     prevLocation !== location
   );
 
-  const transitions = useTransition(isModal && prevLocation ? prevLocation : location, location => location.pathname, getCurrentTransition());
-  const transitionsPrev = useTransition(isModal ? location : [], location => location.pathname, getCurrentTransition());
+  const transitionModal = useTransition(isModal ? location : [], location => location.pathname, getCurrentTransition());
 
   return (
     <React.Fragment>
-      {transitions.map(({ item, props, key }) => (
-        <animated.div key={key} style={props}>
-          <Switch location={item}>
+          <Switch location={isModal && prevLocation ? prevLocation : location}>
             <Route exact path="/" render={(props) => <CoursePage {...props} />} />
             <Route path="/courses" render={(props) => <CoursePage {...props} />} />
             <Route path="/new/course" render={(props) => <NewCoursePage {...props} />} />
@@ -56,9 +52,7 @@ function App() {
             <Route path="/cards/:courseid/:lessonid/:cardid/edit" component={EditCardPage} />
             <Route exact path="/cards/:courseid/:lessonid" component={CardsPage} />
           </Switch>
-        </animated.div>
-      ))}
-      {transitionsPrev.map(({ item, props, key }) => (
+      {transitionModal.map(({ item, props, key }) => (
         <animated.div key={key} style={props}>
           <Switch location={item}>
             <Route exact path="/" render={(props) => <CoursePage {...props} />} />
