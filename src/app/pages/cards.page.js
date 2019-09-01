@@ -180,6 +180,8 @@ class CardsPage extends Component {
         this.props.history.push({
             pathname: `/cards/${this.state.courseid}/${this.state.lessonid}/${this.getCurrentCard().id}/edit`,
             state: {
+                ...SlideOverFromBottom,
+                modal: true,
                 prevLocation: this.props.history.location
             }
         });
